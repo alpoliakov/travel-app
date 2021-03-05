@@ -106,3 +106,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+.AppleDouble
+.LSOverride
+
+*.graphql.d.ts
+*.graphqls.d.ts
+__generated__
+# vercel
+.vercel
+
+.eslintcache
