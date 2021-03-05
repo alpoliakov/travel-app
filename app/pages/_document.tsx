@@ -20,17 +20,17 @@ class MyDocument extends Document {
           <link
             rel="preload"
             as="style"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
           />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
             media="print"
           />
           <noscript>
             <link
               rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
             />
           </noscript>
         </Head>
