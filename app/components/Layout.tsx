@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className="main">{children}</main>
       <Footer />
     </div>
   );
