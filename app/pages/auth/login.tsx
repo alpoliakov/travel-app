@@ -20,7 +20,7 @@ const postVariants = {
 
 export default function Login() {
   return (
-    <div>
+    <div className="box">
       <Head>
         <title>Login</title>
         <link rel="shortcut icon" href="/favicon.ico" />

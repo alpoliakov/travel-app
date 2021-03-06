@@ -20,7 +20,7 @@ const postVariants = {
 
 export default function SignUp() {
   return (
-    <div>
+    <div className="box">
       <Head>
         <title>Sign Up</title>
       </Head>

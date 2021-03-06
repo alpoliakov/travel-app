@@ -20,7 +20,7 @@ const postVariants = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="box">
       <Head>
         <title>Countries</title>
       </Head>
