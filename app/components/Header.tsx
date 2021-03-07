@@ -1,31 +1,38 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
+import setLanguage from 'next-translate/setLanguage';
+import React, { useEffect, useState } from 'react';
+import { useIntl } from 'react-intl';
 
 export default function Header() {
   // eslint-disable-next-line prefer-const
   let { locale, locales } = useRouter();
+  const [currentLocal, setCurrentLocal] = useState(locale);
+  const { formatMessage: f } = useIntl();
 
   const setLocal = ({ target }) => {
-    locale = target.value;
-    console.log(locale);
+    setCurrentLocal(target.value);
   };
+
+  useEffect(() => {
+    setLanguage(currentLocal);
+  }, [currentLocal]);
 
   return (
     <div className="header">
       <div className="header__home">
         <Link href="/">
-          <a>Home</a>
+          <a>
+            <Image src="/images/logo.png" width="150px" height="60px" />
+          </a>
         </Link>
       </div>
       <div className="header__search">
-        <h1>Search</h1>
+        <h1>{f({ id: 'search' })}</h1>
       </div>
-      <div
-        className="header__menu"
-        style={{ width: 200, display: 'flex', justifyContent: 'space-around' }}>
-        <select onBlur={setLocal}>
+      <div className="header__menu">
+        <select className="select-css" onChange={setLocal} defaultValue={locale}>
           {locales.map((item) => (
             <option key={item} value={item}>
               {item}
@@ -33,7 +40,7 @@ export default function Header() {
           ))}
         </select>
         <Link href="/auth/login">
-          <a>Login</a>
+          <a>{f({ id: 'btn' })}</a>
         </Link>
         <Link href="/auth/signup">
           <a>Sign Up</a>
