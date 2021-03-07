@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import * as React from 'react';
+
+import Card from '../components/Card';
+import data from '../data/data';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -18,67 +22,35 @@ const postVariants = {
   },
 };
 
+interface item {
+  country: string;
+  capital: string;
+  src: string;
+  id: number;
+}
+
 export default function Home() {
+  const { locale } = useRouter();
+
   return (
     <div className="box">
       <Head>
         <title>Countries</title>
       </Head>
       <motion.div
-        style={{ maxWidth: 1280 }}
+        style={{ padding: '0 20px', margin: '0 auto' }}
         initial="initial"
         animate="enter"
         exit="exit"
         variants={postVariants}>
-        <h1 style={{ color: '#ffffff' }}>Home Page</h1>
-        <p style={{ color: '#ffffff', fontSize: 25 }}>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-          cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-          est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-          libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-          maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-          Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-          ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic
-          tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
-          perferendis doloribus asperiores repellat.
-        </p>
-        <p style={{ color: '#ffffff', fontSize: 25 }}>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-          cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-          est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-          libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-          maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-          Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-          ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic
-          tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
-          perferendis doloribus asperiores repellat.
-        </p>
-        <p style={{ color: '#ffffff', fontSize: 25 }}>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-          cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-          est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-          libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-          maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-          Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-          ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic
-          tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
-          perferendis doloribus asperiores repellat.
-        </p>
-        <p style={{ color: '#ffffff', fontSize: 25 }}>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-          cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-          est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-          libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-          maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-          Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-          ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic
-          tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
-          perferendis doloribus asperiores repellat.
-        </p>
+        <section>
+          <div style={{ color: '#ffffff' }}>Current locale: {locale}</div>
+        </section>
+        <div className="countries">
+          {data.map((item) => (
+            <Card key={item.id} item={item} />
+          ))}
+        </div>
       </motion.div>
     </div>
   );

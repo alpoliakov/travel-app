@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import React from 'react';
+import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
+import React, { useEffect } from 'react';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -19,6 +21,9 @@ const postVariants = {
 };
 
 export default function Login() {
+  const { locale } = useRouter();
+  console.log(locale);
+
   return (
     <div className="box">
       <Head>
