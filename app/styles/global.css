@@ -129,3 +129,36 @@ a {
 
 /*https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80*/
 /*https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260*/
+
+/* Widgets */
+
+.widget-container {
+  /* float: right; */
+  width: 25%;
+  right: 20px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+}
+
+.weather-widget {
+  grid-column-start: 1;
+}
+
+.currency-widget {
+  grid-column-start: 2;
+}
+
+.time-widget {
+  grid-column-start: 3;
+}
+
+.weather-icon {
+  width: 70px;
+  float: left;
+  margin-right: 10px;
+}
+
+.weather-info {
+  text-align: center;
+}

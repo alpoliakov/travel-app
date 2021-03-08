@@ -14,12 +14,12 @@ const PLACES = [
 export const Widgets = () => {
 
   return (
-    <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
-      <div className="px-4 py-5 sm:px-6">
+    <div className="widget-container">
+      {/* <div className="px-4 py-5 sm:px-6"> */}
         <WeatherWidget name={PLACES[0].name} />
         <CurrencyWidget />
         <TimeWidget /> 
-      </div>
+      {/* </div> */}
     </div>
   );
           }

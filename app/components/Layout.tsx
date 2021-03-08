@@ -3,6 +3,7 @@ import React from 'react';
 
 import Footer from './Footer';
 import Header from './Header';
+
 import { Widgets } from './Widgets/Widgets';
 
 export default function Layout({ children }) {

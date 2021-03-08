@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useIntl } from 'react-intl';
+
 
 export const WeatherWidget = ({ name }) => {
   const [weatherData, setWeatherData] = useState(null);
+  const { formatMessage: f } = useIntl();
 
   useEffect(() => {
     const URL =
@@ -14,7 +17,7 @@ export const WeatherWidget = ({ name }) => {
   }, []);
 
   if (!weatherData) {
-    return <div>Loading...</div>;
+    return <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">{f({ id: 'load' })}...</div>;
   }
 
   const weather = weatherData.weather[0];
@@ -23,27 +26,18 @@ export const WeatherWidget = ({ name }) => {
   const convertFtoC = temp => Math.round((temp - 32)*5/9)
 
   return (
-    <div className="w-full max-w-lg">
-      <div className="leading-loose">
+    <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl" >
       <p className="text-white font-medium text-center text-lg font-bold uppercase">
         {weather.main} in {weatherData.name}
-        <img src={iconUrl} alt={weatherData.description} />
       </p>
-      <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
-        <dt className="block text-sm text-white">Current</dt>
-        <dd className="mt-1 text-sm text-white-800 sm:mt-0 sm:col-span-2">
-          {convertFtoC(weatherData.main.temp)}°
-        </dd>
-        <dt className="block text-sm text-white">High</dt>
-        <dd className="mt-1 text-sm text-white-800 sm:mt-0 sm:col-span-2">
-          {convertFtoC(weatherData.main.temp_max)}°
-        </dd>
-        <dt className="block text-sm text-white">Low</dt>
-        <dd className="mt-1 text-sm text-white-800 sm:mt-0 sm:col-span-2">
-          {convertFtoC(weatherData.main.temp_min)}°
-        </dd>
-
-</div>      </div>
+        <img src={iconUrl} alt={weatherData.description} className="weather-icon"/>
+      <div className="weather-info"
+      // className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl"
+      >
+        <p className="text-white font-medium text-lg font-bold">{convertFtoC(weatherData.main.temp)}°</p>
+        <p className="block text-sm text-white">{f({ id: 'high' })}: {convertFtoC(weatherData.main.temp_max)}°</p>
+        <p className="block text-sm text-white">{f({ id: 'low' })}: {convertFtoC(weatherData.main.temp_min)}°</p>
+      </div>
     </div>
   );
 };
