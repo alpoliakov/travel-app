@@ -1,6 +1,10 @@
 @import 'variables.css';
 @import 'select.css';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   height: 100%;
@@ -17,6 +21,7 @@ a {
 
 .container {
   min-height: 100vh;
+  min-width: 100%;
   display: grid;
   row-gap: 50px;
   grid-template-rows: auto 1fr;

@@ -1,0 +1,27 @@
+query Country($id:ObjectId!) {
+  country(countryId: $id) {
+    _id
+    currency
+    coordinates
+    ISOCode
+    videoUrl
+    imagesUrl
+    data {
+      en {
+        name
+        description
+        capital
+      }
+      ru {
+        name
+        description
+        capital
+      }
+      uk {
+        name
+        description
+        capital
+      }
+    }
+  }
+}

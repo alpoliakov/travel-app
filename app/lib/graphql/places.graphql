@@ -1,0 +1,48 @@
+query Places($countryId: ObjectId!) {
+  places(countryId: $countryId) {
+    _id
+    imagesUrl
+    data {
+      en {
+        name
+        description
+        country
+      }
+      ru {
+        name
+        description
+        country
+      }
+      uk {
+        name
+        description
+        country
+      }
+    }
+    country {
+      ISOCode
+      currency
+      coordinates
+      data {
+        en {
+          name
+          description
+          capital
+        }
+        ru {
+          name
+          description
+          capital
+        }
+        uk {
+          name
+          description
+          capital
+        }
+      }
+      videoUrl
+      imagesUrl
+      _id
+    }
+  }
+}

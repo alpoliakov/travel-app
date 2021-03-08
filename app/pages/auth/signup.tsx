@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import React from 'react';
+import { useIntl } from 'react-intl';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -19,13 +20,15 @@ const postVariants = {
 };
 
 export default function SignUp() {
+  const { formatMessage: f } = useIntl();
+
   return (
     <div className="box">
       <Head>
         <title>Sign Up</title>
       </Head>
       <motion.div initial="initial" animate="enter" exit="exit" variants={postVariants}>
-        <h1>Sign Up Page</h1>
+        <h1>{f({ id: 'signUpPage' })}</h1>
       </motion.div>
     </div>
   );

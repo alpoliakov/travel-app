@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -5,11 +6,29 @@ import setLanguage from 'next-translate/setLanguage';
 import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
+const postVariants = {
+  initial: { scale: 0.96, y: 30, opacity: 0 },
+  enter: {
+    scale: 1,
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] },
+  },
+  exit: {
+    scale: 0.6,
+    y: 100,
+    opacity: 0,
+    transition: { duration: 0.2, ease: [0.48, 0.15, 0.25, 0.96] },
+  },
+};
+
 export default function Header() {
-  // eslint-disable-next-line prefer-const
-  let { locale, locales } = useRouter();
+  const { locale, locales } = useRouter();
   const [currentLocal, setCurrentLocal] = useState(locale);
   const { formatMessage: f } = useIntl();
+  const router = useRouter();
+
+  const showSearch = router.pathname === '/';
 
   const setLocal = ({ target }) => {
     setCurrentLocal(target.value);
@@ -29,7 +48,11 @@ export default function Header() {
         </Link>
       </div>
       <div className="header__search">
-        <h1>{f({ id: 'search' })}</h1>
+        {showSearch && (
+          <motion.h1 initial="initial" animate="enter" exit="exit" variants={postVariants}>
+            {f({ id: 'search' })}
+          </motion.h1>
+        )}
       </div>
       <div className="header__menu">
         <select className="select-css" onChange={setLocal} defaultValue={locale}>
@@ -40,10 +63,10 @@ export default function Header() {
           ))}
         </select>
         <Link href="/auth/login">
-          <a>{f({ id: 'btn' })}</a>
+          <a>{f({ id: 'btnLogin' })}</a>
         </Link>
         <Link href="/auth/signup">
-          <a>Sign Up</a>
+          <a>{f({ id: 'btnSignUp' })}</a>
         </Link>
       </div>
     </div>
