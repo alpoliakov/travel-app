@@ -12,13 +12,37 @@ export default function Footer() {
       </Link>
       <h4 style={{ color: '#ffffff' }}>
         <span className="shadow__item">
-          Created: 2021:{' '}
+          Created 2021:{' '}
           <Link href="https://github.com/alpoliakov">
             <a
               className="shadow__item hover__item hover:text-orange-600"
               style={{ color: '#ffffff' }}
               target="_blank">
               @alpoliakov
+            </a>
+          </Link>{' '}
+          <Link href="https://github.com/buiiz">
+            <a
+              className="shadow__item hover__item hover:text-orange-600"
+              style={{ color: '#ffffff' }}
+              target="_blank">
+              @buiiz
+            </a>
+          </Link>{' '}
+          <Link href="https://github.com/ya-mashnenko">
+            <a
+              className="shadow__item hover__item hover:text-orange-600"
+              style={{ color: '#ffffff' }}
+              target="_blank">
+              @ya-mashnenko
+            </a>
+          </Link>{' '}
+          <Link href="https://github.com/w1r3d7/">
+            <a
+              className="shadow__item hover__item hover:text-orange-600"
+              style={{ color: '#ffffff' }}
+              target="_blank">
+              @w1r3d7
             </a>
           </Link>
         </span>

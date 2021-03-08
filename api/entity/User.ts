@@ -15,14 +15,17 @@ export class User {
   @Property({ required: true })
   email: string;
 
+  @Field()
   @Property({ required: true })
   password: string;
 
-  @Property()
-  avatar: string;
+  @Field()
+  @Property({ required: true })
+  avatar?: string;
 
+  @Field()
   @Property()
-  role: string;
+  role?: string;
 }
 
 export const UserModel = getModelForClass(User);

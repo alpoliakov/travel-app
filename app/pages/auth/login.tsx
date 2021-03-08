@@ -3,6 +3,9 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import React, { useEffect } from 'react';
+import { useIntl } from 'react-intl';
+
+import LoginForm from '../../components/LoginForm';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -21,8 +24,7 @@ const postVariants = {
 };
 
 export default function Login() {
-  const { locale } = useRouter();
-  console.log(locale);
+  const router = useRouter();
 
   return (
     <div className="box">
@@ -30,8 +32,13 @@ export default function Login() {
         <title>Login</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <motion.div initial="initial" animate="enter" exit="exit" variants={postVariants}>
-        <h1>Login Page</h1>
+      <motion.div
+        className="flex justify-center w-full max-w-lg"
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        variants={postVariants}>
+        <LoginForm />
       </motion.div>
     </div>
   );
