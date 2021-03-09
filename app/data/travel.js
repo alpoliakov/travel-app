@@ -1,6 +1,4 @@
-//country
 export const countries = [
-  // DONE: Germany
   {
     name: {
       ru: 'Германия',
@@ -28,7 +26,7 @@ export const countries = [
       },
       coordinates: [52.5102, 13.3834],
     },
-    timeZone: 'CET',
+    timeZone: 'GMT+1',
     currency: 'EUR',
     sightList: [
       {
@@ -173,7 +171,6 @@ export const countries = [
       },
     ],
   },
-  // DONE: France
   {
     name: {
       ru: 'Франция',
@@ -326,7 +323,6 @@ export const countries = [
       },
     ],
   },
-  // DONE: Spain
   {
     name: {
       ru: 'Испания',
@@ -479,7 +475,6 @@ export const countries = [
       },
     ],
   },
-  // DONE: Britain
   {
     name: {
       ru: 'Великобритания',
@@ -633,7 +628,6 @@ export const countries = [
       },
     ],
   },
-  // DONE: Italy
   {
     name: {
       ru: 'Италия',
@@ -644,9 +638,6 @@ export const countries = [
       'https://images.unsplash.com/photo-1533676802871-eca1ae998cd5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80',
       'https://images.unsplash.com/photo-1525874684015-58379d421a52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80',
       'https://images.unsplash.com/photo-1499678329028-101435549a4e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
-      'https://images.unsplash.com/photo-1529260830199-42c24126f198?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80',
-      'https://images.unsplash.com/photo-1513581166391-887a96ddeafd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
     ],
     video: 'https://www.youtube.com/watch?v=zGlpMEUZv3U',
     description: {
@@ -790,7 +781,6 @@ export const countries = [
       },
     ],
   },
-  // TODO: Greece
   {
     name: {
       ru: 'Греция',
@@ -801,15 +791,15 @@ export const countries = [
       'https://images.unsplash.com/photo-1503152394-c571994fd383?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
       'https://images.unsplash.com/photo-1504512485720-7d83a16ee930?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=779&q=80',
       'https://images.unsplash.com/photo-1560703650-ef3e0f254ae0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1507475380673-1246fa72eeea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1527108097555-a5c5e36f3dd0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1470497409162-889ff0ac5726?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80',
     ],
     video: 'https://www.youtube.com/watch?v=VqtAhvsdc-c',
     description: {
-      ru: '',
-      uk: '',
-      en: '',
+      ru:
+        'Греция – страна в Южной Европе, расположенная на Балканском полуострове и тысячах островов в Эгейском и Ионическом морях. Она является наследницей могущественной Древней Греции, которая считается колыбелью западной цивилизации. Столица Греции Афины славится своей крепостью Акрополь, возведенной в V веке до н. э., и храмом Парфенон. У туристов пользуются популярностью пляжи острова Санторини с черным песком, курорты острова Миконос и другие места летнего отдыха.',
+      uk:
+        'Греція - країна в Південній Європі, розташована на Балканському півострові і тисячах островів в Егейському та Іонічному морях. Вона є спадкоємицею могутньої Стародавній Греції, яка вважається колискою західної цивілізації. Столиця Греції Афіни славиться своєю фортецею Акрополь, яка була зведена в V столітті до н. е., і храмом Парфенон. У туристів користуються популярністю пляжі острова Санторіні з чорним піском, курорти острова Міконос і інші місця літнього відпочинку.',
+      en:
+        'Greece is a country in Southern Europe, located on the Balkan Peninsula and thousands of islands in the Aegean and Ionian Seas. She is the heir to the powerful Ancient Greece, which is considered the cradle of Western civilization. The capital of Greece, Athens is famous for its Acropolis fortress, built in the 5th century BC. e., and the Parthenon temple. The black sand beaches of Santorini, the resorts of the island of Mykonos and other places of summer vacation are popular among tourists.',
     },
     capital: {
       name: {
@@ -817,9 +807,9 @@ export const countries = [
         ru: 'Афины',
         en: 'Athens',
       },
-      coordinates: '37°59′N 23°44′E',
+      coordinates: [37.9916, 23.7167],
     },
-    timeZone: ['UTC+02:00'],
+    timeZone: 'GMT+2',
     currency: 'EUR',
     sightList: [
       {
@@ -829,11 +819,18 @@ export const countries = [
           en: 'Acropolis of Athens',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Афи́нский Акро́поль — акрополь в городе Афины, представляющий собой 156-метровый скалистый холм с пологой вершиной. Это было главное место для нахождения царя. Также внутри имелось немало храмов, где возносились молитвы греческим богам и воздавались жертвы',
+          uk:
+            'Афінський Акрополь - акрополь в місті Афіни, що представляє собою 156-метровий скелястий пагорб з пологою вершиною. Це було головне місце для перебування царя. Також всередині було чимало храмів, де підносилися молитви грецьким богам і відплачувалися жертви',
+          en:
+            'Athens Acropolis - Acropolis in the city of Athens, which is a 156-meter high rocky hill with a gentle summit. This was the main location for the king. Also inside there were many temples where prayers were offered to the Greek gods and sacrifices were made.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1569770725012-58fac5eec229?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80',
+          'https://images.unsplash.com/photo-1557094692-0a39333c1025?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80',
+          'https://images.unsplash.com/photo-1512155912692-1229949f4879?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1324&q=80',
+        ],
       },
       {
         name: {
@@ -842,11 +839,18 @@ export const countries = [
           en: 'Parthenon',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Парфено́н — памятник античной архитектуры, древнегреческий храм, расположенный на афинском Акрополе, главный храм в древних Афинах, посвящённый покровительнице этого города и всей Аттики, богине Афине-Девственнице. Построен в 447−438 годах до н. э. архитектором Калликратом по проекту Иктина и украшен в 438−431 годах до н. э. под руководством Фидия при правлении Перикла. В настоящее время находится в полуразрушенном состоянии, ведутся восстановительные работы.',
+          uk:
+            "Парфенон - пам'ятник античної архітектури, давньогрецький храм, розташований на афінському Акрополі, головний храм в древніх Афінах, присвячений покровительці цього міста і всієї Аттики, богині Афіні-діви. Побудований в 447-438 роках до н. е. архітектором Каллікратом за проектом Іктіна і прикрашений в 438-431 роках до н. е. під керівництвом Фідія при правлінні Перікла. В даний час знаходиться в напівзруйнованому стані, ведуться відновлювальні роботи.",
+          en:
+            'The Parthenon is a monument of ancient architecture, an ancient Greek temple located on the Athenian Acropolis, the main temple in ancient Athens, dedicated to the patroness of this city and all of Attica, the goddess Athena the Virgin. Built in 447-438 BC. e. by the architect Callicrates according to the project of Iktin and decorated in 438-431 BC. e. under the leadership of Phidias under the reign of Pericles. Currently, it is in a dilapidated state, restoration work is underway.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1599423217192-34da246be9e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80',
+          'https://images.unsplash.com/photo-1522787345986-d5c7885a889e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1531816458010-fb7685eecbcb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
@@ -855,24 +859,37 @@ export const countries = [
           en: 'Meteora',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Метеоры — скалы, состоящие из смеси песчаника и обломочной горной породы и достигающие в высоту 600 м над уровнем моря, в горах Фессалии на севере Греции, на севере нома Трикала, в 1—2 км к северу от города Каламбака (ранее Стаги). Известны с X века, наряду с Афоном, как один из центров православного монашества в Греции. В 1988 году монастыри, расположенные на вершинах скал, были включены в список объектов Всемирного наследия. В церковно-каноническом отношении монашеские поселения относятся к митрополии Стаги и Метеор Церкви Греции. Скалы образовались более 60 млн лет назад и являлись каменистым дном доисторического моря, находившегося на месте равнины.',
+          uk:
+            "Метеори - скелі, що складаються з суміші пісковика і уламкової гірської породи і досягають у висоту 600 м над рівнем моря, в горах Фессалії на півночі Греції, на півночі нома Трікала, в 1-2 км на північ від міста Каламбака (раніше Стаг). Відомі з X століття, поряд з Афоном, як один із центрів православного чернецтва в Греції. У 1988 році монастирі, розташовані на вершинах скель, були включені в список об'єктів Всесвітньої спадщини. У церковно-канонічному відношенні чернечі поселення відносяться до митрополії Стаг і Метеор Церкви Греції. Скелі утворилися більше 60 млн років тому і були кам'янистим дном доісторичного моря, що знаходився на місці рівнини.",
+          en:
+            'Meteora - rocks, consisting of a mixture of sandstone and detrital rock and reaching a height of 600 m above sea level, in the mountains of Thessaly in northern Greece, in the north of the Trikala region, 1-2 km north of the city of Kalambaka (formerly Stagi). They are known since the X century, along with Athos, as one of the centers of Orthodox monasticism in Greece. In 1988, the monasteries located on the cliff tops were included in the list of World Heritage Sites. In ecclesiastical canonical terms, monastic settlements belong to the Metropolitanate of Stagi and Meteor of the Church of Greece. The rocks were formed more than 60 million years ago and were the rocky bottom of the prehistoric sea, which was located in the place of the plain.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1495386217358-4ffdde036fe7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1599953046062-20aff1812d1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1613759880231-6f42c397aac8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
-          ru: 'Новий музей акрополя',
-          uk: 'Новый музей Акрополя',
+          ru: 'Новый музей акрополя',
+          uk: 'Новий музей Акрополя',
           en: 'Acropolis Museum',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Новый музей Акрополя — музей в Греции. Был заложен в Афинах 22 декабря 2003 года и официально открыт 20 июня 2009 года. По случаю открытия музея была проведена официальная церемония во главе с президентом Греции Каролосом Папульясом, на которой присутствовали председатель ЕС и руководители зарубежных стран.',
+          uk:
+            'Новий музей Акрополя - музей в Греції. Був закладений в Афінах 22 грудня 2003 року і офіційно відкритий 20 червня 2009 року. З нагоди відкриття музею була проведена офіційна церемонія на чолі з президентом Греції Каролосом Папульясом, на якій були присутні голова ЄС і керівники зарубіжних країн.',
+          en:
+            'The New Acropolis Museum is a museum in Greece. It was laid down in Athens on December 22, 2003 and officially opened on June 20, 2009. On the occasion of the opening of the museum, an official ceremony was held led by Greek President Karolos Papoulias, which was attended by the EU President and foreign leaders.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1540393709739-68d543432d02?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80',
+          'https://images.unsplash.com/photo-1538815971037-bf7a755da317?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
@@ -881,11 +898,18 @@ export const countries = [
           en: 'Temple of Olympian Zeus',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Олимпейо́н, храм Зевса Олимпийского — самый большой храм Греции, строившийся с VI века до н. э. до II века н. э.; располагается в Афинах в 500 метрах к юго-востоку от Акрополя и около 700 метров южнее площади Синтагма',
+          uk:
+            'Олимпейон, храм Зевса Олімпійського - найбільший храм Греції, що будувався з VI століття до н. е. до II століття н. е .; розташовується в Афінах в 500 метрах на південний схід від Акрополя і близько 700 метрів на південь від площі Синтагма',
+          en:
+            'Olympion, the Temple of Olympian Zeus, is the largest temple in Greece, built from the 6th century BC. e. until the 2nd century AD e.; located in Athens, 500 meters southeast of the Acropolis and about 700 meters south of Syntagma Square',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1565022074331-68c473aeba1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1598172626637-d9e648bb76c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1585602984924-97d3b7171983?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80',
+        ],
       },
       {
         name: {
@@ -894,15 +918,21 @@ export const countries = [
           en: 'Ancient Agora of Athens',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Афи́нская агора́ — городская площадь Афин, занимающая территорию приблизительно 40 гектаров и расположенная на пологом склоне к северо-западу от Акрополя. Греческое слово агора́ происходит от ἀγείρω «собирать, созывать». Это соответствует назначению Агоры как главного места встреч в городе.',
+          uk:
+            'Афінська агора - міська площа Афін, що займає територію приблизно 40 гектарів і розташована на пологому схилі на північний захід від Акрополя. Грецьке слово агора походить від ἀγείρω «збирати, скликати». Це відповідає призначенню Агори як головного місця зустрічей в місті.',
+          en:
+            'The Athens agora is a city square in Athens, covering an area of approximately 40 hectares and located on a gentle slope northwest of the Acropolis. The Greek word agorá comes from ἀγείρω "to gather, to call." This is in line with the Agora\'s designation as the main meeting place in the city.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1595445695224-6d6dbb24f1e8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1558297733-383c11030c44?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1610397857737-d352559136d0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
+        ],
       },
     ],
   },
-  // TODO: USA
   {
     name: {
       ru: 'США',
@@ -913,15 +943,15 @@ export const countries = [
       'https://images.unsplash.com/photo-1485738422979-f5c462d49f74?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=775&q=80',
       'https://images.unsplash.com/photo-1422464804701-7d8356b3a42f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80',
       'https://images.unsplash.com/photo-1576468610408-9fef351b5ab6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1562749536-5642fe7bb115?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=721&q=80',
-      'https://images.unsplash.com/photo-1563641676291-9f01de32c82d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1590499865396-a119960fd16f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80',
     ],
     video: 'https://www.youtube.com/watch?v=bNTUukfWe00',
     description: {
-      uk: '',
-      ru: '',
-      en: '',
+      ru:
+        'Соединенные Штаты Америки – государство, состоящее из 50 штатов, занимает значительную часть Северной Америки. Штат Аляска расположен на северо-западе континента, а Гавайи – в Тихом океане. К крупным городам атлантического побережья относятся Нью-Йорк и столица Вашингтон. К западу от них находится ещё один важный город – Чикаго, известный своей впечатляющей архитектурой. А на западном побережье расположен Лос-Анджелес со знаменитыми голливудскими киностудиями.',
+      uk:
+        'Сполучені Штати Америки - держава, що складається з 50 штатів, займає значну частину Північної Америки. Штат Аляска розташований на північному заході континенту, а Гаваї - в Тихому океані. До великих містах атлантичного узбережжя відносяться Нью-Йорк і столиця Вашингтон. На захід від них знаходиться ще один важливий місто - Чикаго, відомий своєю вражаючою архітектурою. А на західному узбережжі розташований Лос-Анджелес зі знаменитими голлівудськими кіностудіями.',
+      en:
+        'The United States of America is a state of 50 states that occupies a significant part of North America. The state of Alaska is located in the northwest of the continent, while Hawaii is in the Pacific Ocean. The major cities of the Atlantic coast include New York and the capital Washington. To the west of them lies another important city - Chicago, known for its impressive architecture. And on the west coast is Los Angeles with famous Hollywood film studios.',
     },
     capital: {
       name: {
@@ -929,21 +959,9 @@ export const countries = [
         uk: 'Вашингтон',
         en: 'Washington, D.C.',
       },
-      coordinates: '38°55′N 77°01′W',
+      coordinates: [38.8865, -77.0368],
     },
-    timeZone: [
-      'UTC-12:00',
-      'UTC-11:00',
-      'UTC-10:00',
-      'UTC-09:00',
-      'UTC-08:00',
-      'UTC-07:00',
-      'UTC-06:00',
-      'UTC-05:00',
-      'UTC-04:00',
-      'UTC+10:00',
-      'UTC+12:00',
-    ],
+    timeZone: 'GMT-8',
     currency: 'USD',
     sightList: [
       {
@@ -953,17 +971,17 @@ export const countries = [
           en: 'Central Park',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Центральный парк в Нью-Йорке является одним из крупнейших в США и известнейших в мире. Парк расположен на острове Манхэттен между 59-й и 110-й улицей и Пятой и Восьмой авеню и имеет прямоугольную форму. Длина парка — около 4 километров, ширина — около 800 метров, общая площадь — 3,41 км². Парк посещают примерно 25 миллионов человек в год, он является наиболее посещаемым парком в США, и его показ во многих фильмах и телевизионных шоу сделал парк одним из самых знаменитых в мире. Парк обслуживается Комитетом по охране природы Центрального парка, частной некоммерческой организацией, которая управляет парком по контракту с Департаментом парков и мест отдыха города Нью-Йорк.',
+          uk:
+            "Центральний парк в Нью-Йорку є одним з найбільших в США і найвідоміших у світі. Парк розташований на острові Манхеттен між 59-й і 110-ю вулицею і П'ятої та Восьмій авеню і має прямокутну форму. Довжина парку - близько 4 кілометрів, ширина - близько 800 метрів, загальна площа - 3,41 км². Парк відвідують приблизно 25 мільйонів чоловік в рік, він є найбільш відвідуваним парком в США, і його показ у багатьох фільмах і телевізійних шоу зробив парк одним з найзнаменитіших у світі. Парк обслуговується Комітетом з охорони природи Центрального парку, приватної некомерційної організацією, яка управляє парком за контрактом з Департаментом парків і місць відпочинку міста Нью-Йорк.",
+          en:
+            'Central Park in New York is one of the largest in the United States and the most famous in the world. The park is located on Manhattan Island between 59th and 110th Streets and Fifth and Eighth Avenues and has a rectangular shape. The park is about 4 kilometers long, about 800 meters wide, and its total area is 3.41 km². The park is visited by approximately 25 million people a year, it is the most visited park in the United States, and its screening in many films and television shows has made the park one of the most famous in the world. The park is maintained by the Central Park Conservation Committee, a private, non-profit organization that operates the park under contract with the New York City Department of Parks and Recreation.',
         },
         photos: [
           'https://images.unsplash.com/photo-1459508583695-86e229e8855a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
           'https://images.unsplash.com/photo-1512872942423-e9877d94e902?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80',
           'https://images.unsplash.com/photo-1541450228924-1ecb88feeaea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80',
-          'https://images.unsplash.com/photo-1480722897755-8bdf83637a34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80',
-          'https://images.unsplash.com/photo-1584886972278-577c6ce38037?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80',
-          'https://images.unsplash.com/photo-1602959709984-3a61ffd2b228?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80',
         ],
       },
       {
@@ -973,17 +991,17 @@ export const countries = [
           en: 'Grand Canyon National Park',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Гранд-Каньон в Аризоне – это уникальное природное образование. На красных скалах проступают полосы геологических слоев, демонстрирующие миллионы лет земной истории в поперечном сечении. Огромный по своей площади каньон простирается на 446 км, его ширина колеблется от 6 до 29 км, а глубина составляет до 1,8 км. Большая часть этой территории входит в состав национального парка. Здесь можно полюбоваться быстрыми порогами реки Колорадо и потрясающими видами. ',
+          uk:
+            'Гранд-Каньйон в Арізоні - це унікальне природне утворення. На червоних скелях проступають смуги геологічних шарів, що демонструють мільйони років земної історії в поперечному перерізі. Величезний за своєю площею каньйон простягається на 446 км, його ширина коливається від 6 до 29 км, а глибина становить до 1,8 км. Велика частина цієї території входить до складу національного парку. Тут можна помилуватися швидкими порогами річки Колорадо і приголомшливими видами.',
+          en:
+            "The Grand Canyon in Arizona is a unique natural formation. Stripes of geological layers show through on the red rocks, showing millions of years of Earth's history in cross-section. The canyon, which is huge in area, stretches for 446 km, its width ranges from 6 to 29 km, and its depth is up to 1.8 km. Most of this area is part of the national park. Here you can admire the fast rapids of the Colorado River and stunning views.",
         },
         photos: [
           'https://images.unsplash.com/photo-1516302350523-4c29d47b89e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
           'https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
           'https://images.unsplash.com/photo-1559292704-84f666718d61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
-          'https://images.unsplash.com/photo-1593435713715-c35a9201cfbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80',
-          'https://images.unsplash.com/photo-1577260691781-ff006f68b751?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1502&q=80',
-          'https://images.unsplash.com/photo-1611653388006-7b349d331bf5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80',
         ],
       },
       {
@@ -993,17 +1011,17 @@ export const countries = [
           en: 'Statue of Liberty',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Ста́туя Свобо́ды — колоссальная скульптура в cтиле Наполеона III, или стиле Второй империи, расположенная в США на острове Свободы, находящемся в Верхней Нью-Йоркской бухте примерно в 3 километрах к юго-западу от южной оконечности острова Манхэттен.',
+          uk:
+            'Статуя Свободи - колосальна скульптура в Cтиль Наполеона III, або стилі Другої імперії, розташована в США на острові Свободи, що знаходиться у Верхній Нью-Йоркській бухті приблизно в 3 кілометрах на північний захід від південного краю острова Манхеттен.',
+          en:
+            'The Statue of Liberty is a colossal sculpture in the style of Napoleon III, or the style of the Second Empire, located in the United States on Liberty Island, located in Upper New York Bay, about 3 kilometers southwest of the southern tip of Manhattan Island.',
         },
         photos: [
           'https://images.unsplash.com/photo-1556899198-7478f7736a64?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
           'https://images.unsplash.com/photo-1526638684360-95cdcee762ce?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1520&q=80',
           'https://images.unsplash.com/photo-1445023086979-7244a12345a8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1502&q=80',
-          'https://images.unsplash.com/photo-1435097791017-d2a958c96f81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80',
-          'https://images.unsplash.com/photo-1445264966786-3029690313ca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80',
-          'https://images.unsplash.com/photo-1549813069-a5f8c1dce35f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80',
         ],
       },
       {
@@ -1013,17 +1031,17 @@ export const countries = [
           en: 'Disneyland Park',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Диснейленд — парк развлечений в городе Анахайме (штат Калифорния, США), находящийся под управлением Walt Disney Parks and Resorts — подразделения компании «Уолт Дисней». Идея Диснейленда родилась у Уолта Диснея, когда он вместе с дочерьми посещал различные парки развлечений в 1930—1940-х годах.',
+          uk:
+            'Діснейленд - парк розваг в місті Анахаймі (штат Каліфорнія, США), що знаходиться під управлінням Walt Disney Parks and Resorts - підрозділу компанії «Уолт Дісней». Ідея Діснейленду народилася у Уолта Діснея, коли він разом з дочками відвідував різні парки розваг в 1930-1940-х роках.',
+          en:
+            'Disneyland is an amusement park in Anaheim (California, USA) operated by Walt Disney Parks and Resorts, a division of Walt Disney Company. Walt Disney came up with the idea for Disneyland when he and his daughters visited various amusement parks in the 1930s and 1940s.',
         },
         photos: [
           'https://images.unsplash.com/photo-1590144662036-33bf0ebd2c7f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80',
           'https://images.unsplash.com/photo-1586877644127-e5ee9b4231c3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
           'https://images.unsplash.com/photo-1484923720570-4bc210954735?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
-          'https://images.unsplash.com/photo-1561035061-94b5fccd55ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80',
-          'https://images.unsplash.com/photo-1547782149-1bf9689e7654?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
-          'https://images.unsplash.com/photo-1591134654008-e0ec39e7267a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
         ],
       },
       {
@@ -1033,17 +1051,17 @@ export const countries = [
           en: 'Times Squkre',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Таймс-сквер — площадь в центральной части Манхэттена в городе Нью-Йорке в США, расположенная на пересечении Бродвея и Седьмой авеню в промежутке между 42-й и 47-й улицами. Центр Театрального квартала Нью-Йорка.',
+          uk:
+            'Таймс-сквер - площа в центральній частині Манхеттена в місті Нью-Йорку в США, розташована на перетині Бродвею та Сьомої авеню в проміжку між 42-ою і 47-ою вулицями. Центр Театрального кварталу Нью-Йорка.',
+          en:
+            'Times Square is a square in central Manhattan in New York City, USA, located at the intersection of Broadway and Seventh Avenue between 42nd and 47th Streets. Center for the New York City Theater District.',
         },
         photos: [
           'https://images.unsplash.com/photo-1521989841745-2fded4328e13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
           'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80',
           'https://images.unsplash.com/photo-1597814695402-8cdc35d4640e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
-          'https://images.unsplash.com/photo-1585238326164-612cb4248873?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1528&q=80',
-          'https://images.unsplash.com/photo-1501807151581-0a506b9808e4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-          'https://images.unsplash.com/photo-1571623330223-dd78c862712d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
         ],
       },
       {
@@ -1053,22 +1071,21 @@ export const countries = [
           en: 'Epcot',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Эпкот — это тематический парк «Всемирного центра отдыха Уолта Диснея». Тематика парка посвящена международной культуре и новшествам в сфере технологий. Открытие парка состоялось 1 октября 1982 года.',
+          uk:
+            'Епкот - це тематичний парк «Всесвітнього центру відпочинку Уолта Діснея». Тематика парку присвячена міжнародній культурі і нововведень у сфері технологій. Відкриття парку відбулося 1 жовтня 1982 року.',
+          en:
+            'Epcot is the Walt Disney World Recreation Center theme park. The theme of the park is dedicated to international culture and technological innovation. The park was opened on October 1, 1982.',
         },
         photos: [
           'https://images.unsplash.com/photo-1553526630-81e8f0d6ffde?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
           'https://images.unsplash.com/photo-1511879507820-cb4a5781a57d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80',
           'https://images.unsplash.com/photo-1587818658881-3015ef265894?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1525&q=80',
-          'https://images.unsplash.com/photo-1562158148-3a83c9df8fb2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80',
-          'https://images.unsplash.com/photo-1553526665-dbfe3e8a6fcc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
-          'https://images.unsplash.com/photo-1579833049955-f8782ebeb404?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
         ],
       },
     ],
   },
-  // TODO: Cyprus
   {
     name: {
       ru: 'Кипр',
@@ -1076,18 +1093,18 @@ export const countries = [
       en: 'Cyprus',
     },
     photos: [
-      'https://images.unsplash.com/photo-1468649437954-f86751c119b6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1543850080-730b0fde8b07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1544205031-b31c199960fd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=726&q=80',
-      'https://images.unsplash.com/flagged/photo-1557006027-cf0673ec2cfa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=755&q=80',
-      'https://images.unsplash.com/photo-1563232858-30b5ed1314ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-      'https://images.unsplash.com/photo-1602521369445-c7c13cbdb252?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80',
+      'https://images.unsplash.com/photo-1468649437954-f86751c119b6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+      'https://images.unsplash.com/photo-1543850080-730b0fde8b07?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      'https://images.unsplash.com/photo-1544205031-b31c199960fd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     ],
     video: 'https://www.youtube.com/watch?v=o6ZB7rbmFak',
     description: {
-      ru: '',
-      uk: '',
-      en: '',
+      ru:
+        'Республика Кипр занимает южную часть острова Кипр, расположенного в восточной части Средиземного моря. Столица страны, Никосия, одновременно является главным городом Турецкой республики Северного Кипра, которую признает только Турция. Республика Кипр славится своими пляжами на побережье и виноградниками во внутренних холмистых районах острова. На побережье пролег город Пафос, который согласно греческой мифологии является родиной Афродиты. Он популярен у туристов благодаря археологическому парку с развалинами дворцов, гробниц и вилл с мозаиками.',
+      uk:
+        'Республіка Кіпр займає південну частину острова Кіпр, розташованого в східній частині Середземного моря. Столиця країни, Нікосія, одночасно є головним містом Турецької республіки Північного Кіпру, яку визнає тільки Туреччина. Республіка Кіпр славиться своїми пляжами на узбережжі і виноградниками у внутрішніх горбистих районах острова. На узбережжі проліг місто Пафос, який відповідно до грецької міфології є батьківщиною Афродіти. Він популярний у туристів завдяки археологічному парку з руїнами палаців, гробниць і вілл з мозаїками.',
+      en:
+        'The Republic of Cyprus occupies the southern part of the island of Cyprus, located in the eastern Mediterranean. The capital of the country, Nicosia, is also the main city of the Turkish Republic of Northern Cyprus, which is recognized only by Turkey. The Republic of Cyprus is famous for its beaches on the coast and vineyards in the hilly interior of the island. On the coast lies the city of Paphos, which, according to Greek mythology, is the birthplace of Aphrodite. It is popular with tourists for its archaeological park with ruins of palaces, tombs and mosaic villas.',
     },
     capital: {
       name: {
@@ -1095,9 +1112,9 @@ export const countries = [
         ru: 'Никосия',
         en: 'Nicosia',
       },
-      coordinates: '35°10′N 33°22′E',
+      coordinates: [35.1578, 33.3665],
     },
-    timeZone: ['UTC+02:00'],
+    timeZone: 'GMT+2',
     currency: 'EUR',
     sightList: [
       {
@@ -1107,17 +1124,17 @@ export const countries = [
           en: 'Petra tou Romiou',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Пе́тра-ту-Ромиу́, также известная как Скала Афродиты, — морской кекур в Пафосе. Сочетание красоты местности и считающейся в греческой мифологии родины богини Афродиты привлекает туристов.',
+          uk:
+            'Петра-ту-Роміу, також відома як Скала Афродіти, - морський кекури в Пафосі. Поєднання краси місцевості і вважається в грецькій міфології батьківщини богині Афродіти приваблює туристів.',
+          en:
+            'Petra tou Romiou, also known as the Rock of Aphrodite, is a sea kekur in Paphos. The combination of the beauty of the area and the homeland of the goddess Aphrodite, considered in Greek mythology, attracts tourists.',
         },
         photos: [
           'https://images.unsplash.com/photo-1611677573423-c394dd9deb35?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
           'https://images.unsplash.com/photo-1610658748626-ef1c7f900b70?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
           'https://images.unsplash.com/photo-1611677571813-211daf4c9387?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-          'https://images.unsplash.com/photo-1611677572022-0a87fd5bbc4b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-          'https://images.unsplash.com/photo-1598183706997-b09928fb4175?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80',
-          'https://images.unsplash.com/photo-1603535410790-5ad1a0ba6c6d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=689&q=80',
         ],
       },
       {
@@ -1127,17 +1144,17 @@ export const countries = [
           en: 'Nissi Beach',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Пляж Нисси - популярный пляж на курорте Айя-Напа на острове Кипр. Пляж простирается на 500 метров вдоль бухты с кристально чистой водой, благодаря чему пляж был удостоен награды "Голубой флаг".',
+          uk:
+            'Пляж Ніссі - популярний пляж на курорті Айя-Напа на острові Кіпр. Пляж простягається на 500 метрів уздовж бухти з кришталево чистою водою, завдяки чому пляж був удостоєний нагороди "Блакитний прапор".',
+          en:
+            'Nissi Beach is a popular beach in Ayia Napa resort on the island of Cyprus. The beach stretches for 500 meters along a cove with crystal clear waters, which is why the beach was awarded the Blue Flag.',
         },
         photos: [
           'https://images.unsplash.com/photo-1610963576589-062626b1000a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=749&q=80',
           'https://images.unsplash.com/photo-1610963566338-06151290a444?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80',
           'https://images.unsplash.com/photo-1603535015633-ae70aaca2bed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-          'https://live.staticflickr.com/7611/27616730986_4b9354c2bc_k.jpg',
-          'https://live.staticflickr.com/3072/5720138520_06b756d4ab_k.jpg',
-          'https://live.staticflickr.com/862/29852122168_22615fa3d5_b.jpg',
         ],
       },
       {
@@ -1147,17 +1164,17 @@ export const countries = [
           en: 'Cape Greco',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Гре́ко, Ка́по-Гре́ко, Ка́во-Гре́ко — мыс в юго-восточной части острова Кипра, является южным окончанием залива Фамагусты и восточным окончанием бухты Айия-Напы.',
+          uk:
+            'Греко, Капо-Греко, Каво-Греко - мис в південно-східній частині острова Кіпру, є південним закінченням затоки Фамагусти і східним закінченням бухти Айія-напи.',
+          en:
+            'Greco, Capo Greco, Kavo Greco - a cape in the southeastern part of the island of Cyprus, is the southern end of Famagusta Bay and the eastern end of Ayia Napa Bay.',
         },
         photos: [
           'https://images.unsplash.com/photo-1580733092867-326cf7e2738d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80',
           'https://images.unsplash.com/photo-1604243180985-1e31a5ced136?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80',
           'https://images.unsplash.com/photo-1516658542418-7777f7c65df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
-          'https://live.staticflickr.com/65535/50379113608_65ca9bc94a_k.jpg',
-          'https://live.staticflickr.com/5504/9323483970_b3dc601a87_k.jpg',
-          'https://live.staticflickr.com/4253/35288257195_24c4b664dc_h.jpg',
         ],
       },
       {
@@ -1167,17 +1184,17 @@ export const countries = [
           en: 'Church of Saint Lazarus',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Це́рковь Свято́го Ла́заря — православный храм IX века в городе Ларнаке, Республика Кипр. Находится в ведении Китийской митрополии Кипрской православной церкви. Церковь названа в честь праведного Лазаря из Вифании, которого, согласно Евангелию, воскресил Иисус Христос.',
+          uk:
+            'Церква Святого Лазаря - православний храм IX століття в місті Ларнаці, Республіка Кіпр. Перебуває у віданні Китійського митрополії Кіпрської православної церкви. Церква названа в честь праведного Лазаря з Віфанії, якого, згідно з Євангелієм, воскресив Ісус Христос.',
+          en:
+            'The Church of Saint Lazar is an Orthodox church of the 9th century in the city of Larnaca, Republic of Cyprus. It is administered by the Metropolis of Kitia, the Cypriot Orthodox Church. The church is named after the righteous Lazarus of Bethany, who, according to the Gospel, was resurrected by Jesus Christ.',
         },
         photos: [
           'https://live.staticflickr.com/914/42747855084_207fc41c8e_k.jpg',
           'https://live.staticflickr.com/4488/37352173934_d2012af193_k.jpg',
           'https://live.staticflickr.com/569/21116252526_17f0636e8d_k.jpg',
-          'https://live.staticflickr.com/5747/22480945882_6c19d9f21a_k.jpg',
-          'https://live.staticflickr.com/4903/44678007190_69b88dac4d_k.jpg',
-          'https://live.staticflickr.com/4804/45758002904_449f60bade_k.jpg',
         ],
       },
       {
@@ -1187,17 +1204,17 @@ export const countries = [
           en: 'Kykkos Monastery',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Ки́ккский монастырь — мужской ставропигиальный монастырь Кипрской православной церкви, один из богатейших и известнейших монастырей Кипра. Монастырь был основан примерно в конце XI века византийским императором Алексеем I Комнином.',
+          uk:
+            'Кіккський монастир - чоловічий ставропігійний монастир Кіпрської православної церкви, один з найбагатших і найвідоміших монастирів Кіпру. Монастир був заснований приблизно в кінці XI століття візантійським імператором Олексієм I Комнін.',
+          en:
+            'The Kykkos Monastery is a male stauropegic monastery of the Cyprus Orthodox Church, one of the richest and most famous monasteries in Cyprus. The monastery was founded around the end of the 11th century by the Byzantine emperor Alexei I Komnenos.',
         },
         photos: [
           'https://live.staticflickr.com/4281/35158355551_c7e18447aa_h.jpg',
           'https://live.staticflickr.com/3891/33311603285_ecc1fb239e_k.jpg',
           'https://live.staticflickr.com/5643/21590834086_846d38a7b5_k.jpg',
-          'https://live.staticflickr.com/4242/34478379903_79dc1cff75_h.jpg',
-          'https://live.staticflickr.com/4266/34900929830_ba202687ae_h.jpg',
-          'https://live.staticflickr.com/907/41349063985_9b4c77a25c_k.jpg',
         ],
       },
       {
@@ -1207,17 +1224,17 @@ export const countries = [
           en: 'Hala Sultan Tekke',
         },
         description: {
-          ru: '',
-          uk: '',
-          en: '',
+          ru:
+            'Хала Султан Текке или мечеть Умм Харам - это мечеть и комплекс текке на западном берегу соленого озера Ларнаки, в Ларнаке, Кипр. Умм Харам (турецкий: Хала Султан) была женой Убады бин аль-Самита, соратницы исламского пророка Мухаммеда, и приемной сестрой матери Мухаммеда, Амины бинт Вахб.',
+          uk:
+            'Хала Султан Текі або мечеть Умм Харам - це мечеть і текінський комплекс на західному березі Соляного озера Ларнака в Ларнаці, Кіпр. Умм Харам (турецька: Hala Sultan) була дружиною Убади бін аль-Саміта, супутниці ісламського пророка Мухаммеда, і прийомною сестрою матері Мухаммеда Аміни Бінт Вах.',
+          en:
+            'Hala Sultan Tekke or the Mosque of Umm Haram is a mosque and tekke complex on the west bank of Larnaca Salt Lake, in Larnaca, Cyprus. Umm Haram (Turkish: Hala Sultan) was the wife of Ubada bin al-Samit, a companion of the Islamic prophet Muhammad, and foster sister of Muhammad’s mother, Aminah bint Wahb.',
         },
         photos: [
           'https://live.staticflickr.com/693/33111249982_a1b02e8c9d_k.jpg',
           'https://live.staticflickr.com/65535/49070205213_d2c3eb9288_b.jpg',
           'https://live.staticflickr.com/65535/48272793632_e43e79a5c8_k.jpg',
-          'https://live.staticflickr.com/65535/48876909251_7b297ae1de_k.jpg',
-          'https://live.staticflickr.com/1971/45483655482_4ce135aefd_k.jpg',
-          'https://live.staticflickr.com/3204/2785109844_7ac8da5fca_k.jpg',
         ],
       },
     ],
