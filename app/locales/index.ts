@@ -9,7 +9,11 @@ export const messages = {
     createAcc: 'Create an account',
     forgetPass: 'Forgot password ?',
     enter: 'Enter',
-    load: 'Loading'
+    
+    load: 'Loading',
+    high: 'Max',
+    low: 'Min',
+    now: 'Currently',
   },
   ru: {
     btnLogin: 'Войти',
@@ -21,7 +25,11 @@ export const messages = {
     createAcc: 'Создать аккаунт',
     forgetPass: 'Забыли пароль ?',
     enter: 'Ввести',
-    load: 'Загрузка'
+    
+    load: 'Загрузка',
+    high: 'Макс',
+    low: 'Мин',
+    now: 'Сейчас',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -33,6 +41,10 @@ export const messages = {
     createAcc: 'Створити акаунт',
     forgetPass: 'Забули пароль ?',
     enter: 'Введіть',
-    load: 'Завантаження'
+    
+    load: 'Завантаження',
+    high: 'Макс',
+    low: 'Miн',
+    now: 'Зараз',
   },
 };
