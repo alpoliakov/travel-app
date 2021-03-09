@@ -4,31 +4,29 @@ export const countries = [
   {
     name: {
       ru: 'Германия',
-      ua: 'Німеччина',
+      uk: 'Німеччина',
       en: 'Germany',
     },
     photos: [
       'https://images.unsplash.com/photo-1473615695634-d284ec918736?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
       'https://images.unsplash.com/photo-1554072675-66db59dba46f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1353&q=80',
-      'https://images.unsplash.com/photo-1548783094-f92d7c8ae2d3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80',
-      'https://images.unsplash.com/photo-1592855431000-2584c3a6f713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1271&q=80',
     ],
     video: 'https://www.youtube.com/watch?v=D7e8sv7lFeY',
     description: {
       ru:
         'Германия - страна разнообразных пейзажей и интересных городов. Ее экономика является крупнейшей в Европе и пятой по величине в мире. Именно в Германии были сделаны многие революционные научные открытия: наука и исследования имеют здесь давние традиции.',
-      ua:
+      uk:
         "Німеччина - країна різноманітних пейзажів і цікавих міст. Її економіка є найбільшою в Європі і п'ятою за величиною в світі. Саме в Німеччині були зроблені багато революційні наукові відкриття: наука і дослідження мають тут давні традиції.",
       en:
         'Germany is a land of diverse landscapes and interesting cities. Its economy is the largest in Europe and the fifth largest in the world. It was in Germany that many revolutionary scientific discoveries were made: science and research have a long tradition here.',
     },
     capital: {
       name: {
-        ua: 'Берлін',
+        uk: 'Берлін',
         ru: 'Берлин',
         en: 'Berlin',
       },
-      coordinates: "52°31'N / 13°23'E",
+      coordinates: [52.5102, 13.3834],
     },
     timeZone: 'CET',
     currency: 'EUR',
@@ -36,16 +34,16 @@ export const countries = [
       {
         name: {
           ru: 'Бранденбургские ворота',
-          ua: 'Бранденбурзькі ворота',
+          uk: 'Бранденбурзькі ворота',
           en: 'Brandenburg Gate',
         },
         description: {
           ru:
             'Символ столицы Германии, с 1989 года символ воссоединения страны. Построил архитектор Карл Готтгард Лангганс. Проект ворот он делал по мотивам проходов Акрополя. Сооружение в стиле классицизма великолепно сочетается с остальными зданиями на Парижской площади. Украшением ворот является квадрига высотой 6 метров с колесницей, которой управляет Виктория – богиня победы. Барельефы внутренних стен изображают подвиги Геракла.',
-          ua:
+          uk:
             "Символ столиці Німеччини, з 1989 року символ возз'єднання країни. Збудував архітектор Карл Готтард Ланґганс. Проект воріт він робив за мотивами проходів Акрополя. Спорудження в стилі класицизму чудово поєднується з іншими будівлями на Паризькій площі. Окрасою воріт є квадрига висотою 6 метрів з колісницею, якою управляє Вікторія - богиня перемоги. Барельєфи внутрішніх стін зображують подвиги Геракла.",
           en:
-            'The symbol of the capital of Germany, since 1989 the symbol of the reunification of the country. Built by architect Karl Gottgard Langgans. He designed the gate based on the passages of the Acropolis. The building in the style of classicism is perfectly combined with the rest of the buildings on the Parisian square. The decoration of the gate is a 6-meter high quadriga with a chariot driven by Victoria, the goddess of victory. The bas-reliefs of the inner walls depict the exploits of Hercules.',
+            'The symbol of the capital of Germany, since 1989 the symbol of the reunification of the country. Built by architect Karl Gottgard Langgans. He designed the gate based on the passages of the Acropolis. The building in the style of classicism is perfectly combined with the rest of the buildings on the Parisian squkre. The decoration of the gate is a 6-meter high qukdriga with a chariot driven by Victoria, the goddess of victory. The bas-reliefs of the inner walls depict the exploits of Hercules.',
         },
         photos: [
           'https://images.unsplash.com/photo-1612696700664-6a604df969f8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
@@ -56,13 +54,13 @@ export const countries = [
       {
         name: {
           ru: 'Рейхстаг',
-          ua: 'Рейхстаг',
+          uk: 'Рейхстаг',
           en: 'Reichstag',
         },
         description: {
           ru:
             'Здание рейхста́га или Рейхстаг — «здание имперского собрания») — историческое здание в Берлине, где в 1894—1933 годах заседал одноимённый государственный орган Германии — рейхстаг Германской империи и рейхстаг Веймарской республики. В 1945 году в Советском Союзе здание германского парламента было объявлено главным символом гитлеровской Германии. И.В. Сталин приказал водрузить на нём Знамя Победы. С 1999 года в реконструированном здании рейхстага размещается бундестаг.',
-          ua:
+          uk:
             'Будівля рейхстагу або Рейхстаг - «будівля імперського зборів») - історична будівля в Берліні, де в 1894-1933 роках засідав однойменний державний орган Німеччини - рейхстаг Німецької імперії і рейхстаг Веймарської республіки. У 1945 році в Радянському Союзі німецький парламент було оголошено головним символом гітлерівської Німеччини. І.В. Сталін наказав поставити на ньому Прапор Перемоги. З 1999 року в реконструйованій будівлі рейхстагу розміщується бундестаг.',
           en:
             'The Reichstag building or the Reichstag - "the building of the imperial assembly") is a historical building in Berlin, where the eponymous state body of Germany, the Reichstag of the German Empire and the Reichstag of the Weimar Republic, met in 1894-1933. In 1945, in the Soviet Union, the building of the German Parliament was declared the main symbol of Nazi Germany. I.V. Stalin ordered the Victory Banner to be hoisted on it. Since 1999, the reconstructed Reichstag building has been home to the Bundestag.',
@@ -76,16 +74,16 @@ export const countries = [
       {
         name: {
           ru: 'Мариенплац',
-          ua: 'Марієнплац',
+          uk: 'Марієнплац',
           en: 'Marienplatz',
         },
         description: {
           ru:
             'Мари́енплац — центральная площадь Мюнхена, центр пешеходной зоны и одна из главных достопримечательностей центра города. На площади расположены мюнхенские ратуши — Новая и Старая, отсюда начинается Кауфингерштрассе, где множество магазинов. В районе Мариенплац также находятся исторический рынок Виктуалиенмаркт, самый большой мюнхенский собор Фрауэнкирхе и многие другие достопримечательности.',
-          ua:
+          uk:
             "Марієнплац - центральна площа Мюнхена, центр пішохідної зони і одна з головних визначних пам'яток центру міста. На площі розташовані мюнхенські ратуші - Нова і Стара, звідси починається Кауфингерштрассе, де безліч магазинів. В районі Марієнплац також знаходяться історичний ринок Віктуалієнмаркт, найбільший мюнхенський собор Фрауенкірхе та багато інших визначних пам'яток.",
           en:
-            "Marienplatz is the central square of Munich, the center of the pedestrian zone and one of the main attractions of the city center. On the square are the Munich town halls - New and Old, from here begins the Kaufingerstrasse, where there are many shops. The historic Viktualienmarkt market, Munich's largest cathedral, the Frauenkirche and many other attractions are also located in the Marienplatz area.",
+            "Marienplatz is the central squkre of Munich, the center of the pedestrian zone and one of the main attractions of the city center. On the squkre are the Munich town halls - New and Old, from here begins the Kaufingerstrasse, where there are many shops. The historic Viktuklienmarkt market, Munich's largest cathedral, the Frauenkirche and many other attractions are also located in the Marienplatz area.",
         },
         photos: [
           'https://images.unsplash.com/photo-1577462281852-279bf4986f7b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
@@ -96,16 +94,16 @@ export const countries = [
       {
         name: {
           ru: 'Октоберфест',
-          ua: 'Октоберфест',
+          uk: 'Октоберфест',
           en: 'Oktoberfest',
         },
         description: {
           ru:
             'Окто́берфест — фольклорный фестиваль , ежегодно проводимый в Мюнхене, самое большое народное гуляние в мире. Праздник начинается во второй половине сентября на лугу Терезы в центре Мюнхена, неподалёку от Главного вокзала, и продолжается в среднем 16—18 дней. Праздник отличается большим количеством пивных палаток и разнообразных аттракционов. Октоберфест привлекает каждый год около 6 млн посетителей, приезжающих в Мюнхен со всех частей Баварии и Германии, а также из других стран. Октоберфест организуется и проводится администрацией Мюнхена. К участию в этом фестивале допускаются только мюнхенские до 120 км в округе пивоваренные компании, которые варят для него специальное октоберфестовское пиво с содержанием алкоголя 5,8—6,3 %, которое в другое время года обычно называют мартовским или венским.',
-          ua:
+          uk:
             'Октоберфест - фольклорний фестиваль, щорічно проводиться в Мюнхені, найбільше народне гуляння в світі. Свято починається у другій половині вересня на лугу Терези в центрі Мюнхена, неподалік від Головного вокзалу, і триває в середньому 16-18 днів. Свято відрізняється великою кількістю пивних наметів і різноманітних атракціонів. Октоберфест приваблює щороку близько 6 млн відвідувачів, які приїжджають до Мюнхена з усіх частин Баварії та Німеччини, а також з інших країн. Октоберфест організовується і проводиться адміністрацією Мюнхена. До участі в цьому фестивалі допускаються тільки мюнхенські до 120 км в окрузі пивоварні компанії, які варять для нього спеціальне октоберфестівське пиво з вмістом алкоголю 5,8-6,3%, яке в іншу пору року зазвичай називають березневим або віденським.',
           en:
-            'Oktoberfest is a folklore festival held annually in Munich, the largest folk festival in the world. The holiday begins in the second half of September in the Theresa meadow in the center of Munich, not far from the Main Station, and lasts an average of 16-18 days. The holiday is distinguished by a large number of beer tents and a variety of attractions. Oktoberfest attracts around 6 million visitors every year to Munich from all parts of Bavaria and Germany, as well as from other countries. The Oktoberfest is organized and conducted by the Munich administration. Only Munich brewing companies up to 120 km in the vicinity are allowed to participate in this festival, which brew for it a special Oktoberfest beer with an alcohol content of 5.8-6.3%, which at other times of the year is usually called March or Vienna.',
+            'Oktoberfest is a folklore festival held annuklly in Munich, the largest folk festival in the world. The holiday begins in the second half of September in the Theresa meadow in the center of Munich, not far from the Main Station, and lasts an average of 16-18 days. The holiday is distinguished by a large number of beer tents and a variety of attractions. Oktoberfest attracts around 6 million visitors every year to Munich from all parts of Bavaria and Germany, as well as from other countries. The Oktoberfest is organized and conducted by the Munich administration. Only Munich brewing companies up to 120 km in the vicinity are allowed to participate in this festival, which brew for it a special Oktoberfest beer with an alcohol content of 5.8-6.3%, which at other times of the year is usuklly called March or Vienna.',
         },
         photos: [
           'https://images.unsplash.com/photo-1600338663176-b4c5b853d037?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80',
@@ -116,13 +114,13 @@ export const countries = [
       {
         name: {
           ru: 'Берлинская стена',
-          ua: 'Берлінська стіна',
+          uk: 'Берлінська стіна',
           en: 'Berlin Wall',
         },
         description: {
           ru:
             'Берли́нская стена́ — инженерно-оборудованная и укреплённая государственная граница Германской Демократической Республики, построенная на территории ГДР вокруг Западного Берлина и существовавшая с 13 августа 1961 года по 9 ноября 1989 года. Берлинская стена разделяла западную и восточную части города, отделяя Западный Берлин от территории ГДР. Общая протяжённость стены составляла 155 км (43 км в черте Берлина и 112 км по внутренней границе Западного Берлина).',
-          ua:
+          uk:
             'Берлінська стіна - інженерно-обладнана і укріплена державний кордон Німецької Демократичної Республіки, побудована на території НДР навколо Західного Берліна і існувала з 13 серпня 1961 року по 9 листопада 1989 року. Берлінська стіна розділяла західну і східну частини міста, відокремлюючи Західний Берлін від території НДР. Загальна протяжність стіни становила 155 км (43 км в межах Берліна і 112 км по внутрішньому кордоні Західного Берліна).',
           en:
             'The Berlin Wall is an engineering-equipped and fortified state border of the German Democratic Republic, built on the territory of the GDR around West Berlin and existed from August 13, 1961 to November 9, 1989. The Berlin Wall divided the western and eastern parts of the city, separating West Berlin from the territory of the GDR. The total length of the wall was 155 km (43 km within Berlin and 112 km along the inner border of West Berlin).',
@@ -136,13 +134,13 @@ export const countries = [
       {
         name: {
           ru: 'Замок Нойшванштайн',
-          ua: 'Замок Нойшванштайн',
+          uk: 'Замок Нойшванштайн',
           en: 'Neuschwanstein Castle',
         },
         description: {
           ru:
             'Замок Нойшванштайн — романтический замок баварского короля Людвига II около городка Фюссен и замка Хоэншвангау в юго-западной Баварии, недалеко от австрийской границы. Одно из самых популярных среди туристов мест на юге Германии.',
-          ua:
+          uk:
             'Замок Нойшванштайн - романтичний замок баварського короля Людвіга II біля містечка Фюссен і замку Хоеншвангау в південно-західній Баварії, недалеко від австрійського кордону. Одне з найпопулярніших серед туристів місць на півдні Німеччини.',
           en:
             'Neuschwanstein Castle is a romantic castle of the Bavarian King Ludwig II near the town of Füssen and Hohenschwangau Castle in southwestern Bavaria, near the Austrian border. One of the most popular tourist destinations in southern Germany.',
@@ -156,13 +154,13 @@ export const countries = [
       {
         name: {
           ru: 'Кёльнский собор',
-          ua: 'Кельнський собор',
+          uk: 'Кельнський собор',
           en: 'Cologne Cathedral',
         },
         description: {
           ru:
             'Кёльнский собор — римско-католический готический собор в городе Кёльне. Занимает третье место в списке самых высоких церквей мира и внесён в список объектов Всемирного культурного наследия. Строительство главного храма Кёльнской архиепископии велось в два приёма — в 1248—1437 гг. и в 1842—1880 годах. По окончании строительства 157-метровый собор на четыре года стал самым высоким зданием мира.',
-          ua:
+          uk:
             "Кельнський собор - римсько-католицький готичний собор в місті Кельні. Займає третє місце в списку найвищих церков світу і внесений до списку об'єктів Всесвітньої культурної спадщини. Будівництво головного храму Кельнської архієпископії велося в два прийоми - в 1248-1437 рр. і в 1842-1880 роках. Після закінчення будівництва 157-метровий собор на чотири роки став найвищою будівлею світу.",
           en:
             'Cologne Cathedral is a Roman Catholic Gothic cathedral in the city of Cologne. Ranked third in the list of the tallest churches in the world and is included in the list of World Cultural Heritage sites. The construction of the main church of the Cologne Archdiocese was carried out in two stages - in 1248-1437. and in 1842-1880. Upon completion of construction, the 157-meter cathedral became the tallest building in the world for four years.',
@@ -175,370 +173,471 @@ export const countries = [
       },
     ],
   },
-  // TODO: France
+  // DONE: France
   {
     name: {
       ru: 'Франция',
-      ua: 'Франція',
+      uk: 'Франція',
       en: 'France',
     },
     photos: [
       'https://images.unsplash.com/photo-1431274172761-fca41d930114?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       'https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1182&q=80',
-      'https://images.unsplash.com/photo-1473951574080-01fe45ec8643?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1079&q=80',
-      'https://images.unsplash.com/photo-1500039436846-25ae2f11882e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80',
-      'https://images.unsplash.com/photo-1477089884677-c596568bd120?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-      'https://images.unsplash.com/photo-1576519980643-bd0a56cdbbbf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
     ],
     video: 'https://www.youtube.com/watch?v=9U-1HahKwX8',
     description: {
-      ru: '',
-      ua: '',
-      en: '',
+      ru:
+        'Франция – это страна в Западной Европе, на территории которой находятся средневековые города, альпийские деревни и пляжи Средиземного моря. Париж, столица государства, славится своими домами моды, старейшими художественными музеями, в числе которых Лувр, и достопримечательностями, такими как Эйфелева башня. Франция известна своими винами и изысканной кухней. Наскальная живопись в пещере Ласко, амфитеатр Трех Галлий в Лионе и огромный Версальский дворец свидетельствуют о богатой истории этих мест.',
+      uk:
+        "Франція - це країна в Західній Європі, на території якої знаходяться середньовічні міста, альпійські села і пляжі Середземного моря. Париж, столиця держави, славиться своїми будинками моди, найстаршими художніми музеями, в числі яких Лувр, і пам'ятками, такими як Ейфелева вежа. Франція відома своїми винами і вишуканою кухнею. Наскальний живопис в печері Ласко, амфітеатр Трьох Галій в Ліоні і величезний Версальський палац свідчать про багату історію цих місць.",
+      en:
+        'France is a country in Western Europe, home to medieval towns, alpine villages and Mediterranean beaches. Paris, the capital of the state, is famous for its fashion houses, the oldest art museums, including the Louvre, and landmarks such as the Eiffel Tower. France is known for its wines and fine cuisine. The rock paintings in the Lascaux cave, the Amphitheater of the Three Gauls in Lyon and the huge Palace of Versailles testify to the rich history of the area.',
     },
     capital: {
       name: {
-        ua: 'Париж',
+        uk: 'Париж',
         ru: 'Париж',
         en: 'Paris',
       },
-      coordinates: '48°51′N 2°21′E',
+      coordinates: [48.8263, 2.3332],
     },
-    timeZone: [
-      'UTC-10:00',
-      'UTC-09:30',
-      'UTC-09:00',
-      'UTC-08:00',
-      'UTC-04:00',
-      'UTC-03:00',
-      'UTC+01:00',
-      'UTC+03:00',
-      'UTC+04:00',
-      'UTC+05:00',
-      'UTC+11:00',
-      'UTC+12:00',
-    ],
+    timeZone: 'GMT+1',
     currency: 'EUR',
     sightList: [
       {
         name: {
           ru: 'Эйфелева башня',
-          ua: 'Ейфелева вежа',
+          uk: 'Ейфелева вежа',
           en: 'Eiffel Tower',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Э́йфелева ба́шня  — металлическая башня в центре Парижа, самая узнаваемая его архитектурная достопримечательность. Названа в честь главного конструктора Гюстава Эйфеля; сам Эйфель называл её просто «300-метровой башней». Башня, впоследствии ставшая символом Парижа, была построена в 1889 году и первоначально задумывалась как временное сооружение, служившее входной аркой парижской Всемирной выставки 1889 года. Эйфелеву башню называют самой посещаемой платной и самой фотографируемой достопримечательностью мира.',
+          uk:
+            "Ейфелева вежа - металева вежа в центрі Парижа, сама впізнанна його архітектурна пам'ятка. Названа на честь головного конструктора Гюстава Ейфеля; сам Ейфель називав її просто «300-метровою вежею». Вежа, що згодом стала символом Парижа, була побудована в 1889 році і спочатку замислювалася як тимчасова споруда, що служило вхідною аркою паризької Всесвітньої виставки 1889 року. Ейфелеву вежу називають найбільш відвідуваною платній і самої фотографується пам'яткою світу.",
+          en:
+            'The Eiffel Tower is a metal tower in the center of Paris, its most recognizable architectural landmark. Named after chief designer Gustave Eiffel; Eiffel himself called it simply "the 300-meter tower." The tower, which later became the symbol of Paris, was built in 1889 and was originally conceived as a temporary structure that served as the entrance arch of the Paris World Exhibition of 1889. The Eiffel Tower is called the most visited paid and most photographed attraction in the world.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1599549057218-c9d1ac41d8ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1433&q=80',
+          'https://images.unsplash.com/photo-1511721699083-845d252f800f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+          'https://images.unsplash.com/photo-1566330371101-139ba2b641fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
+        ],
       },
       {
         name: {
           ru: 'Лувр',
-          ua: 'Лувр',
+          uk: 'Лувр',
           en: 'Louvre',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Музей Лувра — один из крупнейших и самый популярный художественный музей мира. Музей расположен в центре Парижа, на правом берегу Сены, на улице Риволи, в 1-м округе столицы. В 2018 году число посетителей Лувра превысило 10 млн человек, что является рекордом. Здание музея — старинный королевский дворец. Конная статуя Людовика XIV обозначает точку начала так называемой исторической оси Парижа. Лувр — один из старейших музеев с богатой историей коллекционирования художественных и исторических реликвий Франции, начиная со времён династии Капетингов и до наших дней. В Лувре собиралось всё, этот музей можно назвать универсальным. Его коллекции покрывают огромные географические и временные пространства: от западной Европы до Ирана через Грецию, Египет и Ближний Восток; с античности до 1848 года. Европейское искусство новейшего периода времени — с 1848 года и до наших дней — представлено в Музее Орсе и Центре Жоржа Помпиду, а азиатское выставляется в музее Гиме. Искусство Африки, Америки и Океании экспонируется в музее набережной Бранли.',
+          uk:
+            'Музей Лувра - один з найбільших і найбільш популярний мистецький музей світу. Музей розташований в центрі Парижа, на правому березі Сени, на вулиці Ріволі, в 1-му окрузі столиці. У 2018 році кількість відвідувачів Лувру перевищила 10 млн осіб, що є рекордом. Будівля музею - старовинний королівський палац. Кінна статуя Людовіка XIV позначає точку початку так званої історичної осі Парижа. Лувр - один з найстаріших музеїв з багатою історією колекціонування художніх і історичних реліквій Франції, починаючи з часів династії Капетингів і до наших днів. У Луврі збиралося все, цей музей можна назвати універсальним. Його колекції покривають величезні географічні і часові простори: від західної Європи до Ірану через Грецію, Єгипет і Близький Схід; з античності до 1848 року. Європейське мистецтво новітнього періоду часу - з 1848 року і до наших днів - представлено в Музеї Орсе та Центрі Жоржа Помпіду, а азіатське виставляється в музеї Гиме. Мистецтво Африки, Америки і Океанії експонується в музеї набережній Бранлі.',
+          en:
+            "The Louvre Museum is one of the largest and most popular art museums in the world. The museum is located in the center of Paris, on the right bank of the Seine, on rue Rivoli, in the 1st arrondissement of the capital. In 2018, the number of visitors to the Louvre exceeded 10 million, a record. The museum building is an old royal palace. The equestrian statue of Louis XIV marks the starting point of the so-called historical axis of Paris. The Louvre is one of the oldest museums with a rich history of collecting artistic and historical relics in France, from the Capetian dynasty to the present day. Everything gathered in the Louvre, this museum can be called universal. His collections cover vast geographic and temporal spaces: from western Europe to Iran through Greece, Egypt and the Middle East; from antiquity to 1848. European art of the most recent period of time - from 1848 to the present day - is represented in the Musée d'Orsay and the Center Georges Pompidou, while Asian art is exhibited in the Guimet Museum. Art from Africa, America and Oceania is exhibited at the Quki Branly Museum.",
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1566998474135-99fef8a34ed9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1575153886291-b423b7fe3495?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+          'https://images.unsplash.com/photo-1500039436846-25ae2f11882e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
+        ],
       },
       {
         name: {
           ru: 'Собор Парижской Богоматери',
-          ua: 'Собор Паризької Богоматері',
+          uk: 'Собор Паризької Богоматері',
           en: 'Cathédrale Notre-Dame de Paris',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Собо́р Пари́жской Богома́тери, также парижский собор Нотр-Да́м или Нотр-Да́м-де-Пари́ — католический храм в центре Парижа, один из символов французской столицы. Кафедральный собор архиепархии Парижа. Расположен в восточной части острова Сите, в 4-м городском округе, на месте первой христианской церкви Парижа — базилики Святого Стефана, построенной, в свою очередь, на фундаменте галло-римского храма Юпитера. Готический собор возводился по инициативе парижского епископа Мориса де Сюлли в период 1163—1345 годов. Алтарная часть освящена в 1182 году; западный фасад и башни закончены во второй четверти XIII века. С 1235 года вносились большие изменения: обустроены часовни между контрфорсами нефа (сер. XIII века); увеличен размер трансепта (архитекторы Жан де Шель с 1250 и Пьер де Монтрёй вплоть до 1267); добавлены часовни хора и большие аркбутаны деамбулатория. В XIX веке под руководством Виолле-ле-Дюка отреставрирована повреждённая в Революцию скульптурная часть, восстановлены витражные розы нефа и возведён новый шпиль вместо утраченного.',
+          uk:
+            "Собор Паризької Богоматері, також паризький собор Нотр-Дам або Нотр-Дам-де-Парі - католицький храм в центрі Парижа, один із символів французької столиці. Кафедральний собор архиєпархії Парижа. Розташований в східній частині острова Сіте, в 4-му міському окрузі, на місці першої християнської церкви Парижа - базиліки Святого Стефана, побудованої, в свою чергу, на фундаменті галло-римського храму Юпітера. Готичний собор зводився з ініціативи паризького єпископа Моріса де Сюллі в період 1163-1345 років. Вівтарна частина освячена в 1182 році; західний фасад і вежі закінчені в другій чверті XIII століття. З 1235 року вносилися великі зміни: облаштовано каплиці між контрфорсами нефа (сер. XIII століття); збільшений розмір трансепта (архітектори Жан де Шель з 1250 і П'єр де Монтрей аж до 1267); додані каплиці хору і великі аркбутани деамбулатория. У XIX столітті під керівництвом Виолле-ле-Дюка відреставрована пошкоджена в Революцію скульптурна частина, відновлені вітражні троянди нефа і зведений новий шпиль замість втраченого.",
+          en:
+            "The Cathedral of Our Lady of Paris, also the Parisian Cathedral of Notre Dame or Notre Dame de Paris - a Catholic church in the center of Paris, one of the symbols of the French capital. Cathedral of the Archdiocese of Paris. Located in the eastern part of the Ile de la Cité, in the 4th arrondissement, on the site of the first Christian church in Paris - St. Stephen's Basilica, built, in turn, on the foundations of the Gallo-Roman Temple of Jupiter. The Gothic cathedral was erected on the initiative of the Parisian bishop Maurice de Sully in the period 1163-1345. The altar part was consecrated in 1182; the western façade and towers were completed in the second qukrter of the 13th century. Since 1235 major changes have been made: the chapels between the buttresses of the nave were equipped (mid-13th century); the size of the transept was increased (architects Jean de Chelles from 1250 and Pierre de Montreuil up to 1267); choir chapels and large flying butts of the deambulatory have been added. In the 19th century, under the leadership of Viollet-le-Duc, the sculptural part damaged during the Revolution was restored, the stained glass roses of the nave were restored and a new spire was erected to replace the lost one.",
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1555397227-cbcbc55768de?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80',
+          'https://images.unsplash.com/photo-1583692497973-0e3ecc7ef35c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80',
+          'https://images.unsplash.com/photo-1593283877664-040a1ef5d811?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
           ru: 'Триумфальная арка',
-          ua: 'Тріумфальна арка',
+          uk: 'Тріумфальна арка',
           en: 'Arc de Triomphe',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Триумфальная арка — монумент в 8-м округе Парижа на площади Шарля де Голля (Звезды), возведённый в 1806—1836 годах по проекту архитектора французского ампира Жана-Франсуа Шальгрена. Проект арки «в древнеримском стиле» был разработан по распоряжению Наполеона Бонапарта в ознаменование побед его «Великой армии». За основу была взята композиция однопролётной Триумфальной арки Тита на римском Форуме. После смерти Шальгрена в 1811 году строительство продолжал архитектор Жан-Арно Реймон.',
+          uk:
+            'Тріумфальна арка - монумент в 8-му окрузі Парижа на площі Шарля де Голля (Зірки), зведений в 1806-1836 роках за проектом архітектора французького ампіру Жана-Франсуа Шальгрена. Проект арки «в давньоримському стилі» був розроблений за розпорядженням Наполеона Бонапарта в ознаменування перемог його «Великої армії». За основу була взята композиція однопрогоновою Тріумфальної арки Тита на римському Форумі. Після смерті Шальгрена в 1811 році будівництво продовжував архітектор Жан-Арно Реймон.',
+          en:
+            'The Arc de Triomphe is a monument in the 8th arrondissement of Paris on the Place Charles de Gaulle (Stars), erected in 1806-1836 by the architect of the French Empire, Jean-François Chalgrin. The arch project "in the ancient Roman style" was developed by order of Napoleon Bonaparte to commemorate the victories of his "Great Army". The composition of the one-span Arch of Triumph of Titus at the Roman Forum was taken as a basis. After the death of Chalgren in 1811, the construction was continued by the architect Jean-Arnaud Reymond.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1574756693887-51d908326a5d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
+          'https://images.unsplash.com/photo-1575793446034-b1b09252487b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
+          'https://images.unsplash.com/photo-1569740444919-ab918f5f21bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80',
+        ],
       },
       {
         name: {
           ru: 'Версальский дворец',
-          ua: 'Версальський палац',
+          uk: 'Версальський палац',
           en: 'Palace of Versailles',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Верса́ль — дворцово-парковый ансамбль во Франции, бывшая резиденция французских королей в городе Версале, ныне являющемся пригородом Парижа; центр туризма мирового значения. Версаль сооружался под руководством Людовика XIV с 1661 года и стал своеобразным памятником эпохи «короля-солнца», художественно-архитектурным выражением идеи абсолютизма. Ведущие архитекторы — Луи Лево и Жюль Ардуэн-Мансар, создатель парка — Андре Ленотр. Ансамбль Версаля, крупнейший в Европе, отличается уникальной целостностью замысла и гармонией архитектурных форм и преобразованного ландшафта. С конца XVII века Версаль служил образцом для парадных загородных резиденций европейских монархов и аристократии, однако прямых подражаний ему не имеется. С 1682 по 1789 годы, до Великой французской революции, Версаль являлся официальной королевской резиденцией. В 1801 году получил статус музея и открыт для публики; с 1830 года музеем стал весь архитектурный комплекс Версаля; в 1837 году в королевском дворце открылся Музей истории Франции. В 1979 году Версальский дворец и парк включены в список всемирного культурного наследия ЮНЕСКО.',
+          uk:
+            "Версаль - палацово-парковий ансамбль у Франції, колишня резиденція французьких королів у місті Версаль, нині що є передмістям Парижа; центр туризму світового значення. Версаль споруджувався під керівництвом Людовика XIV з 1661 року і став своєрідним пам'ятником епохи «короля-сонця», художньо-архітектурним вираженням ідеї абсолютизму. Провідні архітектори - Луї Ліво і Жюль Ардуен-Мансар, творець парку - Андре Ленотр. Ансамбль Версаля, найбільший в Європі, відрізняється унікальною цілісністю задуму і гармонією архітектурних форм і перетвореного ландшафту. З кінця XVII століття Версаль служив зразком для парадних заміських резиденцій європейських монархів і аристократії, однак прямих наслідувань йому немає. З 1682 по 1789 роки, до Великої французької революції, Версаль був офіційною королівською резиденцією. У 1801 році отримав статус музею і відкритий для публіки; з 1830 року музеєм став весь архітектурний комплекс Версаля; в 1837 році в королівському палаці відкрився Музей історії Франції. У 1979 році Версальський палац і парк включені в список всесвітньої культурної спадщини ЮНЕСКО.",
+          en:
+            'Versailles - a palace and park ensemble in France, the former residence of the French kings in the city of Versailles, now a suburb of Paris; center of tourism of world importance. Versailles was built under the leadership of Louis XIV in 1661 and became a kind of monument to the era of the "sun king", an artistic and architectural expression of the idea of ​​absolutism. Leading architects are Louis Levo and Jules Hardouin-Mansart, the creator of the park is André Le Nôtre. The ensemble of Versailles, the largest in Europe, is distinguished by a unique integrity of design and harmony of architectural forms and a transformed landscape. Since the end of the 17th century, Versailles served as a model for the ceremonial country residences of European monarchs and aristocracy, but there are no direct imitations of it. From 1682 to 1789, before the Great French Revolution, Versailles was the official royal residence. In 1801 it received the status of a museum and is open to the public; since 1830 the entire architectural complex of Versailles has become a museum; in 1837, the Museum of the History of France was opened in the royal palace. In 1979, the Palace of Versailles and the park were included in the UNESCO World Cultural Heritage List.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1590991290724-515f63a45625?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80',
+          'https://images.unsplash.com/photo-1591828353335-197466da2a4e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1548093419-ad1c177e2654?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
           ru: 'Базилика Сакре-Кёр',
-          ua: 'Базиліка Сакре-Кер',
+          uk: 'Базиліка Сакре-Кер',
           en: 'Sacré-Cœur',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Базили́ка Сакре́-Кёр (фр. Basilique du Sacré-Cœur или просто Сакре-Кёр, буквально «базилика Святого Сердца», то есть Сердца Христова) — католический храм в Париже, построенный в 1875—1914 годах по проекту архитектора Поля Абади в римско-византийском стиле, расположенный на вершине холма Монмартр, в самой высокой точке (130 м) города.',
+          uk:
+            'Базиліка Сакре-Кер (фр. Basilique du Sacré-Cœur або просто Сакре-Кер, буквально «базиліка Святого Серця», тобто Серця Христового) - католицький храм в Парижі, побудований в 1875-1914 роках за проектом архітектора Поля Абаді в римсько візантійському стилі, розташований на вершині пагорба Монмартр, в найвищій точці (130 м) міста.',
+          en:
+            'Basilica Sacré-Coeur (French Basilique du Sacré-Cœur or simply Sacré-Coeur, literally "Basilica of the Sacred Heart", that is, the Heart of Christ) is a Catholic church in Paris, built in 1875-1914 by the architect Paul Abadi in the Roman Byzantine style, located on the top of the Montmartre hill, at the highest point (130 m) of the city.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1585831281446-b7923f405537?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
+          'https://images.unsplash.com/photo-1589805054722-c407021fa8ef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1512852964607-8cca57a833e1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80',
+        ],
       },
     ],
   },
-  // TODO: Spain
+  // DONE: Spain
   {
     name: {
       ru: 'Испания',
-      ua: 'Іспанія',
+      uk: 'Іспанія',
       en: 'Spain',
     },
     photos: [
       'https://images.unsplash.com/photo-1509840841025-9088ba78a826?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       'https://images.unsplash.com/photo-1504019347908-b45f9b0b8dd5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80',
-      'https://images.unsplash.com/photo-1457079585111-4f7fc5d8a98b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1286&q=80',
-      'https://images.unsplash.com/photo-1476786516785-c3ff2dac9bbf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-      'https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-      'https://images.unsplash.com/photo-1502919963290-40096b6983ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80',
     ],
     video: 'https://www.youtube.com/watch?v=9U-1HahKwX8',
     description: {
-      ru: '',
-      ua: '',
-      en: '',
+      ru:
+        'Испа́ния  — трансконтинентальное суверенное государство на юго-западе Европы и частично в Африке, член Европейского союза и НАТО. Испания занимает бо́льшую часть (80 %) Пиренейского полуострова, а также Канарские и Балеарские острова, имеет общую площадь 504 782 км² (вместе с небольшими суверенными территориями на африканском побережье, городами Сеута и Мелилья), являясь четвёртой по величине страной в Европе (после России, Украины и Франции).',
+      uk:
+        'Іспанія - трансконтинентальної суверенна держава на південному заході Європи і частково в Африці, член Європейського союзу і НАТО. Іспанія займає більшу частину (80%) Піренейського півострова, а також Канарські і Балеарські острови, має загальну площу 504 782 км² (разом з невеликими суверенними територіями на африканському узбережжі, містами Сеута і Мелілья), будучи четвертою за величиною країною в Європі (після Росії , України та Франції).',
+      en:
+        'Spain is a transcontinental sovereign state in southwestern Europe and partly in Africa, a member of the European Union and NATO. Spain occupies most (80%) of the Iberian Peninsula, as well as the Canary and Balearic Islands, has a total area of 504 782 km² (together with small sovereign territories on the African coast, the cities of Ceuta and Melilla), being the fourth largest country in Europe (after Russia , Ukraine and France).',
     },
     capital: {
       name: {
-        ua: 'Мадрид',
+        uk: 'Мадрид',
         ru: 'Мадрид',
         en: 'Madrid ',
       },
-      coordinates: '40°25′N 3°43′W',
+      coordinates: [40.3958, -3.6833],
     },
-    timeZone: ['UTC', 'UTC+01:00'],
+    timeZone: 'GMT+1',
     currency: 'EUR',
     sightList: [
       {
         name: {
           ru: 'Саграда Фамилия',
-          ua: 'Саґрада Фамілія',
+          uk: 'Саґрада Фамілія',
           en: 'La Sagrada Familia',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Искупительный храм Святого Семейства — церковь в Барселоне, в районе Эшампле, строящаяся с 1882 года. Первый проект был разработан архитектором Франсиско дель Вильяр, на место которого в конце 1883 года был приглашён Антонио Гауди, значительно изменивший первоначальный проект. По решению инициаторов строительства храма финансирование работ должно выполняться исключительно за счёт пожертвований прихожан, что является одной из причин столь длительного строительства. Также окончание строительства задерживает сложность изготовления каменных блоков. Согласно компьютерной модели, каждый из них требует индивидуальной обработки и подгонки.',
+          uk:
+            "Спокутний храм Святого Сімейства - церква в Барселоні, в районі Ешампле, що будується з 1882 року. Перший проект був розроблений архітектором Франсиско дель Вільяр, на місце якого в кінці 1883 року був запрошений Антоніо Гауді, значно змінив початковий проект. За рішенням ініціаторів будівництва храму фінансування робіт повинно виконуватися виключно за рахунок пожертвувань прихожан, що є однією з причин такого тривалого будівництва. Також закінчення будівництва затримує складність виготовлення кам'яних блоків. Згідно комп'ютерної моделі, кожен з них потребує індивідуальної обробки і підгонки.",
+          en:
+            'The expiatory temple of the Sagrada Familia is a church in Barcelona, ​​in the Eixample district, under construction since 1882. The first project was developed by the architect Francisco del Villar, who was replaced at the end of 1883 by Antoni Gaudi, who significantly changed the original project. According to the decision of the initiators of the construction of the temple, the financing of the work should be carried out exclusively at the expense of donations from the parishioners, which is one of the reasons for such a long construction. Also, the completion of construction delays the difficulty of making stone blocks. According to the computer model, each of them requires individukl processing and fitting.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1585831280970-eb398a1da83b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1557080985-637c8cddf98a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1560291772-fe8f8f6ac145?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1344&q=80',
+        ],
       },
       {
         name: {
           ru: 'Альгамбра',
-          ua: 'Альгамбра',
+          uk: 'Альгамбра',
           en: 'Alhambra',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Альгáмбра — архитектурно-парковый ансамбль, расположенный на холмистой террасе в восточной части города Гранада в Южной Испании. Основное развитие получил во времена правления мусульманской династии Насридов (1230—1492), при которых Гранада стала столицей Гранадского эмирата на Иберийском полуострове, а Альгамбра — их резиденцией (сохранившиеся дворцы относятся преимущественно к XIV веку). В состав обширного комплекса, заключенного в крепостные стены с башнями, входили также мечети, жилые дома, бани, сады, склады, кладбище. В настоящее время является музеем исламской архитектуры.',
+          uk:
+            'Альгáмбра - архітектурно-парковий ансамбль, розташований на горбистій терасі в східній частині міста Гранада в Південній Іспанії. Основний розвиток отримав за часів правління мусульманської династії Насрідов (1230-1492), при яких Гранада стала столицею Гранадского емірату на Іберійському півострові, а Альгамбра - їх резиденцією (збереглися палаци відносяться переважно до XIV століття). До складу великого комплексу, укладеного в кріпосні стіни з вежами, входили також мечеті, житлові будинки, лазні, сади, склади, кладовище. В даний час є музеєм ісламської архітектури.',
+          en:
+            'The Alhambra is an architectural and park complex located on a hilly terrace in the eastern part of the city of Granada in southern Spain. It was mainly developed during the reign of the Muslim dynasty of the Nasrid (1230-1492), during which Granada became the capital of the Granada Emirate on the Iberian Peninsula, and the Alhambra became their residence (the surviving palaces belong mainly to the XIV century). The vast complex, enclosed in fortress walls with towers, also included mosques, residential buildings, baths, gardens, warehouses, and a cemetery. It is currently a museum of Islamic architecture.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1514981184024-f7fea649f6ed?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1576141405481-58f5ed9cf94e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+          'https://images.unsplash.com/photo-1596036435403-cdb01867592d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
+        ],
       },
       {
         name: {
           ru: 'Пласа-Майор',
-          ua: 'Пласа Майор',
+          uk: 'Пласа Майор',
           en: 'Plaza Mayor',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Пласа-Майор — одна из центральных площадей испанской столицы. Расположена в части, которую принято называть «австрийским Мадридом». Соперничает с площадью Пуэрта-дель-Соль за право именоваться главной площадью испанской столицы, но в отличие от демократичной Пуэрта-дель-Соль, Пласа-Майор — статусная площадь, «пуп Испании», как сказал Лопе де Вега. Площадь в стиле мадридского барокко, один из немногих памятников эпохи Габсбургов, была построена по проекту архитектора Хуана Гомеса де Моры.',
+          uk:
+            "Пласа-Майор - одна з центральних площ іспанської столиці. Розташована в частині, яку прийнято називати «австрійським Мадридом». Змагається з площею Пуерта-дель-Соль за право називатися головною площею іспанської столиці, але на відміну від демократичної Пуерта-дель-Соль, Пласа-Майор - статусна площа, «пуп Іспанії», як сказав Лопе де Вега. Площа в стилі мадридського бароко, один з небагатьох пам'яток епохи Габсбургів, була побудована за проектом архітектора Хуана Гомеса де Мори.",
+          en:
+            'Plaza Mayor is one of the central squkres of the Spanish capital. Located in the part that is commonly called "Austrian Madrid". It competes with Puerta del Sol for the right to be called the main squkre of the Spanish capital, but unlike the democratic Puerta del Sol, Plaza Mayor is a status squkre, “the navel of Spain,” as Lope de Vega said. The Madrid Baroque squkre, one of the few monuments from the Habsburg era, was designed by the architect Jukn Gomez de Mora.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1562580821-10d51c62dde2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1578747205332-c85fc3f980b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80',
+          'https://images.unsplash.com/photo-1604506341132-5b3f43009c3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
           ru: 'Парк Гуэль',
-          ua: 'Парк Гуель',
+          uk: 'Парк Гуель',
           en: 'Park Güell',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Парк Гуэль — парк в верхней части Барселоны, созданный Антонио Гауди в 1900—1914 годах. Представляет собой сочетание садов и жилых зон, площадь парка составляет 17,18 га.',
+          uk:
+            'Парк Гуель - парк у верхній частині Барселони, створений Антоніо Гауді в 1900-1914 роках. Є поєднанням садів і житлових зон, площа парку становить 17,18 га.',
+          en:
+            'Parc Guell is a park in the upper part of Barcelona, created by Antoni Gaudi in 1900-1914. It is a combination of gardens and residential areas, the area of the park is 17.18 hectares.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1583974123663-ee1f9e96d40f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1587203835042-7167273f13d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1570896764183-447568be8b84?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80',
+        ],
       },
       {
         name: {
           ru: 'Каса-Батльо',
-          ua: 'Будинок Бальо',
+          uk: 'Будинок Бальо',
           en: 'Casa Batlló',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Каса-Батльо́ (также известен как «Дом Костей») — жилой дом, построенный в 1877 году для текстильного магната Жозепа Бальо-и-Касановаса по адресу: Пасео-де-Грасия, 43 в районе Эшампле, Барселона и перестроенный архитектором Антони Гауди в 1904—1906 годах.',
+          uk:
+            'Каса-Батло (також відомий як «Будинок Костею») - житловий будинок, побудований в 1877 році для текстильного магната Жозепа Бальо-і-Касановаса за адресою: Пасео-де-Грас, 43 в районі Ешампле, Барселона і перебудований архітектором Антоні Гауді в 1904-1906 роках.',
+          en:
+            'Casa Batlló (also known as the "House of Bones") is a residential building built in 1877 for the textile magnate Josep Batlló y Casanovas at 43 Paseo de Gracia in the Eixample district of Barcelona and rebuilt by the architect Antoni Gaudí in 1904-1906.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1587043211963-0352f1528f6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1593780242729-72b489db4d61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+          'https://images.unsplash.com/photo-1534713570913-ae674f0fc2af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+        ],
       },
       {
         name: {
           ru: 'Севильский Алькасар',
-          ua: 'Севільський Алькасар',
+          uk: 'Севільський Алькасар',
           en: 'Royal Alcázar of Seville',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Севи́льский Алькáсар  — королевский алькасар в городе Севилья (Андалусия, Испания). Изначально являлся фортом мавров, несколько раз расширялся.',
+          uk:
+            'Севільський Алькáсар - королівський алькасар в місті Севілья (Андалусія, Іспанія). Спочатку був фортом маврів, кілька разів розширювався.',
+          en:
+            'Alcazar of Seville is a royal alcazar in the city of Seville (Andalusia, Spain). Initially, it was a Moorish fort, expanded several times.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1606400780209-b2857e22e0cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1578076324402-020b66a5d937?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1605138090816-c895526b4c34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
     ],
   },
-  // TODO: Britain
+  // DONE: Britain
   {
     name: {
       ru: 'Великобритания',
-      ua: 'Велика Британія',
+      uk: 'Велика Британія',
       en: 'Britain',
     },
     photos: [
       'https://images.unsplash.com/photo-1561234311-a9e16fa60b25?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       'https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80',
-      'https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80',
-      'https://images.unsplash.com/photo-1514487989277-85a54f0f661f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80',
       'https://images.unsplash.com/photo-1567622468169-65455efdf402?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80',
-      'https://images.unsplash.com/photo-1552424817-3c473e9f9936?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80',
     ],
     video: 'https://www.youtube.com/watch?v=EO3IXOHQJkA',
     description: {
-      ru: '',
-      ua: '',
-      en: '',
+      ru:
+        'Великобрита́ния — Соединённое Короле́вство Великобрита́нии и Се́верной Ирла́ндии — островное государство на северо-западе от континентальной Европы. Единое Королевство Великобритания образовалось в 1707 году вследствие политического объединения королевств Шотландии и Англии; но ещё ранее, в 1603 году, король Шотландии Яков VI унаследовал престолы Англии и Ирландии в порядке личной унии (Яков I). В 1800 году Королевство Великобритания и Королевство Ирландия объединились, образовав Соединённое Королевство Великобритании и Ирландии, которое после отделения от него в 1922 году Ирландского Свободного государства стало именоваться Соединённым Королевством Великобритании и Северной Ирландии. Великобритания — одно из крупнейших государств Европы, ядерная держава с 1952 года (признанная в соответствии с Договором о нераспространении ядерного оружия 1968 года), постоянный член Совета Безопасности ООН, бывшая метрополия Британской империи; британский монарх также является главой 15 иных независимых государств и главой Содружества.',
+      uk:
+        "Великобританія - Сполучене Королівство Великобританії і Північної Ірландії - острівна держава на північному заході від континентальної Європи. Єдине Королівство Великобританія утворилося в 1707 році внаслідок політичного об'єднання королівств Шотландії та Англії; але ще раніше, в 1603 році, король Шотландії Яків VI успадкував престоли Англії і Ірландії в порядку особистої унії (Яків I). У 1800 році Королівство Великобританія і Королівство Ірландія об'єдналися, утворивши Сполучене Королівство Великобританії і Ірландії, яке після відділення від нього в 1922 році Ірландської Вільної держави стало іменуватися Сполученим Королівством Великої Британії та Північної Ірландії. Великобританія - одна з найбільших держав Європи, ядерна держава з 1952 року (визнана відповідно до Договору про нерозповсюдження ядерної зброї 1968 роки), постійний член Ради Безпеки ООН, колишня метрополія Британської імперії; британський монарх також є главою 15 інших незалежних держав і главою Співдружності.",
+      en:
+        'Great Britain - The United Kingdom of Great Britain and Northern Ireland is an island nation in the northwest of continental Europe. The United Kingdom of Great Britain was formed in 1707 as a result of the political unification of the kingdoms of Scotland and England; but even earlier, in 1603, the king of Scotland, James VI, inherited the thrones of England and Ireland by way of personal union (James I). In 1800, the Kingdom of Great Britain and the Kingdom of Ireland merged to form the United Kingdom of Great Britain and Ireland, which, after secession from it in 1922, the Irish Free State became known as the United Kingdom of Great Britain and Northern Ireland. Great Britain is one of the largest states in Europe, a nuclear power since 1952 (recognized in accordance with the 1968 Nuclear Non-Proliferation Treaty), a permanent member of the UN Security Council, the former metropolis of the British Empire; the British monarch is also the head of 15 other independent states and the head of the Commonwealth.',
     },
     capital: {
       name: {
-        ua: 'Лондон',
+        uk: 'Лондон',
         ru: 'Лондон',
         en: 'London',
       },
-      coordinates: '51°30′N 0°08′W',
+      coordinates: [51.5004, -0.1274],
     },
-    timeZone: [
-      'UTC-08:00',
-      'UTC-05:00',
-      'UTC-04:00',
-      'UTC-03:00',
-      'UTC-02:00',
-      'UTC',
-      'UTC+01:00',
-      'UTC+02:00',
-      'UTC+06:00',
-    ],
+    timeZone: 'GMT',
     currency: 'GBP',
     sightList: [
       {
         name: {
           ru: 'Британский музей',
-          ua: 'Британський музей',
+          uk: 'Британський музей',
           en: 'The British Museum',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Британский музей — главный историко-археологический музей Британской империи и один из крупнейших музеев в мире, второй по посещаемости, среди художественных музеев, после Лувра. Находится в лондонском районе Блумсбери.',
+          uk:
+            'Британський музей - головний історико-археологічний музей Британської імперії і один з найбільших музеїв у світі, другий за відвідуваністю, серед художніх музеїв, після Лувру. Знаходиться в лондонському районі Блумсбері.',
+          en:
+            'The British Museum is the main historical and archaeological museum of the British Empire and one of the largest museums in the world, the second most visited art museum, after the Louvre. Located in Bloomsbury, London.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1470215883992-c49406afc34f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1577729507926-78897cc4de05?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1544561403-1b9a9993a69d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
           ru: 'Биг-Бен',
-          ua: 'Біг-Бен',
+          uk: 'Біг-Бен',
           en: 'Big Ben',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Биг-Бен — популярное туристическое название часовой башни Вестминстерского дворца. Официальное название башни с 2012 года — Башня Елизаветы (англ. Elizabeth Tower). Изначально «Биг-Бен» являлось названием самого большого из шести колоколов, однако часто это название расширительно относят и к часам, и к самой часовой башне в целом. На момент отливки Биг-Бен был самым большим и тяжёлым колоколом Соединённого Королевства. Его вес при этом составлял 13,7 тонны. В 1881 году уступил первенство колоколу Большой Пол (17 тонн). Башня Елизаветы — один из самых узнаваемых символов Великобритании, часто используемый в сувенирах, рекламе, кинофильмах.',
+          uk:
+            'Біг-Бен - популярне туристичне назва годинникової вежі Вестмінстерського палацу. Офіційна назва вежі з 2012 року - Вежа Єлизавети (англ. Elizabeth Tower). Спочатку «Біг-Бен» було назвою найбільшого з шести дзвонів, проте часто ця назва розширено відносять і до годинника, і до самої годинникової вежі в цілому. На момент виливки Біг-Бен був найбільшим і важким дзвоном Сполученого Королівства. Його вага при цьому становив 13,7 тонни. У 1881 році поступився першістю дзвону Великий Пол (17 тонн). Вежа Єлизавети - один з найбільш впізнаваних символів Великобританії, часто використовуваний в сувенірах, рекламі, кінофільмах.',
+          en:
+            'Big Ben is a popular tourist name for the clock tower of the Palace of Westminster. The official name of the tower since 2012 is Elizabeth Tower. Initially, "Big Ben" was the name of the largest of the six bells, but this name is often broadly referred to both the clock and the clock tower itself. At the time of its casting, Big Ben was the largest and heaviest bell in the United Kingdom. At the same time, its weight was 13.7 tons. In 1881 he lost the championship to the Big Paul bell (17 tons). The Elizabeth Tower is one of the most recognizable symbols of Great Britain, often used in souvenirs, advertisements, and movies.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80',
+          'https://images.unsplash.com/photo-1584986098745-02507619826c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1488747279002-c8523379faaa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
           ru: 'Эдинбургский замок',
-          ua: 'Единбурзький замок',
+          uk: 'Единбурзький замок',
           en: 'Edinburgh Castle',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Эдинбургский замок — древняя крепость на Замковой скале в центре шотландской столицы — Эдинбурга. До недавнего времени находился в распоряжении британского министерства обороны. Замок открыт для посещения и является главной туристической достопримечательностью Эдинбурга. К нему ведёт главная улица старого Эдинбурга — так называемая Королевская миля, на другом конце которой расположен Холирудский дворец.',
+          uk:
+            "Единбурзький замок - стародавня фортеця на Замковій скелі в центрі шотландської столиці - Единбурга. До недавнього часу знаходився в розпорядженні британського міністерства оборони. Замок відкритий для відвідування і є головною туристичною визначною пам'яткою Единбурга. До нього веде головна вулиця старого Единбурга - так звана Королівська миля, на іншому кінці якої розташований Голірудгауз.",
+          en:
+            'Edinburgh Castle is an ancient fortress on the Castle Rock in the center of the Scottish capital - Edinburgh. Until recently, it was at the disposal of the British Department of Defense. The castle is open to the public and is a major tourist attraction in Edinburgh. The main street of old Edinburgh leads to it - the so-called Royal Mile, at the other end of which is Holyrood Palace.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1535448033526-c0e85c9e6968?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1594800084220-4925c977584c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1432&q=80',
+          'https://images.unsplash.com/photo-1599071252099-94fd98533555?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1411&q=80',
+        ],
       },
       {
         name: {
           ru: 'Букингемский дворец',
-          ua: 'Букінгемський палац',
+          uk: 'Букінгемський палац',
           en: 'Buckingham Palace',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Букинге́мский дворе́ц — официальная лондонская резиденция королевы Великобритании Елизаветы II. Расположен напротив улицы Мэлл и Грин-парка с беломраморным и позолоченным памятником королеве Виктории. Когда монарх находится во дворце, над крышей дворца развевается королевский штандарт.',
+          uk:
+            "Букінгемський палац - офіційна лондонська резиденція королеви Великобританії Єлизавети II. Розташований навпроти вулиці Мелл і Грін-парку з біломармуровим і позолоченим пам'ятником королеві Вікторії. Коли монарх знаходиться в палаці, над дахом палацу майорить королівський штандарт.",
+          en:
+            'Buckingham Palace is the official London residence of Queen Elizabeth II of Great Britain. Located opposite Mall Street and Green Park with the White Marble and Gilded Queen Victoria Monument. When the monarch is in the palace, the royal standard flies over the roof of the palace.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1566594918281-45eb9772819f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1546404061-77f543dd71e2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1599463443163-9c2a6837ccdf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
           ru: 'Гайд-парк',
-          ua: 'Гайд-парк',
+          uk: 'Гайд-парк',
           en: 'Hyde Park',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Гайд-парк — королевский парк площадью 1,4 км² в центре Лондона. С запада к нему примыкают Кенсингтонские сады. Традиционное место политических митингов, празднеств и гуляний.',
+          uk:
+            'Гайд-парк - королівський парк площею 1,4 км² в центрі Лондона. Із заходу до нього примикають Кенсінгтонські сади. Традиційне місце політичних мітингів, свят і гулянь.',
+          en:
+            'Hyde Park is a 1.4 km² royal park in central London. Kensington Gardens adjoin it from the west. A traditional place for political meetings, celebrations and festivities.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1544441452-326ff5a947fd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1569921479014-68ed6535228d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80',
+          'https://images.unsplash.com/photo-1591203179488-58fedba3f135?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+        ],
       },
       {
         name: {
           ru: 'Лейк-Дистрикт парк',
-          ua: 'Лейк-Дистрикт парк',
+          uk: 'Лейк-Дистрикт парк',
           en: 'Lake District National Park',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Национа́льный парк Лейк-Дистрикт — заповедник в Камберлендских горах на северо-западе Англии, в графстве Камбрия. Основан в 1951 году. Лейк-Дистрикт знаменит своими живописными горными и озёрными ландшафтами, послужившими вдохновением для многих поэтов и художников, включая живших здесь представилетелей так называемой озёрной школы — Уильяма Вордсворта и Беатрис Поттер. Назван по обилию озёр, включающих четыре крупнейших в Англии — Уиндермир, Алсуотер, Бассентуэйт, Деруэнт-Уотер. Также на территории заповедника находится гора Скофел-Пайк, являющаяся самой высокой точкой Англии. Лейк-Дистрикт — один из самых посещаемых национальных парков Великобритании.',
+          uk:
+            'Національний парк Лейк-Дистрикт - заповідник в Камберлендських горах на північному заході Англії, в графстві Камбрія. Заснований в 1951 році. Лейк-Дистрикт знаменитий своїми мальовничими гірськими і озерними ландшафтами, який послужив натхненням для багатьох поетів і художників, включаючи жили тут представілетелей так званої озерної школи - Вільяма Вордсворта і Беатрис Поттер. Названий по великій кількості озер, що включають чотири найбільших в Англії - Віндермір, Алсуотер, Бассентуейт, Деруент-Вотер. Також на території заповідника знаходиться гора Скофел-Пайк, що є найвищою точкою Англії. Лейк-Дистрикт - один з найбільш відвідуваних національних парків Великобританії.',
+          en:
+            "Lake District National Park is a nature reserve in the Cumberland Mountains in the northwest of England, in the county of Cumbria. Founded in 1951. The Lake District is renowned for its picturesque mountain and lake landscapes, which have inspired many poets and artists, including the so-called Lake School representatives William Wordsworth and Beatrice Potter who lived here. Named for the abundance of lakes, including the four largest in England - Windermere, Ullswater, Bassenthwaite, Derwent Water. Also on the territory of the reserve is Mount Skofel Pike, which is the highest point in England. The Lake District is one of the UK's most visited national parks.",
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1581976043943-0d8b584c093f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
+          'https://images.unsplash.com/photo-1586026216846-6f9ab3548fdf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+          'https://images.unsplash.com/photo-1525267887619-987d4cbb4aee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1272&q=80',
+        ],
       },
     ],
   },
-  // TODO: Italy
+  // DONE: Italy
   {
     name: {
       ru: 'Италия',
-      ua: 'Італія',
+      uk: 'Італія',
       en: 'Italy',
     },
     photos: [
@@ -551,98 +650,143 @@ export const countries = [
     ],
     video: 'https://www.youtube.com/watch?v=zGlpMEUZv3U',
     description: {
-      ru: '',
-      ua: '',
-      en: '',
+      ru:
+        'Италия — одна из самых красивых стран мира с характерным только для нее колоритом и темпераментом. Это страна-музей с многовековой культурой и невероятным множеством достопримечательностей, как природных, так и исторических. Каждый город Италии — это настоящая сокровищница, хранящая драгоценные свидетельства других эпох. Рим — один из самых древних городов на Земле. Здесь каждая улочка напоминает о могущественной и грандиозной империи древнего мира. Неаполь — город с богатой историей и экспрессивными местными жителями, здесь всегда шумно и весело. Флоренция — один из самых значительных и известных культурных центров европейского континента. Венеция, пожалуй, самый романтичный город в мире, где можно прокатиться по знаменитым каналам на гондоле и увидеть площадь Сан Марко. Милан — мировой центр моды, город, живущий футболом. Островная Италия не менее привлекательна. Сицилия, Сардиния, Искья, Капри и другие острова из года в год принимают огромное количество туристов. Здесь можно наслаждаться живописной природой, уютными и чистыми пляжами, местной кухней и цитрусовыми садами.',
+      uk:
+        "Італія - одна з найкрасивіших країн світу з характерним тільки для неї колоритом і темпераментом. Це країна-музей з багатовіковою культурою і неймовірним безліччю пам'яток, як природних, так і історичних. Кожне місто Італії - це справжня скарбниця, що зберігає дорогоцінні свідоцтва інших епох. Рим - одне з найдавніших міст на Землі. Тут кожна вуличка нагадує про могутню і грандіозної імперії стародавнього світу. Неаполь - місто з багатою історією і експресивними місцевими жителями, тут завжди гамірно і весело. Флоренція - один з найзначніших і відомих культурних центрів європейського континенту. Венеція, мабуть, найромантичніше місто в світі, де можна покататися по знаменитих каналах на гондолі і побачити площу Сан Марко. Мілан - світовий центр моди, місто, що живе футболом. Острівна Італія не менш приваблива. Сицилія, Сардинія, Искья, Капрі та інші острови з року в рік приймають величезну кількість туристів. Тут можна насолоджуватися мальовничою природою, затишними і чистими пляжами, місцевою кухнею і цитрусовими садами.",
+      en:
+        "Italy is one of the most beautiful countries in the world with its characteristic color and temperament. It is a museum country with a centuries-old culture and an incredible array of attractions, both natural and historical. Each city in Italy is a real treasure house that stores precious evidence of other eras. Rome is one of the most ancient cities on Earth. Here, every street reminds of the mighty and grandiose empire of the ancient world. Naples is a city with a rich history and expressive locals, it is always noisy and fun here. Florence is one of the most significant and famous cultural centers of the European continent. Venice is perhaps the most romantic city in the world, where you can ride the famous canals in a gondola and see St. Mark's Square. Milan is the world center of fashion, a city that lives on football. Insular Italy is no less attractive. Sicily, Sardinia, Ischia, Capri and other islands receive a huge number of tourists from year to year. Here you can enjoy picturesque nature, cozy and clean beaches, local cuisine and citrus gardens.",
     },
     capital: {
       name: {
-        ua: 'Рим',
+        uk: 'Рим',
         ru: 'Рим',
         en: 'Rome',
       },
-      coordinates: '41°53′N 12°30′E',
+      coordinates: [41.896, 12.5],
     },
-    timeZone: ['UTC+01:00'],
+    timeZone: 'GMT+1',
     currency: 'EUR',
     sightList: [
       {
         name: {
           ru: 'Колизей',
-          ua: 'Колізей',
+          uk: 'Колізей',
           en: 'Colosseum',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Колизе́й — амфитеатр, памятник архитектуры Древнего Рима, наиболее известное и одно из самых грандиозных сооружений Древнего мира, сохранившихся до нашего времени. Находится в Риме, в низине между Эсквилинским, Палатинским и Целиевым холмами. Строительство самого большого амфитеатра античного мира, вместимостью свыше 50 тыс. человек, велось на протяжении восьми лет как коллективное сооружение императоров династии Флавиев. Его начали строить в 72 году н. э. при императоре Веспасиане, а в 80 году н. э. амфитеатр был освящён императором Титом. Амфитеатр расположился на том месте, где был пруд, относившийся к Золотому дому Нерона.',
+          uk:
+            "Колізей - амфітеатр, пам'ятник архітектури Стародавнього Риму, найбільш відоме і одне з найграндіозніших споруд Стародавнього світу, що збереглися до нашого часу. Знаходиться в Римі, в низині між Еськвілінськом, Палатинским і Целіїв пагорбами. Будівництво найбільшого амфітеатру античного світу, місткістю понад 50 тис. Осіб, велося протягом восьми років як колективне спорудження імператорів династії Флавіїв. Його почали будувати в 72 році н. е. при імператора Веспасіана, а в 80 році н. е. амфітеатр був освячений імператором Титом. Амфітеатр розташувався на тому місці, де був ставок, що відносився до Золотого будинку Нерона.",
+          en:
+            'The Colosseum is an amphitheater, an architectural monument of Ancient Rome, the most famous and one of the most grandiose structures of the Ancient World that have survived to our time. Located in Rome, in the lowlands between the Esquiline, Palatine and Celian hills. The construction of the largest amphitheater of the ancient world, with a capacity of over 50 thousand people, was carried out for eight years as a collective building of the emperors of the Flavian dynasty. It began to be built in 72 AD. e. under the emperor Vespasian, and in 80 AD. e. the amphitheater was consecrated by the Emperor Titus. The amphitheater is located in the place where there was a pond that belonged to the Golden House of Nero.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1286&q=80',
+          'https://images.unsplash.com/photo-1523652615028-87da4d4427b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1519879110616-349b57f8cd11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
           ru: 'Санта-Мария-дель-Фьоре',
-          ua: 'Санта-Марія-дель-Фйоре',
+          uk: 'Санта-Марія-дель-Фйоре',
           en: 'Cathedral of Santa Maria del Fiore',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Собор Санта-Мария-дель-Фьоре — кафедральный собор во Флоренции, самое знаменитое из архитектурных сооружений флорентийского кватроченто. Находится в центре города, на Соборной площади.',
+          uk:
+            'Собор Санта-Марія-дель-Фіоре - кафедральний собор у Флоренції, найвідоміше з архітектурних споруд флорентійського кватроченто. Знаходиться в центрі міста, на Соборній площі.',
+          en:
+            'Cathedral of Santa Maria del Fiore - Cathedral in Florence, the most famous of the architectural structures of the Florentine Quattrocento. It is located in the city center, on Cathedral Square.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1536575251318-66a400f00214?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1578487252770-1f8ce4ec9865?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+          'https://images.unsplash.com/photo-1454192098863-81f20a34ce27?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
       {
         name: {
           ru: 'Пантеон',
-          ua: 'Пантеон',
+          uk: 'Пантеон',
           en: 'Pantheon',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Пантео́н — так называемый «Храм всех богов», выдающийся памятник истории и архитектуры древнего Рима, построенный между 118 и 128 годами н. э.',
+          uk:
+            "Пантеон - так званий «Храм всіх богів», видатний пам'ятник історії і архітектури Стародавнього Риму, побудований між 118 і 128 роками н. е.",
+          en:
+            'The Pantheon is the so-called "Temple of All Gods", an outstanding monument of the history and architecture of ancient Rome, built between 118 and 128 AD. e.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1605200723310-5df264c13e22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1614354987493-a010f414d0d1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1552636954-f20b466efb91?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+        ],
       },
       {
         name: {
           ru: 'Фонтан Треви',
-          ua: 'Фонтан Треві',
+          uk: 'Фонтан Треві',
           en: 'Trevi Fountain',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Фонта́н Тре́ви — самый крупный фонтан Рима, вместе с фасадом здания, являющимся частью архитектурно-скульптурной композиции, имеет высоту 25,9 м и ширину 49,8 м. Фонтан построен в 1732—1762 годах по проекту архитектора Николо Сальви. Он примыкает к фасаду Палаццо Поли. Архитектурно-скульптурная композиция позднего римского барокко с элементами неоклассицизма. Название происходит от латинского «trivium» (пересечение трёх дорог). Фонтан расположен в центральной части Рима, у западного склона Квиринальского холма.',
+          uk:
+            'Фонтан Треві - найбільший фонтан Риму, разом з фасадом будівлі, що є частиною архітектурно-скульптурної композиції, має висоту 25,9 м і ширину 49,8 м. Фонтан побудований в 1732-1762 роках за проектом архітектора Ніколо Сальви. Він примикає до фасаду Палаццо Полі. Архітектурно-скульптурна композиція пізнього римського бароко з елементами неокласицизму. Назва походить від латинського «trivium» (перетин трьох доріг). Фонтан розташований в центральній частині Риму, біля західного схилу Квірінальського пагорба.',
+          en:
+            'The Trevi Fountain is the largest fountain in Rome, together with the building\'s facade, which is part of the architectural and sculptural composition, is 25.9 m high and 49.8 m wide. The fountain was built in 1732-1762 by the architect Nicolo Salvi. It adjoins the facade of Palazzo Poli. Architectural and sculptural composition of the late Roman baroque with elements of neoclassicism. The name comes from the Latin "trivium" (intersection of three roads). The fountain is located in the central part of Rome, on the western slope of the Quirinal Hill.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1607028693938-e63250910b2d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1266&q=80',
+          'https://images.unsplash.com/photo-1542756850-f868cd893e8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1547&q=80',
+          'https://images.unsplash.com/photo-1549264814-7fe7816d0b2c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1254&q=80',
+        ],
       },
       {
         name: {
           ru: 'Римский форум',
-          ua: 'Римський Форум',
+          uk: 'Римський Форум',
           en: 'Roman Forum',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Ри́мский фо́рум — форум в центре Древнего Рима, вместе с прилегающими зданиями. Первоначально на нём размещался рынок, позже он включил в себя комиций, курию, и приобрел политические функции.',
+          uk:
+            'Римський форум - форум в центрі Стародавнього Риму, разом з прилеглими будівлями. Спочатку на ньому розміщувався ринок, пізніше він включив в себе коміцій, курію, і придбав політичні функції.',
+          en:
+            'The Roman Forum is a forum in the center of Ancient Rome, along with the adjacent buildings. Initially, it housed a market, later it included the comitia, curia, and acquired political functions.',
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1610529026778-bbe6214912b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1568797662138-41aeadb55a44?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1610723569051-4a14976b19c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80',
+        ],
       },
       {
         name: {
           ru: 'Пизанская башня',
-          ua: 'Пізанська вежа',
+          uk: 'Пізанська вежа',
           en: 'Leaning Tower of Pisa',
         },
         description: {
-          ru: '',
-          ua: '',
-          en: '',
+          ru:
+            'Пиза́нская башня — колокольная башня, часть ансамбля городского собора Санта-Мария-Ассунта (Пизанский собор) в городе Пиза, получившая всемирную известность благодаря непреднамеренному наклону. Расположенная позади собора, она является третьей старейшей постройкой на Площади чудес Пизы после самого собора и баптистерия. Наклон башни возник в ходе её строительства, длившегося несколько десятилетий и в последующее время медленно увеличивался, пока не был стабилизирован (и частично скорректирован) благодаря усилиям по укреплению в конце XX и начале XXI столетий.',
+          uk:
+            'Пізанська вежа - дзвонова вежа, частина ансамблю міського собору Санта-Марія-Ассунта (Пізанський собор) в місті Піза, яка здобула всесвітню популярність завдяки ненавмисному нахилу. Розташована позаду собору, вона є третьою найстарішою спорудою на Площі чудес Пізи після самого собору і баптістерія. Нахил вежі виник в ході її будівництва, що тривав кілька десятиліть і в наступні часи повільно збільшувався, поки не був стабілізований (і частково скоректований) завдяки зусиллям по зміцненню в кінці XX і початку XXI століть.',
+          en:
+            "The Pisa Tower is a bell tower, part of the ensemble of the city's Cathedral of Santa Maria Assunta (Cathedral of Pisa) in the city of Pisa, known worldwide for its unintentional tilt. Located behind the cathedral, it is the third oldest building in Pisa's Square of Miracles after the cathedral and the baptistery. The slope of the tower arose during its construction, which lasted for several decades and subsequently slowly increased until it was stabilized (and partially corrected) thanks to strengthening efforts in the late 20th and early 21st centuries.",
         },
-        photos: ['', '', '', '', '', ''],
+        photos: [
+          'https://images.unsplash.com/photo-1543429776-2782fc8e1acd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1612018043667-b1b00320a927?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+          'https://images.unsplash.com/photo-1583812902517-2c24da325fc8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        ],
       },
     ],
   },
@@ -650,7 +794,7 @@ export const countries = [
   {
     name: {
       ru: 'Греция',
-      ua: 'Греція',
+      uk: 'Греція',
       en: 'Greece',
     },
     photos: [
@@ -664,12 +808,12 @@ export const countries = [
     video: 'https://www.youtube.com/watch?v=VqtAhvsdc-c',
     description: {
       ru: '',
-      ua: '',
+      uk: '',
       en: '',
     },
     capital: {
       name: {
-        ua: 'Афіни',
+        uk: 'Афіни',
         ru: 'Афины',
         en: 'Athens',
       },
@@ -681,12 +825,12 @@ export const countries = [
       {
         name: {
           ru: 'Афинский Акрополь',
-          ua: 'Афінський Акрополь',
+          uk: 'Афінський Акрополь',
           en: 'Acropolis of Athens',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: ['', '', '', '', '', ''],
@@ -694,12 +838,12 @@ export const countries = [
       {
         name: {
           ru: 'Парфенон',
-          ua: 'Парфенон',
+          uk: 'Парфенон',
           en: 'Parthenon',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: ['', '', '', '', '', ''],
@@ -707,12 +851,12 @@ export const countries = [
       {
         name: {
           ru: 'Метеора',
-          ua: 'Метеора',
+          uk: 'Метеора',
           en: 'Meteora',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: ['', '', '', '', '', ''],
@@ -720,12 +864,12 @@ export const countries = [
       {
         name: {
           ru: 'Новий музей акрополя',
-          ua: 'Новый музей Акрополя',
+          uk: 'Новый музей Акрополя',
           en: 'Acropolis Museum',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: ['', '', '', '', '', ''],
@@ -733,12 +877,12 @@ export const countries = [
       {
         name: {
           ru: 'Храм Зевса Олимпийского',
-          ua: 'Храм Зевса Олімпійського',
+          uk: 'Храм Зевса Олімпійського',
           en: 'Temple of Olympian Zeus',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: ['', '', '', '', '', ''],
@@ -746,12 +890,12 @@ export const countries = [
       {
         name: {
           ru: 'Афинская агора',
-          ua: 'Афінська агора',
+          uk: 'Афінська агора',
           en: 'Ancient Agora of Athens',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: ['', '', '', '', '', ''],
@@ -762,7 +906,7 @@ export const countries = [
   {
     name: {
       ru: 'США',
-      ua: 'США',
+      uk: 'США',
       en: 'USA',
     },
     photos: [
@@ -773,16 +917,16 @@ export const countries = [
       'https://images.unsplash.com/photo-1563641676291-9f01de32c82d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
       'https://images.unsplash.com/photo-1590499865396-a119960fd16f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80',
     ],
-    video: 'https://www.youtube.com/watch?v=bNTUuAfWe00',
+    video: 'https://www.youtube.com/watch?v=bNTUukfWe00',
     description: {
-      ua: '',
+      uk: '',
       ru: '',
       en: '',
     },
     capital: {
       name: {
         ru: 'Вашингтон',
-        ua: 'Вашингтон',
+        uk: 'Вашингтон',
         en: 'Washington, D.C.',
       },
       coordinates: '38°55′N 77°01′W',
@@ -805,12 +949,12 @@ export const countries = [
       {
         name: {
           ru: 'Центральный парк',
-          ua: 'Центральний парк',
+          uk: 'Центральний парк',
           en: 'Central Park',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -825,12 +969,12 @@ export const countries = [
       {
         name: {
           ru: 'Национальный парк Гранд-Каньон',
-          ua: 'Національний парк Гранд-Каньйон',
+          uk: 'Національний парк Гранд-Каньйон',
           en: 'Grand Canyon National Park',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -845,12 +989,12 @@ export const countries = [
       {
         name: {
           ru: 'Статуя Свободы',
-          ua: 'Статуя Свободи',
+          uk: 'Статуя Свободи',
           en: 'Statue of Liberty',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -865,12 +1009,12 @@ export const countries = [
       {
         name: {
           ru: 'Диснейленд',
-          ua: 'Діснейленд',
+          uk: 'Діснейленд',
           en: 'Disneyland Park',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -885,12 +1029,12 @@ export const countries = [
       {
         name: {
           ru: 'Таймс-Сквер',
-          ua: 'Таймс-Сквер',
-          en: 'Times Square',
+          uk: 'Таймс-Сквер',
+          en: 'Times Squkre',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -905,12 +1049,12 @@ export const countries = [
       {
         name: {
           ru: 'Epcot',
-          ua: 'Epcot',
+          uk: 'Epcot',
           en: 'Epcot',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -928,7 +1072,7 @@ export const countries = [
   {
     name: {
       ru: 'Кипр',
-      ua: 'Кіпр',
+      uk: 'Кіпр',
       en: 'Cyprus',
     },
     photos: [
@@ -942,12 +1086,12 @@ export const countries = [
     video: 'https://www.youtube.com/watch?v=o6ZB7rbmFak',
     description: {
       ru: '',
-      ua: '',
+      uk: '',
       en: '',
     },
     capital: {
       name: {
-        ua: 'Нікосія',
+        uk: 'Нікосія',
         ru: 'Никосия',
         en: 'Nicosia',
       },
@@ -959,12 +1103,12 @@ export const countries = [
       {
         name: {
           ru: 'Петра-ту-Ромиу',
-          ua: 'Петра-ту-Роміу',
+          uk: 'Петра-ту-Роміу',
           en: 'Petra tou Romiou',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -979,12 +1123,12 @@ export const countries = [
       {
         name: {
           ru: 'Пляж Нисси',
-          ua: 'Пляж Ніссі',
+          uk: 'Пляж Ніссі',
           en: 'Nissi Beach',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -999,12 +1143,12 @@ export const countries = [
       {
         name: {
           ru: 'Мыс Греко',
-          ua: 'Мис Греко',
+          uk: 'Мис Греко',
           en: 'Cape Greco',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -1019,12 +1163,12 @@ export const countries = [
       {
         name: {
           ru: 'Церковь Святого Лазаря',
-          ua: 'Церква святого Лазаря',
+          uk: 'Церква святого Лазаря',
           en: 'Church of Saint Lazarus',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -1039,12 +1183,12 @@ export const countries = [
       {
         name: {
           ru: 'Монастырь Киккос',
-          ua: 'Монастир Кікос',
+          uk: 'Монастир Кікос',
           en: 'Kykkos Monastery',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -1059,12 +1203,12 @@ export const countries = [
       {
         name: {
           ru: 'Мечеть Хала Султан Текке',
-          ua: 'Мечеть Хала Султан Текке',
+          uk: 'Мечеть Хала Султан Текке',
           en: 'Hala Sultan Tekke',
         },
         description: {
           ru: '',
-          ua: '',
+          uk: '',
           en: '',
         },
         photos: [
@@ -1080,5 +1224,5 @@ export const countries = [
   },
 ];
 
-// languages
-export const languages = ['ru', 'ua'];
+// langukges
+export const langukges = ['ru', 'uk', 'en'];
