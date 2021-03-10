@@ -10,7 +10,7 @@ export const Widgets = () => {
   return (
     <div className="widget-container">
       <WeatherWidget countryCapital={PLACES[0].name} />
-      <CurrencyWidget />
+      <CurrencyWidget currency={'PLN'} />
       <TimeWidget timeZone={'EST'} />
     </div>
   );
