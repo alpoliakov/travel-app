@@ -55,6 +55,11 @@ function useProvideAuth() {
     } catch (err) {
       setError(err.message);
     }
+
+    setTimeout(() => {
+      setMessage('');
+      setError('');
+    }, 1000);
   };
 
   const signUp = async (name, email, password, avatar) => {
@@ -72,6 +77,11 @@ function useProvideAuth() {
     } catch (err) {
       setError(err.message);
     }
+
+    setTimeout(() => {
+      setMessage('');
+      setError('');
+    }, 1000);
   };
 
   const signOut = () => {

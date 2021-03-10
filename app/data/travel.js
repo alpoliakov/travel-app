@@ -27,7 +27,7 @@ const countries = [
         ru: 'Берлин',
         en: 'Berlin',
       },
-      coordinates: "52°31'N / 13°23'E",
+      coordinates: [52.31, 13.23],
     },
     timeZone: 'CET',
     currency: 'EUR',
