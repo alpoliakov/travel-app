@@ -9,7 +9,7 @@ export const messages = {
     createAcc: 'Create an account',
     forgetPass: 'Forgot password ?',
     enter: 'Enter',
-    
+
     load: 'Loading',
     high: 'Max',
     low: 'Min',
@@ -25,7 +25,7 @@ export const messages = {
     createAcc: 'Создать аккаунт',
     forgetPass: 'Забыли пароль ?',
     enter: 'Ввести',
-    
+
     load: 'Загрузка',
     high: 'Макс',
     low: 'Мин',
@@ -41,7 +41,7 @@ export const messages = {
     createAcc: 'Створити акаунт',
     forgetPass: 'Забули пароль ?',
     enter: 'Введіть',
-    
+
     load: 'Завантаження',
     high: 'Макс',
     low: 'Miн',

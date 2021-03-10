@@ -4,7 +4,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import setLanguage from 'next-translate/setLanguage';
 import React, { useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 import { useIntl } from 'react-intl';
+
+import { useAuth } from '../lib/useAuth';
+import Dropdown from './Dropdown';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -27,6 +31,7 @@ export default function Header() {
   const [currentLocal, setCurrentLocal] = useState(locale);
   const { formatMessage: f } = useIntl();
   const router = useRouter();
+  const { user, signOut, message, error } = useAuth();
 
   const showSearch = router.pathname === '/';
 
@@ -37,6 +42,18 @@ export default function Header() {
   useEffect(() => {
     setLanguage(currentLocal);
   }, [currentLocal]);
+
+  useEffect(() => {
+    if (message) {
+      toast.success(message, { duration: 4000 });
+    }
+  }, [message]);
+
+  useEffect(() => {
+    if (error) {
+      toast.error(error, { duration: 4000 });
+    }
+  }, [error]);
 
   return (
     <div className="header">
@@ -62,12 +79,17 @@ export default function Header() {
             </option>
           ))}
         </select>
-        <Link href="/auth/login">
-          <a>{f({ id: 'btnLogin' })}</a>
-        </Link>
-        <Link href="/auth/signup">
-          <a>{f({ id: 'btnSignUp' })}</a>
-        </Link>
+        {user && <Dropdown />}
+        {!user && (
+          <>
+            <Link href="/auth/login">
+              <a>{f({ id: 'btnLogin' })}</a>
+            </Link>
+            <Link href="/auth/signup">
+              <a>{f({ id: 'btnSignUp' })}</a>
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

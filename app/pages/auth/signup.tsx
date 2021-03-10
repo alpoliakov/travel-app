@@ -3,6 +3,8 @@ import Head from 'next/head';
 import React from 'react';
 import { useIntl } from 'react-intl';
 
+import SignUpForm from '../../components/SignUpForm';
+
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
   enter: {
@@ -27,8 +29,13 @@ export default function SignUp() {
       <Head>
         <title>Sign Up</title>
       </Head>
-      <motion.div initial="initial" animate="enter" exit="exit" variants={postVariants}>
-        <h1>{f({ id: 'signUpPage' })}</h1>
+      <motion.div
+        className="flex justify-center w-full max-w-lg"
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        variants={postVariants}>
+        <SignUpForm />
       </motion.div>
     </div>
   );
