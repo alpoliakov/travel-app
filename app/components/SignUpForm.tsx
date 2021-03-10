@@ -178,7 +178,7 @@ export default function SignUpForm() {
               <a
                 className="inline-block right-0 align-baseline font-bold text-sm text-500 text-white hover:text-blue-800"
                 role="button">
-                Or {f({ id: 'btnLogin' })}
+                {f({ id: 'or' })} {f({ id: 'btnLogin' })}
               </a>
             </Link>
           </div>
