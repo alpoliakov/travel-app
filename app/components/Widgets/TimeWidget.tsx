@@ -6,6 +6,7 @@ export const TimeWidget = ({ timeZone }) => {
   const [todayTime, setTodayTime] = useState(
     new Date().toLocaleTimeString(`${locale}`, {
       timeZone: `${timeZone}`,
+      hour12: false,
       hour: 'numeric',
       minute: 'numeric',
       second: 'numeric',
@@ -25,6 +26,7 @@ export const TimeWidget = ({ timeZone }) => {
       setTodayTime(
         new Date().toLocaleTimeString(`${locale}`, {
           timeZone: `${timeZone}`,
+          hour12: false,
           hour: 'numeric',
           minute: 'numeric',
           second: 'numeric',
