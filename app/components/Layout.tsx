@@ -4,7 +4,6 @@ import { Toaster } from 'react-hot-toast';
 
 import Footer from './Footer';
 import Header from './Header';
-import { Widgets } from './Widgets/Widgets';
 
 export default function Layout({ children }) {
   return (
@@ -15,8 +14,6 @@ export default function Layout({ children }) {
       </Head>
       <Toaster />
       <Header />
-      {/* widgets will be added to country-page and will be removed from here */}
-      <Widgets />
       <main className="main">{children}</main>
       <Footer />
     </div>

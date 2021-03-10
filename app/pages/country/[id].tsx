@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 
+import { Widgets } from '../../components/Widgets/Widgets';
+
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
   enter: {
@@ -32,6 +34,7 @@ export default function Country() {
       </Head>
       <motion.div initial="initial" animate="enter" exit="exit" variants={postVariants}>
         <h1>Country Page</h1>
+        <Widgets />
       </motion.div>
     </div>
   );
