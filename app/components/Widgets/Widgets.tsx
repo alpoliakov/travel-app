@@ -8,10 +8,12 @@ const PLACES = [{ name: 'London' }, { name: 'Berlin' }, { name: 'Madrid' }, { na
 
 export const Widgets = () => {
   return (
-    <div className="widget-container">
-      <WeatherWidget countryCapital={PLACES[0].name} />
-      <CurrencyWidget currency={'PLN'} />
-      <TimeWidget timeZone={'EST'} />
+    <div className="widget-box">
+      <div className="widget-container">
+        <WeatherWidget countryCapital={PLACES[0].name} />
+        <CurrencyWidget currency={'USD'} />
+        <TimeWidget timeZone={'EST'} />
+      </div>
     </div>
   );
 };
