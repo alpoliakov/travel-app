@@ -13,7 +13,7 @@ input AuthInput {
 type Country {
   ISOCode: String!
   _id: ObjectId!
-  coordinates: Float!
+  coordinates: [Float!]!
   currency: String!
   data: LocaleCountry!
   imagesUrl: [String!]!

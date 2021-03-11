@@ -50,9 +50,9 @@ export class Country {
   @Property({ required: true })
   currency: string;
 
-  @Field()
+  @Field(() => [Number])
   @Property({ required: true })
-  coordinates: number;
+  coordinates: number[];
 
   @Field()
   @Property({ required: true, uppercase: true, unique: true })
