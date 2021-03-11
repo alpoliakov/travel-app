@@ -132,8 +132,13 @@ a {
 
 /* Widgets */
 
+.widget-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .widget-container {
-  width: 25%;
+  width: 20%;
   min-width: 250px;
 }
 
@@ -141,4 +146,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .widget-box {
+    justify-content: center;
+  }
+  .weather-informer {
+    font-size: 1rem;
+  }
+  .widget-container {
+    width: 80%;
+  }
 }
