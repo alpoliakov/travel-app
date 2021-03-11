@@ -5,6 +5,7 @@ query Countries {
     imagesUrl
     videoUrl
     currency
+    timeZone
     coordinates
     data {
       en {

@@ -50,6 +50,10 @@ export class Country {
   @Property({ required: true })
   currency: string;
 
+  @Field()
+  @Property({ required: true })
+  timeZone: string;
+
   @Field(() => [Number])
   @Property({ required: true })
   coordinates: number[];

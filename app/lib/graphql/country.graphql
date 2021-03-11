@@ -2,6 +2,7 @@ query Country($id:ObjectId!) {
   country(countryId: $id) {
     _id
     currency
+    timeZone
     coordinates
     ISOCode
     videoUrl
