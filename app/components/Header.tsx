@@ -9,6 +9,7 @@ import { useIntl } from 'react-intl';
 
 import { useAuth } from '../lib/useAuth';
 import Dropdown from './Dropdown';
+import Search from './Search';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -67,7 +68,7 @@ export default function Header() {
       <div className="header__search">
         {showSearch && (
           <motion.h1 initial="initial" animate="enter" exit="exit" variants={postVariants}>
-            {f({ id: 'search' })}
+            <Search />
           </motion.h1>
         )}
       </div>

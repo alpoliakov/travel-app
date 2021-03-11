@@ -17,6 +17,7 @@ type Country {
   currency: String!
   data: LocaleCountry!
   imagesUrl: [String!]!
+  timeZone: String!
   videoUrl: String!
 }
 

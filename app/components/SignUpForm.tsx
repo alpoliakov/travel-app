@@ -149,19 +149,22 @@ export default function SignUpForm() {
             </span>
           </div>
           <div className="mt-1">
-            <label className="block  text-sm text-white" htmlFor="avatar">
+            <label className="block text-sm text-white" htmlFor="avatar">
               {f({ id: 'avatar' })}
+              <div className="w-full cursor-pointer tracking-wide px-5 py-2 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white">
+                <input
+                  className="hidden"
+                  type="file"
+                  id="avatar"
+                  value={userData.avatar}
+                  // onChange={(e) => setUserData({ ...userData, avatar: e.target.value })}
+                  name="avatar"
+                  placeholder={f({ id: 'phAvatar' })}
+                  arial-label="loader"
+                />
+                <span className="mt-2 text-base leading-normal">Select a file</span>
+              </div>
             </label>
-            <input
-              className="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white"
-              type="avatar"
-              id="avatar"
-              value={userData.avatar}
-              onChange={(e) => setUserData({ ...userData, avatar: e.target.value })}
-              name="avatar"
-              placeholder={f({ id: 'phAvatar' })}
-              arial-label="loader"
-            />
             <span className="flex items-center font-medium tracking-wide text-yellow-500 text-xs mt-1 ml-1">
               Invalid username field !
             </span>

@@ -25,6 +25,7 @@ query Place($id: ObjectId!) {
       coordinates
       ISOCode
       videoUrl
+      timeZone
       imagesUrl
       data {
         en {

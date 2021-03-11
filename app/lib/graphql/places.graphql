@@ -23,6 +23,7 @@ query Places($countryId: ObjectId!) {
       ISOCode
       currency
       coordinates
+      timeZone
       data {
         en {
           name
