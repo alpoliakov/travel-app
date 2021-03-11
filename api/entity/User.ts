@@ -9,7 +9,7 @@ export class User {
 
   @Field()
   @Property({ required: true })
-  name: string;
+  name?: string;
 
   @Field()
   @Property({ required: true })

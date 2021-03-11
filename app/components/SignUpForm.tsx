@@ -6,35 +6,61 @@ import { REG_EMAIL } from '../constants';
 import { useAuth } from '../lib/useAuth';
 import Loader from './Loader';
 
-export default function LoginForm() {
+export default function SignUpForm() {
   const [userData, setUserData] = useState({
+    name: '',
     email: '',
     password: '',
+    avatar: '',
   });
   const [loading, setLoading] = useState(false);
   const [errorPsw, setErrorPsw] = useState(false);
+  const [errorName, setErrorName] = useState(false);
   const [validEmail, setValidEmail] = useState(false);
-
-  const { signIn, user, error } = useAuth();
+  const { user, signUp, error } = useAuth();
 
   const { formatMessage: f } = useIntl();
 
-  const onFinish = (e) => {
+  const validation = async ({ name, email, password, avatar }) => {
+    let result = false;
+    if (!password || password.length < 6) {
+      await setErrorPsw(true);
+      result = true;
+    }
+
+    if (!name || name.length < 3) {
+      await setErrorName(true);
+      result = true;
+    }
+
+    if (!email || !email.match(REG_EMAIL)) {
+      await setValidEmail(true);
+      result = true;
+    } else {
+      await setValidEmail(false);
+    }
+
+    return result;
+  };
+
+  const onFinish = async (e) => {
     e.preventDefault();
     setLoading(true);
-    const { email, password } = userData;
+    const { name, email, password } = userData;
+    let { avatar } = userData;
 
-    if (password.length < 6) {
-      setErrorPsw(true);
+    const valid = await validation(userData);
+
+    if (!avatar) {
+      avatar = '/images/hacker.png';
     }
 
-    if (email.match(REG_EMAIL)) {
-      setValidEmail(false);
-    } else {
-      setValidEmail(true);
+    if (valid) {
+      setLoading(false);
+      return;
     }
 
-    signIn(email, password);
+    await signUp(name, email, password, avatar);
   };
 
   useEffect(() => {
@@ -53,9 +79,33 @@ export default function LoginForm() {
         <Loader show={loading} />
         <form className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
           <p className="text-white font-medium text-center text-lg font-bold uppercase">
-            {f({ id: 'btnLogin' })}
+            {f({ id: 'register' })}
           </p>
           <div className="">
+            <label className="block text-sm text-white" htmlFor="name">
+              {f({ id: 'name' })}
+            </label>
+            <input
+              className="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white"
+              type="name"
+              id="name"
+              value={userData.name}
+              placeholder={f({ id: 'phName' })}
+              aria-label="name"
+              onChange={(e) => {
+                setUserData({ ...userData, name: e.target.value });
+
+                if (userData.name.length > 2) {
+                  setErrorName(false);
+                }
+              }}
+              required
+            />
+            <span className="flex items-center font-medium tracking-wide text-yellow-500 text-xs mt-1 ml-1">
+              {errorName && f({ id: 'errorName' })}
+            </span>
+          </div>
+          <div className="mt-1">
             <label className="block text-sm text-white" htmlFor="email">
               E-mail:
             </label>
@@ -73,7 +123,7 @@ export default function LoginForm() {
               {validEmail && f({ id: 'errorEmail' })}
             </span>
           </div>
-          <div className="mt-4">
+          <div className="mt-1">
             <label className="block  text-sm text-white" htmlFor="password">
               {f({ id: 'pass' })}
             </label>
@@ -89,12 +139,31 @@ export default function LoginForm() {
                 }
               }}
               name="password"
+              minLength={6}
               placeholder={f({ id: 'phPass' })}
               arial-label="password"
               required
             />
             <span className="flex items-center font-medium tracking-wide text-yellow-500 text-xs mt-1 ml-1">
               {errorPsw && f({ id: 'errorPass' })}
+            </span>
+          </div>
+          <div className="mt-1">
+            <label className="block  text-sm text-white" htmlFor="avatar">
+              {f({ id: 'avatar' })}
+            </label>
+            <input
+              className="w-full px-5 py-1 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white"
+              type="avatar"
+              id="avatar"
+              value={userData.avatar}
+              onChange={(e) => setUserData({ ...userData, avatar: e.target.value })}
+              name="avatar"
+              placeholder={f({ id: 'phAvatar' })}
+              arial-label="loader"
+            />
+            <span className="flex items-center font-medium tracking-wide text-yellow-500 text-xs mt-1 ml-1">
+              Invalid username field !
             </span>
           </div>
 
@@ -105,18 +174,11 @@ export default function LoginForm() {
               onClick={onFinish}>
               {f({ id: 'enter' })}
             </button>
-            <a
-              className="inline-block right-0 align-baseline font-bold text-sm text-500 text-white hover:text-blue-800"
-              role="button"
-              target="_blanck"
-              href="https://www.youtube.com/watch?v=a3edsIATN6A">
-              {f({ id: 'forgetPass' })}
-            </a>
-          </div>
-          <div className="text-center">
-            <Link href="/auth/signup">
-              <a className="inline-block right-0 align-baseline font-bold text-sm text-500 text-white hover:text-blue-800">
-                {f({ id: 'createAcc' })}
+            <Link href="/auth/login">
+              <a
+                className="inline-block right-0 align-baseline font-bold text-sm text-500 text-white hover:text-blue-800"
+                role="button">
+                {f({ id: 'or' })} {f({ id: 'btnLogin' })}
               </a>
             </Link>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
 const API_KEY = 'b1b35bba8b434a28a0be2a3e1071ae5b';
@@ -28,7 +28,7 @@ export const WeatherWidget = ({ countryCapital }) => {
   const iconUrl = `http://openweathermap.org/img/w/${weather.icon}.png`;
 
   return (
-    <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl ">
+    <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
       <p className="text-white font-medium text-center text-lg font-bold uppercase weather-informer">
         {weather.description}
       </p>
