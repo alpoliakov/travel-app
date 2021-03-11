@@ -28,8 +28,8 @@ export const WeatherWidget = ({ countryCapital }) => {
   const iconUrl = `http://openweathermap.org/img/w/${weather.icon}.png`;
 
   return (
-    <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl weather-informer">
-      <p className="text-white font-medium text-center text-lg font-bold uppercase">
+    <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
+      <p className="text-white font-medium text-center text-lg font-bold uppercase weather-informer">
         {weather.description}
       </p>
       <div className="weather-main">

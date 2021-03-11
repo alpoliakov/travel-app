@@ -26,7 +26,7 @@ export const countries = [
       },
       coordinates: [52.5102, 13.3834],
     },
-    timeZone: 'GMT+1',
+    timeZone: 'CET',
     currency: 'EUR',
     sightList: [
       {
@@ -198,7 +198,7 @@ export const countries = [
       },
       coordinates: [48.8263, 2.3332],
     },
-    timeZone: 'GMT+1',
+    timeZone: 'CET',
     currency: 'EUR',
     sightList: [
       {
@@ -350,7 +350,7 @@ export const countries = [
       },
       coordinates: [40.3958, -3.6833],
     },
-    timeZone: 'GMT+1',
+    timeZone: 'CET',
     currency: 'EUR',
     sightList: [
       {
@@ -365,7 +365,7 @@ export const countries = [
           uk:
             "Спокутний храм Святого Сімейства - церква в Барселоні, в районі Ешампле, що будується з 1882 року. Перший проект був розроблений архітектором Франсиско дель Вільяр, на місце якого в кінці 1883 року був запрошений Антоніо Гауді, значно змінив початковий проект. За рішенням ініціаторів будівництва храму фінансування робіт повинно виконуватися виключно за рахунок пожертвувань прихожан, що є однією з причин такого тривалого будівництва. Також закінчення будівництва затримує складність виготовлення кам'яних блоків. Згідно комп'ютерної моделі, кожен з них потребує індивідуальної обробки і підгонки.",
           en:
-            'The expiatory temple of the Sagrada Familia is a church in Barcelona, ​​in the Eixample district, under construction since 1882. The first project was developed by the architect Francisco del Villar, who was replaced at the end of 1883 by Antoni Gaudi, who significantly changed the original project. According to the decision of the initiators of the construction of the temple, the financing of the work should be carried out exclusively at the expense of donations from the parishioners, which is one of the reasons for such a long construction. Also, the completion of construction delays the difficulty of making stone blocks. According to the computer model, each of them requires individual processing and fitting.',
+            'The expiatory temple of the Sagrada Familia is a church in Barcelona, ​​in the Eixample district, under construction since 1882. The first project was developed by the architect Francisco del Villar, who was replaced at the end of 1883 by Antoni Gaudi, who significantly changed the original project. According to the decision of the initiators of the construction of the temple, the financing of the work should be carried out exclusively at the expense of donations from the parishioners, which is one of the reasons for such a long construction. Also, the completion of construction delays the difficulty of making stone blocks. According to the computer model, each of them requires individukl processing and fitting.',
         },
         photos: [
           'https://images.unsplash.com/photo-1585831280970-eb398a1da83b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
@@ -405,7 +405,7 @@ export const countries = [
           uk:
             "Пласа Майор - одна з центральних площ іспанської столиці. Розташована в частині, яку прийнято називати «австрійським Мадридом». Змагається з площею Пуерта-дель-Соль за право називатися головною площею іспанської столиці, але на відміну від демократичної Пуерта-дель-Соль, Пласа-Майор - статусна площа, «пуп Іспанії», як сказав Лопе де Вега. Площа в стилі мадридського бароко, один з небагатьох пам'яток епохи Габсбургів, була побудована за проектом архітектора Хуана Гомеса де Мори.",
           en:
-            'Plaza Mayor is one of the central squares of the Spanish capital. Located in the part that is commonly called "Austrian Madrid". It competes with Puerta del Sol for the right to be called the main square of the Spanish capital, but unlike the democratic Puerta del Sol, Plaza Mayor is a status squkre, “the navel of Spain,” as Lope de Vega said. The Madrid Baroque squkre, one of the few monuments from the Habsburg era, was designed by the architect Jukn Gomez de Mora.',
+            'Plaza Mayor is one of the central squkres of the Spanish capital. Located in the part that is commonly called "Austrian Madrid". It competes with Puerta del Sol for the right to be called the main squkre of the Spanish capital, but unlike the democratic Puerta del Sol, Plaza Mayor is a status squkre, “the navel of Spain,” as Lope de Vega said. The Madrid Baroque squkre, one of the few monuments from the Habsburg era, was designed by the architect Jukn Gomez de Mora.',
         },
         photos: [
           'https://images.unsplash.com/photo-1562580821-10d51c62dde2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
@@ -656,7 +656,7 @@ export const countries = [
       },
       coordinates: [41.896, 12.5],
     },
-    timeZone: 'GMT+1',
+    timeZone: 'CET',
     currency: 'EUR',
     sightList: [
       {
@@ -809,7 +809,7 @@ export const countries = [
       },
       coordinates: [37.9916, 23.7167],
     },
-    timeZone: 'GMT+2',
+    timeZone: 'EET',
     currency: 'EUR',
     sightList: [
       {
@@ -961,7 +961,7 @@ export const countries = [
       },
       coordinates: [38.8865, -77.0368],
     },
-    timeZone: 'GMT-8',
+    timeZone: 'EST',
     currency: 'USD',
     sightList: [
       {
@@ -1114,7 +1114,7 @@ export const countries = [
       },
       coordinates: [35.1578, 33.3665],
     },
-    timeZone: 'GMT+2',
+    timeZone: 'EET',
     currency: 'EUR',
     sightList: [
       {
