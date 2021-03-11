@@ -11,38 +11,45 @@ export const CurrencyWidget = ({ currency }) => {
     fetch(`https://api.exchangeratesapi.io/latest?base=${currency}&symbols=USD`)
       .then((res) => res.json())
       .then((json) => {
-        setToUSD(json.rates.USD.toFixed(3));
-        console.log(toUSD);
-      });
+        setToUSD(json.rates.USD.toFixed(2));
+      })
+      .catch(() => setToUSD(1));
   }, []);
 
   useEffect(() => {
     fetch(`https://api.exchangeratesapi.io/latest?base=${currency}&symbols=EUR`)
       .then((res) => res.json())
       .then((json) => {
-        setToEUR(json.rates.EUR.toFixed(3));
-        console.log(toUSD);
-      });
+        setToEUR(json.rates.EUR.toFixed(2));
+      })
+      .catch(() => setToEUR(1));
   }, []);
 
   useEffect(() => {
     fetch(`https://api.exchangeratesapi.io/latest?base=${currency}&symbols=RUB`)
       .then((res) => res.json())
       .then((json) => {
-        setToRUB(json.rates.RUB.toFixed(3));
-        console.log(toUSD);
-      });
+        setToRUB(json.rates.RUB.toFixed(2));
+      })
+      .catch(() => setToRUB(1));
   }, []);
+
+  if (!toUSD || !toEUR || !toRUB) {
+    return (
+      <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
+        {f({ id: 'load' })}...
+      </div>
+    );
+  }
 
   return (
     <div className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
-      <p className="text-white font-medium text-center text-lg font-bold uppercase">{currency}</p>
-      <div className="m-2 weather-info block text-sm text-white">
-        USD: {toUSD ? toUSD : f({ id: 'load' })}
+      <div className="text-white font-medium text-lg text-center font-bold uppercase">
+        USD: {toUSD}
         <br />
-        EUR: {toEUR ? toEUR : f({ id: 'load' })}
+        EUR: {toEUR}
         <br />
-        RUB: {toRUB ? toRUB : f({ id: 'load' })}
+        RUB: {toRUB}
       </div>
     </div>
   );
