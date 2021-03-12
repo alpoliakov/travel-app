@@ -21,6 +21,12 @@ export default function SignUpForm() {
 
   const { formatMessage: f } = useIntl();
 
+  const onLoadAvatar = (e) => {
+    const file = e.target.files[0];
+    console.log(file);
+    setUserData({ ...userData, avatar: file });
+  };
+
   const validation = async ({ name, email, password, avatar }) => {
     let result = false;
     if (!password || password.length < 6) {
@@ -148,7 +154,7 @@ export default function SignUpForm() {
               {errorPsw && f({ id: 'errorPass' })}
             </span>
           </div>
-          <div className="mt-1">
+          <div className="mt-4 flex justify-between align-center">
             <label className="block text-sm text-white" htmlFor="avatar">
               {f({ id: 'avatar' })}
               <div className="w-full cursor-pointer tracking-wide px-5 py-2 text-gray-700 bg-gray-300 rounded focus:outline-none focus:bg-white">
@@ -156,18 +162,22 @@ export default function SignUpForm() {
                   className="hidden"
                   type="file"
                   id="avatar"
-                  value={userData.avatar}
-                  // onChange={(e) => setUserData({ ...userData, avatar: e.target.value })}
-                  name="avatar"
+                  accept="image/*"
+                  onChange={onLoadAvatar}
+                  name="file"
                   placeholder={f({ id: 'phAvatar' })}
                   arial-label="loader"
                 />
-                <span className="mt-2 text-base leading-normal">Select a file</span>
+                <span className="mt-2 text-base leading-normal">{f({ id: 'selectFile' })}</span>
               </div>
             </label>
-            <span className="flex items-center font-medium tracking-wide text-yellow-500 text-xs mt-1 ml-1">
-              Invalid username field !
-            </span>
+            <div className="mr-3">
+              <img
+                className="h-20 w-20 rounded-full"
+                src={userData.avatar ? URL.createObjectURL(userData.avatar) : '/images/hacker.png'}
+                alt="avatar"
+              />
+            </div>
           </div>
 
           <div className="mt-8 items-center flex justify-between">
