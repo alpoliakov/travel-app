@@ -1,5 +1,5 @@
 import React from 'react'
-import {GoogleMap, Marker, useLoadScript} from '@react-google-maps/api';
+import {GoogleMap, Marker, LoadScript} from '@react-google-maps/api';
 import mapStyles from '../styles/map-styles';
 
 const containerStyle = {
@@ -17,35 +17,37 @@ const options = {
 
 const Map = ({locale, coordinates = [52.5102, 13.3834]}) => {
 
-    const { isLoaded, loadError } = useLoadScript({
-        id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyCq9XpVQMtB0rLVqgjgWwQgcTJmDu5mRLc",
-        language: locale
-    })
+    const [map, setMap] = React.useState(null)
+
+    const onLoad = React.useCallback(function callback(map) {
+        map.data.loadGeoJson('https://storage.googleapis.com/mapsdevsite/json/google.json');
+        setMap(map)
+    }, [])
+
+    const onUnmount = React.useCallback(function callback(map) {
+        setMap(null)
+    }, [])
 
     const [lat, lng] = coordinates;
     const center = {lat, lng};
 
-    if (loadError) {
-        return "Error loading maps";
-    }
-
-    if (!isLoaded) {
-        return "Loading maps";
-    }
+  const image = "/images/pin.png";
 
     const renderMap = () => (
-        <GoogleMap
+      <LoadScript googleMapsApiKey={"AIzaSyCq9XpVQMtB0rLVqgjgWwQgcTJmDu5mRLc"} language={locale}>
+          <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
             zoom={6}
             options={options}
-        >
-            <Marker position={center} icon={{
-                url: '/images/pin.svg',
-                scaledSize: new window.google.maps.Size(40, 40)
-            }} />
-        </GoogleMap>
+            onLoad={onLoad}
+            onUnmount={onUnmount}
+
+          >
+              <Marker position={center} icon={image} />
+          </GoogleMap>
+      </LoadScript>
+
     );
 
     return renderMap();
