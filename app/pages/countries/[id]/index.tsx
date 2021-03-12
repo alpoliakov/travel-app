@@ -65,7 +65,7 @@ export default function Country({ id }) {
         {!loading && data && (
           <div>
             <h1 className="text-white text-3xl">{dataCountry[locale].name}</h1>
-            <Widgets />
+            <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
             <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
         )}
