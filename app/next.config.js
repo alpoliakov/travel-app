@@ -32,4 +32,9 @@ module.exports = {
     defaultLocale: 'en',
     localeDetection: false,
   },
+  env: {
+    CLOUD_UPDATE_PRESET: 'travel',
+    CLOUD_NAME: 'dixialex',
+    CLOUD_API: 'https://api.cloudinary.com/v1_1/dixialex/image/upload',
+  },
 };
