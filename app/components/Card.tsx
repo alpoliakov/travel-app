@@ -1,33 +1,45 @@
 import { useRouter } from 'next/router';
-import React, { useRef } from 'react';
+import React from 'react';
+
+import { useAuth } from '../lib/useAuth';
 
 export default function Card({ item }) {
-  const { country, capital, src, id } = item;
-  const currentCard = useRef();
+  const { _id, data, imagesUrl } = item;
+  const { user } = useAuth();
+
   const router = useRouter();
+  const { locale } = useRouter();
 
   const goToCountryPage = (e) => {
     const currentId = e.target.dataset.id;
     console.log(currentId);
-    router.push(`/country/${currentId}`);
+    if (!user) {
+      return;
+    }
+
+    router.push(`/countries/${_id}`);
   };
 
   return (
     <div
-      className="card hover__item shadow__item"
+      className="card hover__item shadow__item p-3"
       role="presentation"
-      ref={currentCard}
       onClick={goToCountryPage}
-      data-id={id}
-      id={id}
+      data-id={_id}
       style={{
-        backgroundImage: `url(${src}), linear-gradient(var(--color-grey-light) 1%, var(--color-grey-dark) 100%)`,
+        backgroundImage: `url(${imagesUrl[0]}), linear-gradient(var(--color-grey-light) 1%, var(--color-grey-dark) 100%)`,
       }}>
-      <h1 className="shadow__item gradient-text" data-id={id} style={{ fontSize: 82, zIndex: -1 }}>
-        {country}
+      <h1
+        className="shadow__item gradient-text font-semibold"
+        data-id={_id}
+        style={{ fontSize: 42, zIndex: -1 }}>
+        {data[locale].name}
       </h1>
-      <h1 className="shadow__item" data-id={id} style={{ color: '#ffffff', zIndex: -1 }}>
-        {capital}
+      <h1
+        className="shadow__item lowercase gradient-text font-semibold text-2xl"
+        data-id={_id}
+        style={{ color: '#ffffff', zIndex: -1 }}>
+        {data[locale].capital}
       </h1>
     </div>
   );

@@ -41,7 +41,7 @@ export const countries = [
           uk:
             "Символ столиці Німеччини, з 1989 року символ возз'єднання країни. Збудував архітектор Карл Готтард Ланґганс. Проект воріт він робив за мотивами проходів Акрополя. Спорудження в стилі класицизму чудово поєднується з іншими будівлями на Паризькій площі. Окрасою воріт є квадрига висотою 6 метрів з колісницею, якою управляє Вікторія - богиня перемоги. Барельєфи внутрішніх стін зображують подвиги Геракла.",
           en:
-            'The symbol of the capital of Germany, since 1989 the symbol of the reunification of the country. Built by architect Karl Gottgard Langgans. He designed the gate based on the passages of the Acropolis. The building in the style of classicism is perfectly combined with the rest of the buildings on the Parisian squkre. The decoration of the gate is a 6-meter high qukdriga with a chariot driven by Victoria, the goddess of victory. The bas-reliefs of the inner walls depict the exploits of Hercules.',
+            'The symbol of the capital of Germany, since 1989 the symbol of the reunification of the countries. Built by architect Karl Gottgard Langgans. He designed the gate based on the passages of the Acropolis. The building in the style of classicism is perfectly combined with the rest of the buildings on the Parisian squkre. The decoration of the gate is a 6-meter high qukdriga with a chariot driven by Victoria, the goddess of victory. The bas-reliefs of the inner walls depict the exploits of Hercules.',
         },
         photos: [
           'https://images.unsplash.com/photo-1612696700664-6a604df969f8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
@@ -188,7 +188,7 @@ export const countries = [
       uk:
         "Франція - це країна в Західній Європі, на території якої знаходяться середньовічні міста, альпійські села і пляжі Середземного моря. Париж, столиця держави, славиться своїми будинками моди, найстаршими художніми музеями, в числі яких Лувр, і пам'ятками, такими як Ейфелева вежа. Франція відома своїми винами і вишуканою кухнею. Наскальний живопис в печері Ласко, амфітеатр Трьох Галій в Ліоні і величезний Версальський палац свідчать про багату історію цих місць.",
       en:
-        'France is a country in Western Europe, home to medieval towns, alpine villages and Mediterranean beaches. Paris, the capital of the state, is famous for its fashion houses, the oldest art museums, including the Louvre, and landmarks such as the Eiffel Tower. France is known for its wines and fine cuisine. The rock paintings in the Lascaux cave, the Amphitheater of the Three Gauls in Lyon and the huge Palace of Versailles testify to the rich history of the area.',
+        'France is a countries in Western Europe, home to medieval towns, alpine villages and Mediterranean beaches. Paris, the capital of the state, is famous for its fashion houses, the oldest art museums, including the Louvre, and landmarks such as the Eiffel Tower. France is known for its wines and fine cuisine. The rock paintings in the Lascaux cave, the Amphitheater of the Three Gauls in Lyon and the huge Palace of Versailles testify to the rich history of the area.',
     },
     capital: {
       name: {
@@ -293,7 +293,7 @@ export const countries = [
           uk:
             "Версаль - палацово-парковий ансамбль у Франції, колишня резиденція французьких королів у місті Версаль, нині що є передмістям Парижа; центр туризму світового значення. Версаль споруджувався під керівництвом Людовика XIV з 1661 року і став своєрідним пам'ятником епохи «короля-сонця», художньо-архітектурним вираженням ідеї абсолютизму. Провідні архітектори - Луї Ліво і Жюль Ардуен-Мансар, творець парку - Андре Ленотр. Ансамбль Версаля, найбільший в Європі, відрізняється унікальною цілісністю задуму і гармонією архітектурних форм і перетвореного ландшафту. З кінця XVII століття Версаль служив зразком для парадних заміських резиденцій європейських монархів і аристократії, однак прямих наслідувань йому немає. З 1682 по 1789 роки, до Великої французької революції, Версаль був офіційною королівською резиденцією. У 1801 році отримав статус музею і відкритий для публіки; з 1830 року музеєм став весь архітектурний комплекс Версаля; в 1837 році в королівському палаці відкрився Музей історії Франції. У 1979 році Версальський палац і парк включені в список всесвітньої культурної спадщини ЮНЕСКО.",
           en:
-            'Versailles - a palace and park ensemble in France, the former residence of the French kings in the city of Versailles, now a suburb of Paris; center of tourism of world importance. Versailles was built under the leadership of Louis XIV in 1661 and became a kind of monument to the era of the "sun king", an artistic and architectural expression of the idea of ​​absolutism. Leading architects are Louis Levo and Jules Hardouin-Mansart, the creator of the park is André Le Nôtre. The ensemble of Versailles, the largest in Europe, is distinguished by a unique integrity of design and harmony of architectural forms and a transformed landscape. Since the end of the 17th century, Versailles served as a model for the ceremonial country residences of European monarchs and aristocracy, but there are no direct imitations of it. From 1682 to 1789, before the Great French Revolution, Versailles was the official royal residence. In 1801 it received the status of a museum and is open to the public; since 1830 the entire architectural complex of Versailles has become a museum; in 1837, the Museum of the History of France was opened in the royal palace. In 1979, the Palace of Versailles and the park were included in the UNESCO World Cultural Heritage List.',
+            'Versailles - a palace and park ensemble in France, the former residence of the French kings in the city of Versailles, now a suburb of Paris; center of tourism of world importance. Versailles was built under the leadership of Louis XIV in 1661 and became a kind of monument to the era of the "sun king", an artistic and architectural expression of the idea of ​​absolutism. Leading architects are Louis Levo and Jules Hardouin-Mansart, the creator of the park is André Le Nôtre. The ensemble of Versailles, the largest in Europe, is distinguished by a unique integrity of design and harmony of architectural forms and a transformed landscape. Since the end of the 17th century, Versailles served as a model for the ceremonial countries residences of European monarchs and aristocracy, but there are no direct imitations of it. From 1682 to 1789, before the Great French Revolution, Versailles was the official royal residence. In 1801 it received the status of a museum and is open to the public; since 1830 the entire architectural complex of Versailles has become a museum; in 1837, the Museum of the History of France was opened in the royal palace. In 1979, the Palace of Versailles and the park were included in the UNESCO World Cultural Heritage List.',
         },
         photos: [
           'https://images.unsplash.com/photo-1590991290724-515f63a45625?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80',
@@ -340,7 +340,7 @@ export const countries = [
       uk:
         'Іспанія - трансконтинентальної суверенна держава на південному заході Європи і частково в Африці, член Європейського союзу і НАТО. Іспанія займає більшу частину (80%) Піренейського півострова, а також Канарські і Балеарські острови, має загальну площу 504 782 км² (разом з невеликими суверенними територіями на африканському узбережжі, містами Сеута і Мелілья), будучи четвертою за величиною країною в Європі (після Росії , України та Франції).',
       en:
-        'Spain is a transcontinental sovereign state in southwestern Europe and partly in Africa, a member of the European Union and NATO. Spain occupies most (80%) of the Iberian Peninsula, as well as the Canary and Balearic Islands, has a total area of 504 782 km² (together with small sovereign territories on the African coast, the cities of Ceuta and Melilla), being the fourth largest country in Europe (after Russia , Ukraine and France).',
+        'Spain is a transcontinental sovereign state in southwestern Europe and partly in Africa, a member of the European Union and NATO. Spain occupies most (80%) of the Iberian Peninsula, as well as the Canary and Balearic Islands, has a total area of 504 782 km² (together with small sovereign territories on the African coast, the cities of Ceuta and Melilla), being the fourth largest countries in Europe (after Russia , Ukraine and France).',
     },
     capital: {
       name: {
@@ -646,7 +646,7 @@ export const countries = [
       uk:
         "Італія - одна з найкрасивіших країн світу з характерним тільки для неї колоритом і темпераментом. Це країна-музей з багатовіковою культурою і неймовірним безліччю пам'яток, як природних, так і історичних. Кожне місто Італії - це справжня скарбниця, що зберігає дорогоцінні свідоцтва інших епох. Рим - одне з найдавніших міст на Землі. Тут кожна вуличка нагадує про могутню і грандіозної імперії стародавнього світу. Неаполь - місто з багатою історією і експресивними місцевими жителями, тут завжди гамірно і весело. Флоренція - один з найзначніших і відомих культурних центрів європейського континенту. Венеція, мабуть, найромантичніше місто в світі, де можна покататися по знаменитих каналах на гондолі і побачити площу Сан Марко. Мілан - світовий центр моди, місто, що живе футболом. Острівна Італія не менш приваблива. Сицилія, Сардинія, Искья, Капрі та інші острови з року в рік приймають величезну кількість туристів. Тут можна насолоджуватися мальовничою природою, затишними і чистими пляжами, місцевою кухнею і цитрусовими садами.",
       en:
-        "Italy is one of the most beautiful countries in the world with its characteristic color and temperament. It is a museum country with a centuries-old culture and an incredible array of attractions, both natural and historical. Each city in Italy is a real treasure house that stores precious evidence of other eras. Rome is one of the most ancient cities on Earth. Here, every street reminds of the mighty and grandiose empire of the ancient world. Naples is a city with a rich history and expressive locals, it is always noisy and fun here. Florence is one of the most significant and famous cultural centers of the European continent. Venice is perhaps the most romantic city in the world, where you can ride the famous canals in a gondola and see St. Mark's Square. Milan is the world center of fashion, a city that lives on football. Insular Italy is no less attractive. Sicily, Sardinia, Ischia, Capri and other islands receive a huge number of tourists from year to year. Here you can enjoy picturesque nature, cozy and clean beaches, local cuisine and citrus gardens.",
+        "Italy is one of the most beautiful countries in the world with its characteristic color and temperament. It is a museum countries with a centuries-old culture and an incredible array of attractions, both natural and historical. Each city in Italy is a real treasure house that stores precious evidence of other eras. Rome is one of the most ancient cities on Earth. Here, every street reminds of the mighty and grandiose empire of the ancient world. Naples is a city with a rich history and expressive locals, it is always noisy and fun here. Florence is one of the most significant and famous cultural centers of the European continent. Venice is perhaps the most romantic city in the world, where you can ride the famous canals in a gondola and see St. Mark's Square. Milan is the world center of fashion, a city that lives on football. Insular Italy is no less attractive. Sicily, Sardinia, Ischia, Capri and other islands receive a huge number of tourists from year to year. Here you can enjoy picturesque nature, cozy and clean beaches, local cuisine and citrus gardens.",
     },
     capital: {
       name: {
@@ -799,7 +799,7 @@ export const countries = [
       uk:
         'Греція - країна в Південній Європі, розташована на Балканському півострові і тисячах островів в Егейському та Іонічному морях. Вона є спадкоємицею могутньої Стародавній Греції, яка вважається колискою західної цивілізації. Столиця Греції Афіни славиться своєю фортецею Акрополь, яка була зведена в V столітті до н. е., і храмом Парфенон. У туристів користуються популярністю пляжі острова Санторіні з чорним піском, курорти острова Міконос і інші місця літнього відпочинку.',
       en:
-        'Greece is a country in Southern Europe, located on the Balkan Peninsula and thousands of islands in the Aegean and Ionian Seas. She is the heir to the powerful Ancient Greece, which is considered the cradle of Western civilization. The capital of Greece, Athens is famous for its Acropolis fortress, built in the 5th century BC. e., and the Parthenon temple. The black sand beaches of Santorini, the resorts of the island of Mykonos and other places of summer vacation are popular among tourists.',
+        'Greece is a countries in Southern Europe, located on the Balkan Peninsula and thousands of islands in the Aegean and Ionian Seas. She is the heir to the powerful Ancient Greece, which is considered the cradle of Western civilization. The capital of Greece, Athens is famous for its Acropolis fortress, built in the 5th century BC. e., and the Parthenon temple. The black sand beaches of Santorini, the resorts of the island of Mykonos and other places of summer vacation are popular among tourists.',
     },
     capital: {
       name: {
@@ -874,7 +874,7 @@ export const countries = [
       },
       {
         name: {
-          ru: 'Новый музей акрополя',
+          ru: 'Новый музей Акрополя',
           uk: 'Новий музей Акрополя',
           en: 'Acropolis Museum',
         },
@@ -899,11 +899,11 @@ export const countries = [
         },
         description: {
           ru:
-            'Олимпейо́н, храм Зевса Олимпийского — самый большой храм Греции, строившийся с VI века до н. э. до II века н. э.; располагается в Афинах в 500 метрах к юго-востоку от Акрополя и около 700 метров южнее площади Синтагма',
+            'Олимпейо́н, храм Зевса Олимпийского — самый большой храм Греции, строившийся с VI века до н. э. до II века н. э.; располагается в Афинах в 500 метрах к юго-востоку от Акрополя и около 700 метров южнее площади Синтагма.',
           uk:
-            'Олимпейон, храм Зевса Олімпійського - найбільший храм Греції, що будувався з VI століття до н. е. до II століття н. е .; розташовується в Афінах в 500 метрах на південний схід від Акрополя і близько 700 метрів на південь від площі Синтагма',
+            'Олимпейон, храм Зевса Олімпійського - найбільший храм Греції, що будувався з VI століття до н. е. до II століття н. е .; розташовується в Афінах в 500 метрах на південний схід від Акрополя і близько 700 метрів на південь від площі Синтагма.',
           en:
-            'Olympion, the Temple of Olympian Zeus, is the largest temple in Greece, built from the 6th century BC. e. until the 2nd century AD e.; located in Athens, 500 meters southeast of the Acropolis and about 700 meters south of Syntagma Square',
+            'Olympion, the Temple of Olympian Zeus, is the largest temple in Greece, built from the 6th century BC. e. until the 2nd century AD e.; located in Athens, 500 meters southeast of the Acropolis and about 700 meters south of Syntagma Square.',
         },
         photos: [
           'https://images.unsplash.com/photo-1565022074331-68c473aeba1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
@@ -957,7 +957,7 @@ export const countries = [
       name: {
         ru: 'Вашингтон',
         uk: 'Вашингтон',
-        en: 'Washington, D.C.',
+        en: 'c',
       },
       coordinates: [38.8865, -77.0368],
     },
@@ -1014,7 +1014,7 @@ export const countries = [
           ru:
             'Ста́туя Свобо́ды — колоссальная скульптура в cтиле Наполеона III, или стиле Второй империи, расположенная в США на острове Свободы, находящемся в Верхней Нью-Йоркской бухте примерно в 3 километрах к юго-западу от южной оконечности острова Манхэттен.',
           uk:
-            'Статуя Свободи - колосальна скульптура в Cтиль Наполеона III, або стилі Другої імперії, розташована в США на острові Свободи, що знаходиться у Верхній Нью-Йоркській бухті приблизно в 3 кілометрах на північний захід від південного краю острова Манхеттен.',
+            'Статуя Свободи - колосальна скульптура в стилі Наполеона III, або стилі Другої імперії, розташована в США на острові Свободи, що знаходиться у Верхній Нью-Йоркській бухті приблизно в 3 кілометрах на північний захід від південного краю острова Манхеттен.',
           en:
             'The Statue of Liberty is a colossal sculpture in the style of Napoleon III, or the style of the Second Empire, located in the United States on Liberty Island, located in Upper New York Bay, about 3 kilometers southwest of the southern tip of Manhattan Island.',
         },
@@ -1048,7 +1048,7 @@ export const countries = [
         name: {
           ru: 'Таймс-Сквер',
           uk: 'Таймс-Сквер',
-          en: 'Times Squkre',
+          en: 'Times Square',
         },
         description: {
           ru:
@@ -1066,8 +1066,8 @@ export const countries = [
       },
       {
         name: {
-          ru: 'Epcot',
-          uk: 'Epcot',
+          ru: 'Эпкот',
+          uk: 'Епкот',
           en: 'Epcot',
         },
         description: {
@@ -1104,7 +1104,7 @@ export const countries = [
       uk:
         'Республіка Кіпр займає південну частину острова Кіпр, розташованого в східній частині Середземного моря. Столиця країни, Нікосія, одночасно є головним містом Турецької республіки Північного Кіпру, яку визнає тільки Туреччина. Республіка Кіпр славиться своїми пляжами на узбережжі і виноградниками у внутрішніх горбистих районах острова. На узбережжі проліг місто Пафос, який відповідно до грецької міфології є батьківщиною Афродіти. Він популярний у туристів завдяки археологічному парку з руїнами палаців, гробниць і вілл з мозаїками.',
       en:
-        'The Republic of Cyprus occupies the southern part of the island of Cyprus, located in the eastern Mediterranean. The capital of the country, Nicosia, is also the main city of the Turkish Republic of Northern Cyprus, which is recognized only by Turkey. The Republic of Cyprus is famous for its beaches on the coast and vineyards in the hilly interior of the island. On the coast lies the city of Paphos, which, according to Greek mythology, is the birthplace of Aphrodite. It is popular with tourists for its archaeological park with ruins of palaces, tombs and mosaic villas.',
+        'The Republic of Cyprus occupies the southern part of the island of Cyprus, located in the eastern Mediterranean. The capital of the countries, Nicosia, is also the main city of the Turkish Republic of Northern Cyprus, which is recognized only by Turkey. The Republic of Cyprus is famous for its beaches on the coast and vineyards in the hilly interior of the island. On the coast lies the city of Paphos, which, according to Greek mythology, is the birthplace of Aphrodite. It is popular with tourists for its archaeological park with ruins of palaces, tombs and mosaic villas.',
     },
     capital: {
       name: {
@@ -1180,7 +1180,7 @@ export const countries = [
       {
         name: {
           ru: 'Церковь Святого Лазаря',
-          uk: 'Церква святого Лазаря',
+          uk: 'Церква Святого Лазаря',
           en: 'Church of Saint Lazarus',
         },
         description: {
@@ -1240,6 +1240,3 @@ export const countries = [
     ],
   },
 ];
-
-// langukges
-export const langukges = ['ru', 'uk', 'en'];

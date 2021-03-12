@@ -4,7 +4,7 @@ import { CurrencyWidget } from './CurrencyWidget';
 import { TimeWidget } from './TimeWidget';
 import { WeatherWidget } from './WeatherWidget';
 
-// will be removed, when widget will be added to country-page
+// will be removed, when widget will be added to countries-page
 const PLACES = [{ name: 'London' }, { name: 'Berlin' }, { name: 'Madrid' }, { name: 'Rome' }];
 
 export const Widgets = () => {

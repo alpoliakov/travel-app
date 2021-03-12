@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import * as React from 'react';
+import React, { useEffect } from 'react';
 
 import Card from '../components/Card';
-import data from '../data/data';
+import Loader from '../components/Loader';
+// import data from '../data/data';
+import { Country, useCountriesQuery } from '../lib/graphql/countries.graphql';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -31,6 +33,11 @@ interface item {
 
 export default function Home() {
   const { locale } = useRouter();
+  const { data, loading, refetch } = useCountriesQuery({ errorPolicy: 'ignore' });
+
+  useEffect(() => {
+    refetch();
+  }, []);
 
   return (
     <div className="box">
@@ -46,11 +53,14 @@ export default function Home() {
         <section>
           <div style={{ color: '#ffffff' }}>Current locale: {locale}</div>
         </section>
-        <div className="countries">
-          {data.map((item) => (
-            <Card key={item.id} item={item} />
-          ))}
-        </div>
+        {loading && <Loader show={loading} />}
+        {!loading && data && data.countries && (
+          <div className="countries">
+            {data.countries.map((item) => (
+              <Card key={item._id} item={item as Country} />
+            ))}
+          </div>
+        )}
       </motion.div>
     </div>
   );
