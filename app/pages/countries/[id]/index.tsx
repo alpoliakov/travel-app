@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
 import Loader from '../../../components/Loader';
+import Map from '../../../components/Map';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
 import { usePlacesQuery } from '../../../lib/graphql/places.graphql';
@@ -27,24 +28,34 @@ const postVariants = {
 };
 
 export default function Country({ id }) {
+  const { locale } = useRouter();
   // const { data, loading } = usePlacesQuery({
   //   variables: { countryId: id },
   // });
+
+  const [countryInfo, setCountryInfo] = useState(null);
 
   const { data, loading } = useCountryQuery({
     variables: { countryId: id },
   });
 
-  const { locale } = useRouter();
-
   useEffect(() => {
     console.log(data);
+    setCountryInfo(data);
   }, [data, loading]);
+
+  if (!countryInfo) {
+    return <Loader show />;
+  }
+
+  const {
+    country: { ISOCode, coordinates, data: dataCountry, currency, timeZone, videoUrl, imagesUrl },
+  } = countryInfo;
 
   return (
     <div className="box">
       <Head>
-        <title>Country</title>
+        <title>{dataCountry[locale].name}</title>
       </Head>
       <motion.div initial="initial" animate="enter" exit="exit" variants={postVariants}>
         <Link href="/">
@@ -53,8 +64,9 @@ export default function Country({ id }) {
         {loading && <Loader show={loading} />}
         {!loading && data && (
           <div>
-            <h1 className="text-white text-3xl">{data.country.data[locale].name}</h1>
+            <h1 className="text-white text-3xl">{dataCountry[locale].name}</h1>
             <Widgets />
+            <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
         )}
       </motion.div>

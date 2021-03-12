@@ -16,12 +16,12 @@ const options = {
   streetViewControl: true,
 };
 
-const Map = ({ id, locale, coordinates = [52.5102, 13.3834] }) => {
+const Map = ({ ISOCode, locale, coordinates }) => {
   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback(function callback(map) {
     map.data.loadGeoJson(
-      `https://rock-paper-b93b9-default-rtdb.europe-west1.firebasedatabase.app/${id}.json`,
+      `https://rock-paper-b93b9-default-rtdb.europe-west1.firebasedatabase.app/${ISOCode}.json`,
     );
     setMap(map);
   }, []);
