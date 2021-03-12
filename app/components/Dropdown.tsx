@@ -14,8 +14,6 @@ export default function Dropdown() {
     signOut();
   };
 
-  console.log(user.avatar);
-
   return (
     <div className="dropdown cursor-pointer p-1 mr-2 flex items-center">
       <div className="mr-3">

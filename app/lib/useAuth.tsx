@@ -86,6 +86,7 @@ function useProvideAuth() {
 
   const signOut = () => {
     sessionStorage.removeItem('token');
+
     client.resetStore().then(() => {
       setMessage('You have successfully logged out of your account.');
       router.push('/');
