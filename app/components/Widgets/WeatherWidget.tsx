@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
-const API_KEY = 'b1b35bba8b434a28a0be2a3e1071ae5b';
+const API_KEY = 'b96b3483c8a4a6510a423be0ef0914e7';
 
 export const WeatherWidget = ({ countryCapital }) => {
   const [weatherData, setWeatherData] = useState(null);
