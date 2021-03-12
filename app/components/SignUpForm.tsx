@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 import { useIntl } from 'react-intl';
 
 import { REG_EMAIL } from '../constants';
 import { useAuth } from '../lib/useAuth';
+import imageUpload from '../utils/imageUpload';
 import Loader from './Loader';
 
 export default function SignUpForm() {
@@ -23,7 +25,19 @@ export default function SignUpForm() {
 
   const onLoadAvatar = (e) => {
     const file = e.target.files[0];
-    console.log(file);
+
+    if (!file) {
+      return toast.error('File doesn`t exist.');
+    }
+
+    if (file.size > 1024 * 2048) {
+      return toast.error('The largest image size is 1mb!');
+    }
+
+    if (file.type !== 'image/jpeg' && file.type !== 'image/png' && file.type !== 'image/gif') {
+      return toast.error('Image format is incorrect!');
+    }
+
     setUserData({ ...userData, avatar: file });
   };
 
@@ -56,6 +70,10 @@ export default function SignUpForm() {
     let { avatar } = userData;
 
     const valid = await validation(userData);
+
+    if (avatar !== '/images/hacker.png') {
+      avatar = await imageUpload([avatar]);
+    }
 
     if (!avatar) {
       avatar = '/images/hacker.png';
