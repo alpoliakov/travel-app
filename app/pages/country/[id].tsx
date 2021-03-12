@@ -3,8 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import Map from "../../components/Map";
-
+import Map from '../../components/Map';
 import { Widgets } from '../../components/Widgets/Widgets';
 
 const postVariants = {
@@ -33,10 +32,15 @@ export default function Country() {
       <Head>
         <title>Country</title>
       </Head>
-      <motion.div initial="initial" animate="enter" exit="exit" variants={postVariants} style={{width: '100%'}}>
+      <motion.div
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        variants={postVariants}
+        style={{ width: '100%' }}>
         <h1>Country Page</h1>
         <Widgets />
-        <Map locale={locale} />
+        <Map locale={locale} id={query.id} />
       </motion.div>
     </div>
   );
