@@ -7,22 +7,22 @@ import { useAuth } from '../lib/useAuth';
 export default function Dropdown() {
   const { user, signOut } = useAuth();
   const { formatMessage: f } = useIntl();
+  const img =
+    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80';
 
-  const signOutFunc = async () => {
-    await signOut();
+  const logOut = () => {
+    signOut();
   };
+
+  console.log(user.avatar);
 
   return (
     <div className="dropdown cursor-pointer p-1 mr-2 flex items-center">
       <div className="mr-3">
-        <img
-          className="h-10 w-10 rounded-full"
-          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt="avatar"
-        />
+        <img className="h-10 w-10 rounded-full" src={user.avatar} alt="avatar" />
       </div>
       <div className="">
-        <span className="text-white text-lg font-light ml-1">{user.name}</span>
+        <span className="text-white text-lg font-semibold ml-1">{user.name}</span>
       </div>
       <div className="rounded-md shadow-sm flex">
         <button className="flex justify-center items-center block h-3 w-3 overflow-hidden focus:outline-none">
@@ -58,7 +58,7 @@ export default function Dropdown() {
           <li className="">
             <div
               className="rounded-b text-gray-800 hover:bg-gray-600 hover:text-white py-2 px-4 block whitespace-no-wrap"
-              onClick={signOutFunc}
+              onClick={logOut}
               role="presentation">
               {f({ id: 'signOut' })}
             </div>

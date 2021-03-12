@@ -1,11 +1,11 @@
-query Country($id:ObjectId!) {
-  country(countryId: $id) {
+query Country($countryId: ObjectId!) {
+  country(countryId: $countryId) {
     _id
     currency
-    timeZone
     coordinates
     ISOCode
     videoUrl
+    timeZone
     imagesUrl
     data {
       en {

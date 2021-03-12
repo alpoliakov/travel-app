@@ -25,6 +25,7 @@ export const messages = {
     profile: 'Profile',
     delete: 'Delete',
     or: 'Or',
+    selectFile: 'Select a file',
   },
   ru: {
     btnLogin: 'Войти',
@@ -52,6 +53,7 @@ export const messages = {
     profile: 'Профиль',
     delete: 'Удалить',
     or: 'Или',
+    selectFile: 'Выберите файл',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -79,5 +81,6 @@ export const messages = {
     profile: 'Профіль',
     delete: 'Видалити',
     or: 'Або',
+    selectFile: 'Виберіть файл',
   },
 };
