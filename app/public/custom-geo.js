@@ -1013,3 +1013,5 @@ const customGEO = [
     },
   },
 ];
+
+export default customGEO;
