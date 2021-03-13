@@ -14,9 +14,6 @@ export default function Card({ item }) {
   const goToCountryPage = (e) => {
     const currentId = e.target.dataset.id;
     console.log(currentId);
-    if (!user) {
-      return;
-    }
 
     router.push(`/countries/${_id}`);
   };

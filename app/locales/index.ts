@@ -26,6 +26,9 @@ export const messages = {
     delete: 'Delete',
     or: 'Or',
     selectFile: 'Select a file',
+    hello: 'Hello!',
+    modalText: 'To view, you need to log in or register!',
+    close: 'Close',
   },
   ru: {
     btnLogin: 'Войти',
@@ -54,6 +57,9 @@ export const messages = {
     delete: 'Удалить',
     or: 'Или',
     selectFile: 'Выберите файл',
+    hello: 'Приветствуем!',
+    modalText: 'Для просмотра необходимо авторизоваться или зарегистрироваться!',
+    close: 'Закрыть',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -82,5 +88,8 @@ export const messages = {
     delete: 'Видалити',
     or: 'Або',
     selectFile: 'Виберіть файл',
+    hello: 'Вітаємо!',
+    modalText: 'Для перегляду потрібно увійти або зареєструватися!',
+    close: 'Закрити',
   },
 };

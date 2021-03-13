@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useIntl } from 'react-intl';
 
 export default function Search() {
   const { formatMessage: f } = useIntl();
+  const searcher = useRef(null);
+
+  const [searchText, setSearchText] = useState('');
+
+  useEffect(() => {
+    searcher.current.focus();
+  }, []);
+
+  const doSearch = (e) => {
+    setSearchText(e.target.value);
+  };
 
   return (
     <div className="flex items-center justify-center">
@@ -24,7 +35,10 @@ export default function Search() {
           </span>
           <input
             type="search"
+            ref={searcher}
             name="q"
+            value={searchText}
+            onChange={doSearch}
             className="py-2 text-sm text-white bg-gray-800 rounded-md pl-10 pr-2 focus:outline-none focus:bg-white focus:text-gray-900"
             placeholder={`${f({ id: 'search' })}...`}
             autoComplete="off"

@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Card from '../components/Card';
 import Loader from '../components/Loader';
-// import data from '../data/data';
+import Modal from '../components/Modal';
 import { Country, useCountriesQuery } from '../lib/graphql/countries.graphql';
 
 const postVariants = {
