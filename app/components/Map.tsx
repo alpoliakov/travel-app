@@ -14,6 +14,7 @@ const options = {
   zoomControl: true,
   fullscreenControl: true,
   streetViewControl: true,
+  minZoom: 3,
 };
 
 const Map = ({ ISOCode, locale, coordinates }) => {
@@ -41,6 +42,7 @@ const Map = ({ ISOCode, locale, coordinates }) => {
         mapContainerStyle={containerStyle}
         center={center}
         zoom={6}
+        minZoom={3}
         options={options}
         onLoad={onLoad}
         onUnmount={onUnmount}>
