@@ -7,6 +7,7 @@ import { useIntl } from 'react-intl';
 
 import Loader from '../../../components/Loader';
 import Map from '../../../components/Map';
+import Places from '../../../components/Places';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
 import { usePlacesQuery } from '../../../lib/graphql/places.graphql';
@@ -67,6 +68,7 @@ export default function Country({ id }) {
             <h1 className="text-white text-3xl">{dataCountry[locale].name}</h1>
             <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
             <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
+            <Places id={id} />
           </div>
         )}
       </motion.div>

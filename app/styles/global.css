@@ -86,6 +86,15 @@ a {
   margin: 0 auto;
 }
 
+.places {
+  max-width: 1220px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: 0 auto;
+}
+
 /*Shadow*/
 
 .shadow__item {
@@ -119,7 +128,8 @@ a {
 }
 
 @media (max-width: 900px) {
-  .countries {
+  .countries,
+  .places {
     grid-template-columns: repeat(1, 1fr);
   }
 }

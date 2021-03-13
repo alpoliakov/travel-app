@@ -34,7 +34,6 @@ interface item {
 export default function Home() {
   const { locale } = useRouter();
   const { data, loading, refetch } = useCountriesQuery({ errorPolicy: 'ignore' });
-  const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
     refetch();
@@ -54,12 +53,11 @@ export default function Home() {
         <section>
           <div style={{ color: '#ffffff' }}>Current locale: {locale}</div>
         </section>
-        {showModal && <Modal setShowModal={setShowModal} />}
         {loading && <Loader show={loading} />}
         {!loading && data && data.countries && (
           <div className="countries">
             {data.countries.map((item) => (
-              <Card key={item._id} setShowModal={setShowModal} item={item as Country} />
+              <Card key={item._id} item={item as Country} />
             ))}
           </div>
         )}
