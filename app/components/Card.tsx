@@ -2,11 +2,13 @@ import { useRouter } from 'next/router';
 import React from 'react';
 
 import { useAuth } from '../lib/useAuth';
+import { getRandomImg } from '../utils/utils';
 
 export default function Card({ item }) {
   const { _id, data, imagesUrl } = item;
   const { user } = useAuth();
-  const randomImgArr = [...imagesUrl].sort(() => Math.random() - 0.5);
+  console.log('tada', imagesUrl);
+  const randomImgArr = getRandomImg(imagesUrl);
 
   const router = useRouter();
   const { locale } = useRouter();

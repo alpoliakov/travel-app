@@ -11,6 +11,7 @@ import Places from '../../../components/Places';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
 import { messages } from '../../../locales';
+import {getRandomImg} from "../../../utils/utils";
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -48,10 +49,10 @@ export default function Country({ id }) {
     country: { ISOCode, coordinates, data: dataCountry, currency, timeZone, videoUrl, imagesUrl },
   } = countryInfo;
 
-  const [, firstImg] = imagesUrl;
+  const imgUrl = getRandomImg(imagesUrl);
 
   const heroStyle = {
-    backgroundImage: `url(${firstImg})`,
+    backgroundImage: `url(${imgUrl})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
   };

@@ -42,7 +42,6 @@ const Map = ({ ISOCode, locale, coordinates }) => {
         mapContainerStyle={containerStyle}
         center={center}
         zoom={6}
-        minZoom={3}
         options={options}
         onLoad={onLoad}
         onUnmount={onUnmount}>
