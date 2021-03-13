@@ -1,0 +1,38 @@
+/*.country {*/
+/*  width: 100%;*/
+/*  display: grid;*/
+/*  grid-gap: 20px;*/
+/*  grid-template-areas:*/
+/*    "title"*/
+/*    "content"*/
+/*    "map";*/
+/*}*/
+
+
+
+
+/*.country__content {*/
+/*  grid-area: content;*/
+/*  padding-left: 10px;*/
+/*  padding-right: 10px;*/
+/*}*/
+
+/*.country__map {*/
+/*  grid-area: map;*/
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*  .country {*/
+/*    grid-template-columns: 2fr 10fr;*/
+/*    grid-template-areas:*/
+/*      "title title"*/
+/*      "sidebar content"*/
+/*      "map map";*/
+/*  }*/
+/*}*/
+
+/*@media (min-width: 1024px) {*/
+/*  .country {*/
+/*    grid-template-columns: 1fr 11fr;*/
+/*  }*/
+/*}*/

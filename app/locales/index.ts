@@ -26,6 +26,7 @@ export const messages = {
     delete: 'Delete',
     or: 'Or',
     selectFile: 'Select a file',
+    capital: 'Capital',
   },
   ru: {
     btnLogin: 'Войти',
@@ -54,6 +55,7 @@ export const messages = {
     delete: 'Удалить',
     or: 'Или',
     selectFile: 'Выберите файл',
+    capital: 'Столица',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -82,5 +84,6 @@ export const messages = {
     delete: 'Видалити',
     or: 'Або',
     selectFile: 'Виберіть файл',
+    capital: 'Столиця',
   },
 };

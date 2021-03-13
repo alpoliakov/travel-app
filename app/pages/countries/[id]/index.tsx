@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import { useIntl } from 'react-intl';
 
+import Footer from '../../../components/Footer';
+import Header from '../../../components/Header';
 import Loader from '../../../components/Loader';
 import Map from '../../../components/Map';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
-import { usePlacesQuery } from '../../../lib/graphql/places.graphql';
+import { messages } from '../../../locales';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -29,12 +29,7 @@ const postVariants = {
 
 export default function Country({ id }) {
   const { locale } = useRouter();
-  // const { data, loading } = usePlacesQuery({
-  //   variables: { countryId: id },
-  // });
-
   const [countryInfo, setCountryInfo] = useState(null);
-
   const { data, loading } = useCountryQuery({
     variables: { countryId: id },
   });
@@ -52,25 +47,48 @@ export default function Country({ id }) {
     country: { ISOCode, coordinates, data: dataCountry, currency, timeZone, videoUrl, imagesUrl },
   } = countryInfo;
 
+  const [,firstImg] = imagesUrl;
+
+  const heroStyle = {
+    backgroundImage: `url(${firstImg})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  };
+
   return (
-    <div className="box">
+    <>
       <Head>
         <title>{dataCountry[locale].name}</title>
       </Head>
-      <motion.div initial="initial" animate="enter" exit="exit" variants={postVariants}>
-        <Link href="/">
-          <a style={{ color: 'white' }}>Home</a>
-        </Link>
-        {loading && <Loader show={loading} />}
-        {!loading && data && (
-          <div>
-            <h1 className="text-white text-3xl">{dataCountry[locale].name}</h1>
+      <motion.div
+        className="w-full"
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        variants={postVariants}>
+        <div className="container">
+          <div className="hero" style={heroStyle}>
+            <Header />
+            <h1 className="text-white text-center text-9xl text-shadow">
+              {dataCountry[locale].name}
+            </h1>
+            <h2 className="text-5xl text-center text-white text-shadow">
+              {messages[locale].capital} - {dataCountry[locale].capital}
+            </h2>
             <Widgets />
-            <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
-        )}
+          <div className="country">
+            <div className="country__content">
+              <p className="text-2xl text-white">{dataCountry[locale].description}</p>
+            </div>
+            <div className="country__map">
+              <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
+            </div>
+          </div>
+          {/*<Footer />*/}
+        </div>
       </motion.div>
-    </div>
+    </>
   );
 }
 

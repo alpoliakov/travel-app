@@ -7,6 +7,8 @@ import Card from '../components/Card';
 import Loader from '../components/Loader';
 // import data from '../data/data';
 import { Country, useCountriesQuery } from '../lib/graphql/countries.graphql';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -40,28 +42,34 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="box">
+    <>
       <Head>
         <title>Countries</title>
       </Head>
-      <motion.div
-        style={{ padding: '0 20px', margin: '0 auto' }}
-        initial="initial"
-        animate="enter"
-        exit="exit"
-        variants={postVariants}>
-        <section>
-          <div style={{ color: '#ffffff' }}>Current locale: {locale}</div>
-        </section>
-        {loading && <Loader show={loading} />}
-        {!loading && data && data.countries && (
-          <div className="countries">
-            {data.countries.map((item) => (
-              <Card key={item._id} item={item as Country} />
-            ))}
-          </div>
-        )}
-      </motion.div>
-    </div>
+      <div className="container main-page">
+        <Header />
+        <div className="box">
+          <motion.div
+            style={{ padding: '0 20px', margin: '0 auto' }}
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={postVariants}>
+            <section>
+              <div style={{ color: '#ffffff' }}>Current locale: {locale}</div>
+            </section>
+            {loading && <Loader show={loading} />}
+            {!loading && data && data.countries && (
+              <div className="countries">
+                {data.countries.map((item) => (
+                  <Card key={item._id} item={item as Country} />
+                ))}
+              </div>
+            )}
+          </motion.div>
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }
