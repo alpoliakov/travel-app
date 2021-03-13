@@ -79,7 +79,7 @@ export default function Country({ id }) {
                 {messages[locale].capital} - {dataCountry[locale].capital}
               </h2>
               <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
-              <p className="p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-center text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
+              <p className="mt-auto p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-justify text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
             </div>
           </div>
           <div className="country__main">
