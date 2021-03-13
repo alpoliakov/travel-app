@@ -44,7 +44,7 @@ a {
   background-blend-mode: overlay, color;
   background-size: cover;
   background-position: top;
-  z-index: 1000;
+  z-index: 40;
 }
 
 .header__home,

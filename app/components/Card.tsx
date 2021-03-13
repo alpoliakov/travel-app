@@ -3,7 +3,7 @@ import React from 'react';
 
 import { useAuth } from '../lib/useAuth';
 
-export default function Card({ item }) {
+export default function Card({ item, setShowModal }) {
   const { _id, data, imagesUrl } = item;
   const { user } = useAuth();
   const randomImgArr = [...imagesUrl].sort(() => Math.random() - 0.5);
@@ -15,6 +15,7 @@ export default function Card({ item }) {
     const currentId = e.target.dataset.id;
     console.log(currentId);
     if (!user) {
+      setShowModal(true);
       return;
     }
 

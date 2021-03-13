@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import useTranslation from 'next-translate/useTranslation';
 import React, { useEffect } from 'react';
 import { useIntl } from 'react-intl';
 

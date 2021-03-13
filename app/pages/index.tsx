@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Card from '../components/Card';
 import Loader from '../components/Loader';
-// import data from '../data/data';
+import Modal from '../components/Modal';
 import { Country, useCountriesQuery } from '../lib/graphql/countries.graphql';
 
 const postVariants = {
@@ -34,6 +34,7 @@ interface item {
 export default function Home() {
   const { locale } = useRouter();
   const { data, loading, refetch } = useCountriesQuery({ errorPolicy: 'ignore' });
+  const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
     refetch();
@@ -53,11 +54,12 @@ export default function Home() {
         <section>
           <div style={{ color: '#ffffff' }}>Current locale: {locale}</div>
         </section>
+        {showModal && <Modal setShowModal={setShowModal} />}
         {loading && <Loader show={loading} />}
         {!loading && data && data.countries && (
           <div className="countries">
             {data.countries.map((item) => (
-              <Card key={item._id} item={item as Country} />
+              <Card key={item._id} setShowModal={setShowModal} item={item as Country} />
             ))}
           </div>
         )}
