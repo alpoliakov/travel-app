@@ -7,6 +7,7 @@ import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import Loader from '../../../components/Loader';
 import Map from '../../../components/Map';
+import Places from '../../../components/Places';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
 import { messages } from '../../../locales';
@@ -47,7 +48,7 @@ export default function Country({ id }) {
     country: { ISOCode, coordinates, data: dataCountry, currency, timeZone, videoUrl, imagesUrl },
   } = countryInfo;
 
-  const [,firstImg] = imagesUrl;
+  const [, firstImg] = imagesUrl;
 
   const heroStyle = {
     backgroundImage: `url(${firstImg})`,
@@ -84,6 +85,7 @@ export default function Country({ id }) {
             <div className="country__map">
               <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
             </div>
+            <Places id={id} />
           </div>
           {/*<Footer />*/}
         </div>

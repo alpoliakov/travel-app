@@ -27,6 +27,9 @@ export const messages = {
     or: 'Or',
     selectFile: 'Select a file',
     capital: 'Capital',
+    hello: 'Hello!',
+    modalText: 'To view, you need to log in or register!',
+    close: 'Close',
   },
   ru: {
     btnLogin: 'Войти',
@@ -56,6 +59,9 @@ export const messages = {
     or: 'Или',
     selectFile: 'Выберите файл',
     capital: 'Столица',
+    hello: 'Приветствуем!',
+    modalText: 'Для просмотра необходимо авторизоваться или зарегистрироваться!',
+    close: 'Закрыть',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -85,5 +91,8 @@ export const messages = {
     or: 'Або',
     selectFile: 'Виберіть файл',
     capital: 'Столиця',
+    hello: 'Вітаємо!',
+    modalText: 'Для перегляду потрібно увійти або зареєструватися!',
+    close: 'Закрити',
   },
 };

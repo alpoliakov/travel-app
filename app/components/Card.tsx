@@ -6,6 +6,7 @@ import { useAuth } from '../lib/useAuth';
 export default function Card({ item }) {
   const { _id, data, imagesUrl } = item;
   const { user } = useAuth();
+  const randomImgArr = [...imagesUrl].sort(() => Math.random() - 0.5);
 
   const router = useRouter();
   const { locale } = useRouter();
@@ -13,9 +14,6 @@ export default function Card({ item }) {
   const goToCountryPage = (e) => {
     const currentId = e.target.dataset.id;
     console.log(currentId);
-    if (!user) {
-      return;
-    }
 
     router.push(`/countries/${_id}`);
   };
@@ -27,7 +25,7 @@ export default function Card({ item }) {
       onClick={goToCountryPage}
       data-id={_id}
       style={{
-        backgroundImage: `url(${imagesUrl[0]}), linear-gradient(var(--color-grey-light) 1%, var(--color-grey-dark) 100%)`,
+        backgroundImage: `url(${randomImgArr[0]}), linear-gradient(var(--color-grey-light) 1%, var(--color-grey-dark) 100%)`,
       }}>
       <h1
         className="shadow__item gradient-text font-semibold"
