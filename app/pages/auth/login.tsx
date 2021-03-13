@@ -4,7 +4,9 @@ import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import { useIntl } from 'react-intl';
 
+import Header from '../../components/Header';
 import LoginForm from '../../components/LoginForm';
+import Footer from "../../components/Footer";
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -26,19 +28,23 @@ export default function Login() {
   const router = useRouter();
 
   return (
-    <div className="box">
-      <Head>
-        <title>Login</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Head>
-      <motion.div
-        className="flex justify-center w-full max-w-lg"
-        initial="initial"
-        animate="enter"
-        exit="exit"
-        variants={postVariants}>
-        <LoginForm />
-      </motion.div>
+    <div className="container default-page">
+      <Header />
+      <div className="box">
+        <Head>
+          <title>Login</title>
+          <link rel="shortcut icon" href="/favicon.ico" />
+        </Head>
+        <motion.div
+          className="flex justify-center w-full max-w-lg"
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          variants={postVariants}>
+          <LoginForm />
+        </motion.div>
+      </div>
+      <Footer />
     </div>
   );
 }

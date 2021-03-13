@@ -1,16 +1,17 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
-import { useIntl } from 'react-intl';
 
+import Footer from '../../../components/Footer';
+import Header from '../../../components/Header';
 import Loader from '../../../components/Loader';
 import Map from '../../../components/Map';
 import Places from '../../../components/Places';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
-import { usePlacesQuery } from '../../../lib/graphql/places.graphql';
+import { messages } from '../../../locales';
+import {getRandomImg} from "../../../utils/utils";
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -30,12 +31,7 @@ const postVariants = {
 
 export default function Country({ id }) {
   const { locale } = useRouter();
-  // const { data, loading } = usePlacesQuery({
-  //   variables: { countryId: id },
-  // });
-
   const [countryInfo, setCountryInfo] = useState(null);
-
   const { data, loading } = useCountryQuery({
     variables: { countryId: id },
   });
@@ -53,26 +49,49 @@ export default function Country({ id }) {
     country: { ISOCode, coordinates, data: dataCountry, currency, timeZone, videoUrl, imagesUrl },
   } = countryInfo;
 
+  const imgUrl = getRandomImg(imagesUrl);
+
+  const heroStyle = {
+    backgroundImage: `url(${imgUrl})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  };
+
   return (
-    <div className="box">
+    <>
       <Head>
         <title>{dataCountry[locale].name}</title>
       </Head>
-      <motion.div initial="initial" animate="enter" exit="exit" variants={postVariants}>
-        <Link href="/">
-          <a style={{ color: 'white' }}>Home</a>
-        </Link>
-        {loading && <Loader show={loading} />}
-        {!loading && data && (
-          <div>
-            <h1 className="text-white text-3xl">{dataCountry[locale].name}</h1>
-            <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
-            <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
-            <Places id={id} />
+      <motion.div
+        className="w-full"
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        variants={postVariants}>
+        <div className="container country">
+          <div className="country__hero" style={heroStyle}>
+            <div className="country__hero-wrapper">
+              <Header />
+              <h1 className="text-white text-center sm:text-9xl text-5xl text-shadow">
+                {dataCountry[locale].name}
+              </h1>
+              <h2 className="sm:text-5xl text-3xl text-center text-white text-shadow">
+                {messages[locale].capital} - {dataCountry[locale].capital}
+              </h2>
+              <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
+              <p className="mt-auto p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-justify text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
+            </div>
           </div>
-        )}
+          <div className="country__main">
+            <div className="mb-5 ">
+              <Places id={id} />
+            </div>
+            <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
+          </div>
+          <Footer />
+        </div>
       </motion.div>
-    </div>
+    </>
   );
 }
 

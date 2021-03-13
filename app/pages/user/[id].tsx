@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { useIntl } from 'react-intl';
 
+import Header from '../../components/Header';
 import Loader from '../../components/Loader';
 import { initializeApollo } from '../../lib/apollo';
 import { CurrentUserDocument } from '../../lib/graphql/currentUser.graphql';
@@ -73,51 +74,54 @@ export default function User({ id }) {
   const { formatMessage: f } = useIntl();
 
   return (
-    <div className="box">
-      <Head>
-        <title>User</title>
-      </Head>
-      <motion.div
-        className="flex justify-center w-full max-w-lg"
-        initial="initial"
-        animate="enter"
-        exit="exit"
-        variants={postVariants}>
-        <div className="w-full max-w-lg">
-          <div className="leading-loose">
-            <Loader show={!user.name} />
-            <div className="m-4 p-10 pb-5 bg-white bg-opacity-25 rounded shadow-xl">
-              <div className="flex items-center justify-around mb-10">
-                <div className="">
-                  <img
-                    className="h-20 w-20 rounded-full shadow__item"
-                    src={user.avatar}
-                    alt="avatar"
-                  />
+    <div className="container default-page">
+      <Header />
+      <div className="box">
+        <Head>
+          <title>User</title>
+        </Head>
+        <motion.div
+          className="flex justify-center w-full max-w-lg"
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          variants={postVariants}>
+          <div className="w-full max-w-lg">
+            <div className="leading-loose">
+              <Loader show={!user.name} />
+              <div className="m-4 p-10 pb-5 bg-white bg-opacity-25 rounded shadow-xl">
+                <div className="flex items-center justify-around mb-10">
+                  <div className="">
+                    <img
+                      className="h-20 w-20 rounded-full shadow__item"
+                      src={user.avatar}
+                      alt="avatar"
+                    />
+                  </div>
+                  <div>
+                    <h1 className="text-xl shadow__item text-white">{user.name}</h1>
+                    <h1 className="text-xl shadow__item text-white">{user.email}</h1>
+                  </div>
                 </div>
-                <div>
-                  <h1 className="text-xl shadow__item text-white">{user.name}</h1>
-                  <h1 className="text-xl shadow__item text-white">{user.email}</h1>
-                </div>
-              </div>
-              <div className="flex items-center justify-around">
-                <div
-                  role="presentation"
-                  onClick={signOutFunc}
-                  className="text-white shadow__item cursor-pointer font-bold text-xl hover:text-gray-800">
-                  {f({ id: 'signOut' })}
-                </div>
-                <div
-                  role="presentation"
-                  onClick={onDelete}
-                  className="text-white shadow__item cursor-pointer font-bold text-xl hover:text-gray-800">
-                  {f({ id: 'delete' })}
+                <div className="flex items-center justify-around">
+                  <div
+                    role="presentation"
+                    onClick={signOutFunc}
+                    className="text-white shadow__item cursor-pointer font-bold text-xl hover:text-gray-800">
+                    {f({ id: 'signOut' })}
+                  </div>
+                  <div
+                    role="presentation"
+                    onClick={onDelete}
+                    className="text-white shadow__item cursor-pointer font-bold text-xl hover:text-gray-800">
+                    {f({ id: 'delete' })}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 }
