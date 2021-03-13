@@ -76,16 +76,12 @@ export default function Country({ id }) {
             <h2 className="text-5xl text-center text-white text-shadow">
               {messages[locale].capital} - {dataCountry[locale].capital}
             </h2>
-            <Widgets />
+            <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
           </div>
           <div className="country">
-            <div className="country__content">
-              <p className="text-2xl text-white">{dataCountry[locale].description}</p>
-            </div>
-            <div className="country__map">
-              <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
-            </div>
+            <p className="text-2xl text-white">{dataCountry[locale].description}</p>
             <Places id={id} />
+            <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
           {/*<Footer />*/}
         </div>
