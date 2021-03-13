@@ -4,11 +4,12 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
 import Card from '../components/Card';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import Loader from '../components/Loader';
 import Modal from '../components/Modal';
+import { useAppContext } from '../contexts/state';
 import { Country, useCountriesQuery } from '../lib/graphql/countries.graphql';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -36,10 +37,40 @@ interface item {
 export default function Home() {
   const { locale } = useRouter();
   const { data, loading, refetch } = useCountriesQuery({ errorPolicy: 'ignore' });
+  const { text } = useAppContext();
+
+  const [dataCountry, setDataCountry] = useState([]);
+  const [searchText, setSearchText] = useState(text);
 
   useEffect(() => {
     refetch();
   }, []);
+
+  useEffect(() => {
+    if (data && !loading) {
+      setDataCountry([...data.countries]);
+    }
+  }, [data]);
+
+  const sortCountry = (text) => {
+    let newData = [];
+    if (!data) {
+      return;
+    }
+
+    newData = data.countries.filter(
+      ({ data }) =>
+        data[locale].name.toLowerCase().match(text) ||
+        data[locale].capital.toLowerCase().match(text),
+    );
+    setDataCountry(newData);
+    console.log(newData);
+  };
+
+  useEffect(() => {
+    sortCountry(text);
+    setSearchText(text);
+  }, [text]);
 
   return (
     <>
@@ -56,12 +87,15 @@ export default function Home() {
             exit="exit"
             variants={postVariants}>
             <section>
-              <div style={{ color: '#ffffff' }}>Current locale: {locale}</div>
+              <div style={{ color: '#ffffff' }}>
+                <span>Current locale: {locale}</span>
+                <span>Current text: {searchText}</span>
+              </div>
             </section>
             {loading && <Loader show={loading} />}
             {!loading && data && data.countries && (
               <div className="countries">
-                {data.countries.map((item) => (
+                {dataCountry.map((item) => (
                   <Card key={item._id} item={item as Country} />
                 ))}
               </div>

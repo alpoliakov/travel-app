@@ -7,7 +7,6 @@ import { getRandomImg } from '../utils/utils';
 export default function Card({ item }) {
   const { _id, data, imagesUrl } = item;
   const { user } = useAuth();
-  console.log('tada', imagesUrl);
   const randomImgArr = getRandomImg(imagesUrl);
 
   const router = useRouter();

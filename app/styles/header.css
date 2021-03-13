@@ -7,13 +7,13 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*top: 0;*/
-  /*position: sticky;*/
-  /*padding: 0 30px;*/
+  top: 0;
+  position: sticky;
+  padding: 0 30px;
   /*background-blend-mode: overlay, color;*/
   /*background-size: cover;*/
   /*background-position: top;*/
-  /*z-index: 40;*/
+  z-index: 40;
 }
 
 .header__home,

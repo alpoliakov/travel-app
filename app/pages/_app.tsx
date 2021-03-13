@@ -9,6 +9,7 @@ import React, { useEffect } from 'react';
 import { IntlProvider } from 'react-intl';
 
 import Layout from '../components/Layout';
+import { AppWrapper } from '../contexts/state';
 import { AuthProvider } from '../lib/useAuth';
 import { messages } from '../locales';
 
@@ -27,11 +28,13 @@ function MyApp({ Component, pageProps, router }) {
     <ApolloProvider client={apolloClient}>
       <IntlProvider locale={locale} messages={messages[locale]}>
         <AuthProvider>
-          <Layout>
-            <AnimatePresence exitBeforeEnter>
-              <Component {...pageProps} key={router.route} />
-            </AnimatePresence>
-          </Layout>
+          <AppWrapper>
+            <Layout>
+              <AnimatePresence exitBeforeEnter>
+                <Component {...pageProps} key={router.route} />
+              </AnimatePresence>
+            </Layout>
+          </AppWrapper>
         </AuthProvider>
       </IntlProvider>
     </ApolloProvider>

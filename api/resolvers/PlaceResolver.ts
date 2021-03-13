@@ -15,7 +15,6 @@ export class PlaceResolver {
   }
 
   @Query(() => [Place])
-  @UseMiddleware(isAuth)
   places(@Arg('countryId', () => ObjectIdScalar) countryId: ObjectId) {
     return PlaceModel.find({ country: countryId });
   }
