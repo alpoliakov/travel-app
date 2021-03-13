@@ -1,0 +1,15 @@
+.country__hero-wrapper {
+  min-height: 850px;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.country__hero {
+  position: relative;
+
+  padding-bottom: 150px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+

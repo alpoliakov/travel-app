@@ -1,7 +1,13 @@
 @import 'variables.css';
+@import 'header.css';
+@import 'footer.css';
 @import 'select.css';
 @import 'dropdown.css';
 @import 'carousel.css';
+@import 'country.css';
+@import 'loader.css';
+@import 'card.css';
+@import 'widget.css';
 
 @tailwind base;
 @tailwind components;
@@ -15,6 +21,7 @@ body {
   padding: 0;
   font-family: 'Merriweather', sans-serif;
   box-sizing: border-box;
+  background-color: var(--color-grey-dark);
 }
 
 a {
@@ -27,6 +34,9 @@ a {
   display: grid;
   row-gap: 50px;
   grid-template-rows: auto 1fr;
+}
+
+.default-page {
   background-image: url('/images/mountain-min.jpeg'), url('/images/sea.jpeg');
   background-size: cover;
   background-blend-mode: overlay, color;
@@ -34,41 +44,9 @@ a {
   background-repeat: no-repeat;
 }
 
-.header {
-  height: 100px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-image: url('/images/mountain-min.jpeg'), url('/images/sea.jpeg');
-  top: 0;
-  position: sticky;
-  padding: 0 30px;
-  background-blend-mode: overlay, color;
-  background-size: cover;
-  background-position: top;
-  z-index: 40;
-}
-
-.header__home,
-.header__menu,
-.header__search {
-  align-self: center;
-  color: antiquewhite;
-}
-
-.header__home {
-  justify-self: start;
-}
-
-.header__menu {
-  justify-self: end;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__search {
-  justify-self: center;
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .box {
@@ -111,16 +89,18 @@ a {
   filter: drop-shadow(5px 5px 5px hsl(0, 0%, 15%));
 }
 
-/* Loader */
-
-.loader {
-  border: 10px solid var(--color-bg);
-  border-top: 10px solid var(--color-blue);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 2s linear infinite;
+.text-shadow {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa,
+    0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
 }
+
+.text-light-shadow {
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* Loader */
 
 @media (min-width: 1400px) {
   .countries {
@@ -132,42 +112,5 @@ a {
   .countries,
   .places {
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@import 'card.css';
-
-/*Images*/
-
-/*https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=4000&q=80*/
-/*https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260*/
-
-/* Widgets */
-
-.widget-box {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.widget-container {
-  width: 20%;
-  min-width: 250px;
-}
-
-.weather-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 600px) {
-  .widget-box {
-    justify-content: center;
-  }
-  .weather-informer {
-    font-size: 1rem;
-  }
-  .widget-container {
-    width: 80%;
   }
 }

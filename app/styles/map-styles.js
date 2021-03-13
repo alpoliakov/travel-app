@@ -43,6 +43,14 @@ export default [
     stylers: [{ color: '#746855' }],
   },
   {
+    featureType: 'road.arterial',
+    stylers: [
+      {
+        visibility: 'off',
+      },
+    ],
+  },
+  {
     featureType: 'road.highway',
     elementType: 'geometry.stroke',
     stylers: [{ color: '#1f2835' }],

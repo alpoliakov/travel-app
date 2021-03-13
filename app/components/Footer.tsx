@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+    <div className="footer">
       <Link href="https://rs.school/react/">
         <a className="shadow__item hover__item" target="_blank">
           <Image src="/rs_school_logo.svg" alt="Logo" width={150} height={30} />

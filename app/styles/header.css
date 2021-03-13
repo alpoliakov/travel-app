@@ -1,0 +1,40 @@
+.header {
+  height: 100px;
+  max-width: var(--max-width);
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*top: 0;*/
+  /*position: sticky;*/
+  /*padding: 0 30px;*/
+  /*background-blend-mode: overlay, color;*/
+  /*background-size: cover;*/
+  /*background-position: top;*/
+  /*z-index: 40;*/
+}
+
+.header__home,
+.header__menu,
+.header__search {
+  align-self: center;
+  color: antiquewhite;
+}
+
+.header__home {
+  justify-self: start;
+}
+
+.header__menu {
+  justify-self: end;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__search {
+  justify-self: center;
+}

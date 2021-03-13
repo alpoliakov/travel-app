@@ -3,6 +3,8 @@ import Head from 'next/head';
 import React from 'react';
 import { useIntl } from 'react-intl';
 
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import SignUpForm from '../../components/SignUpForm';
 
 const postVariants = {
@@ -25,18 +27,22 @@ export default function SignUp() {
   const { formatMessage: f } = useIntl();
 
   return (
-    <div className="box">
-      <Head>
-        <title>Sign Up</title>
-      </Head>
-      <motion.div
-        className="flex justify-center w-full max-w-lg"
-        initial="initial"
-        animate="enter"
-        exit="exit"
-        variants={postVariants}>
-        <SignUpForm />
-      </motion.div>
+    <div className="container default-page">
+      <Header />
+      <div className="box">
+        <Head>
+          <title>Sign Up</title>
+        </Head>
+        <motion.div
+          className="flex justify-center w-full max-w-lg"
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          variants={postVariants}>
+          <SignUpForm />
+        </motion.div>
+      </div>
+      <Footer />
     </div>
   );
 }
