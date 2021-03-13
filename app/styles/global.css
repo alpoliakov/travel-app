@@ -30,12 +30,17 @@ a {
   grid-template-rows: auto 1fr;
 }
 
-.main-page {
+.default-page {
   background-image: url('/images/mountain-min.jpeg'), url('/images/sea.jpeg');
   background-size: cover;
   background-blend-mode: overlay, color;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.hero__wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .hero {

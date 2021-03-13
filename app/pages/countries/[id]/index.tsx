@@ -69,18 +69,22 @@ export default function Country({ id }) {
         variants={postVariants}>
         <div className="container">
           <div className="hero" style={heroStyle}>
-            <Header />
-            <h1 className="text-white text-center sm:text-9xl text-5xl text-shadow">
-              {dataCountry[locale].name}
-            </h1>
-            <h2 className="sm:text-5xl text-3xl text-center text-white text-shadow">
-              {messages[locale].capital} - {dataCountry[locale].capital}
-            </h2>
-            <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
-            <p className="pt-2 pb-2 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-center text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
+            <div className="hero__wrapper">
+              <Header />
+              <h1 className="text-white text-center sm:text-9xl text-5xl text-shadow">
+                {dataCountry[locale].name}
+              </h1>
+              <h2 className="sm:text-5xl text-3xl text-center text-white text-shadow">
+                {messages[locale].capital} - {dataCountry[locale].capital}
+              </h2>
+              <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
+              <p className="p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-center text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
+            </div>
           </div>
           <div className="country">
-            <Places id={id} />
+            <div className="mb-5 ">
+              <Places id={id} />
+            </div>
             <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
           {/*<Footer />*/}

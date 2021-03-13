@@ -46,7 +46,7 @@ export default function Home() {
       <Head>
         <title>Countries</title>
       </Head>
-      <div className="container main-page">
+      <div className="container default-page">
         <Header />
         <div className="box">
           <motion.div
