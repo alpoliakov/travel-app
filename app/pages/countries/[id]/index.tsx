@@ -67,9 +67,9 @@ export default function Country({ id }) {
         animate="enter"
         exit="exit"
         variants={postVariants}>
-        <div className="container">
-          <div className="hero" style={heroStyle}>
-            <div className="hero__wrapper">
+        <div className="container country">
+          <div className="country__hero" style={heroStyle}>
+            <div className="country__hero-wrapper">
               <Header />
               <h1 className="text-white text-center sm:text-9xl text-5xl text-shadow">
                 {dataCountry[locale].name}
@@ -81,13 +81,13 @@ export default function Country({ id }) {
               <p className="p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-center text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
             </div>
           </div>
-          <div className="country">
+          <div className="country__main">
             <div className="mb-5 ">
               <Places id={id} />
             </div>
             <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
-          {/*<Footer />*/}
+          <Footer />
         </div>
       </motion.div>
     </>

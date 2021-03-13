@@ -1,38 +1,22 @@
-/*.country {*/
-/*  width: 100%;*/
-/*  display: grid;*/
-/*  grid-gap: 20px;*/
-/*  grid-template-areas:*/
-/*    "title"*/
-/*    "content"*/
-/*    "map";*/
-/*}*/
+.country__hero-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
 
+.country__hero {
+  position: relative;
+  min-height: 700px;
+  padding-bottom: 300px;
+}
 
-
-
-/*.country__content {*/
-/*  grid-area: content;*/
-/*  padding-left: 10px;*/
-/*  padding-right: 10px;*/
-/*}*/
-
-/*.country__map {*/
-/*  grid-area: map;*/
-/*}*/
-
-/*@media (min-width: 768px) {*/
-/*  .country {*/
-/*    grid-template-columns: 2fr 10fr;*/
-/*    grid-template-areas:*/
-/*      "title title"*/
-/*      "sidebar content"*/
-/*      "map map";*/
-/*  }*/
-/*}*/
-
-/*@media (min-width: 1024px) {*/
-/*  .country {*/
-/*    grid-template-columns: 1fr 11fr;*/
-/*  }*/
-/*}*/
+.country__hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: -11px;
+  left: 0;
+  background-image: url('/images/wave.svg');
+  background-repeat: repeat-x;
+  z-index: 2;
+}
