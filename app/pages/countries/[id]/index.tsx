@@ -70,16 +70,16 @@ export default function Country({ id }) {
         <div className="container">
           <div className="hero" style={heroStyle}>
             <Header />
-            <h1 className="text-white text-center text-9xl text-shadow">
+            <h1 className="text-white text-center sm:text-9xl text-5xl text-shadow">
               {dataCountry[locale].name}
             </h1>
-            <h2 className="text-5xl text-center text-white text-shadow">
+            <h2 className="sm:text-5xl text-3xl text-center text-white text-shadow">
               {messages[locale].capital} - {dataCountry[locale].capital}
             </h2>
             <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
+            <p className="pt-2 pb-2 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-center text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
           </div>
           <div className="country">
-            <p className="text-2xl text-white">{dataCountry[locale].description}</p>
             <Places id={id} />
             <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
