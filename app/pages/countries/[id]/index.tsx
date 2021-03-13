@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
+import { Carousel } from '../../../components/Carousel';
 import Loader from '../../../components/Loader';
 import Map from '../../../components/Map';
 import Places from '../../../components/Places';
@@ -66,6 +67,7 @@ export default function Country({ id }) {
         {!loading && data && (
           <div>
             <h1 className="text-white text-3xl">{dataCountry[locale].name}</h1>
+            <Carousel photos={imagesUrl} />
             <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
             <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
             <Places id={id} />

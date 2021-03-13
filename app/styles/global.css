@@ -1,6 +1,7 @@
 @import 'variables.css';
 @import 'select.css';
 @import 'dropdown.css';
+@import 'carousel.css';
 
 @tailwind base;
 @tailwind components;
