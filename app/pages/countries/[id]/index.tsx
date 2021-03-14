@@ -10,8 +10,7 @@ import Map from '../../../components/Map';
 import Places from '../../../components/Places';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
-import { messages } from '../../../locales';
-import {getRandomImg} from "../../../utils/utils";
+import { getRandomImg } from '../../../utils/utils';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -54,6 +53,7 @@ export default function Country({ id }) {
   const heroStyle = {
     backgroundImage: `url(${imgUrl})`,
     backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
     backgroundRepeat: 'no-repeat',
   };
 
@@ -68,24 +68,21 @@ export default function Country({ id }) {
         animate="enter"
         exit="exit"
         variants={postVariants}>
-        <div className="container country">
-          <div className="country__hero" style={heroStyle}>
-            <div className="country__hero-wrapper">
-              <Header />
-              <h1 className="text-white text-center sm:text-9xl text-5xl text-shadow">
-                {dataCountry[locale].name}
-              </h1>
-              <h2 className="sm:text-5xl text-3xl text-center text-white text-shadow">
-                {messages[locale].capital} - {dataCountry[locale].capital}
-              </h2>
+        <div className="container country" style={heroStyle}>
+          <Header />
+          <div className="box">
+            <h1 className="text-white text-center sm:text-7xl text-4xl shadow__item">
+              {dataCountry[locale].name}
+            </h1>
+            <h2 className="sm:text-3xl text-2xl text-center text-white shadow__item">
+              {dataCountry[locale].capital}
+            </h2>
+            <div className="mb-5">
               <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
-              <p className="mt-auto p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-justify text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
             </div>
-          </div>
-          <div className="country__main">
-            <div className="mb-5 ">
-              <Places id={id} />
-            </div>
+            <p className="p-5 sm:text-sm lg:text-xl text-sm text-white bg-gray-900 bg-opacity-50 mx-5 text-justify text-light-shadow rounded-2xl mb-10">
+              {dataCountry[locale].description}
+            </p>
             <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
           <Footer />
