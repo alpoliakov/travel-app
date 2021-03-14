@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import Player from 'react-player/youtube';
 
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
@@ -11,7 +12,7 @@ import Places from '../../../components/Places';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
 import { messages } from '../../../locales';
-import {getRandomImg} from "../../../utils/utils";
+import { getRandomImg } from '../../../utils/utils';
 
 const postVariants = {
   initial: { scale: 0.96, y: 30, opacity: 0 },
@@ -79,7 +80,12 @@ export default function Country({ id }) {
                 {messages[locale].capital} - {dataCountry[locale].capital}
               </h2>
               <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
-              <p className="mt-auto p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-justify text-light-shadow rounded-2xl">{dataCountry[locale].description}</p>
+              <p className="mt-auto p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-justify text-light-shadow rounded-2xl">
+                {dataCountry[locale].description}
+              </p>
+              <div className="w-full p-5 flex justify-center box-border">
+                <Player url={videoUrl} controls light />
+              </div>
             </div>
           </div>
           <div className="country__main">
