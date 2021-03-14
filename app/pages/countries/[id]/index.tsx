@@ -82,9 +82,15 @@ export default function Country({ id }) {
             <div className="mb-5">
               <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
             </div>
-            <p className="p-5 sm:text-sm lg:text-xl text-sm text-white bg-gray-900 bg-opacity-50 mx-5 text-justify text-light-shadow rounded-2xl mb-10">
+            <p className="p-5 w-full sm:text-sm lg:text-xl text-sm text-white bg-gray-900 bg-opacity-50 mx-5 text-justify text-light-shadow rounded-2xl mb-10">
               {dataCountry[locale].description}
             </p>
+            <div className="w-full bg-gray-900 rounded-xl bg-opacity-50 mx-5 p-5 mb-10 flex justify-center box-border">
+              <Player url={videoUrl} controls light />
+            </div>
+            <div className="w-full bg-gray-900 rounded-xl bg-opacity-50 mx-5 p-5 mb-10 flex justify-center box-border">
+              <Carousel id={id} />
+            </div>
             <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />
           </div>
           <Footer />

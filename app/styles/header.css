@@ -1,8 +1,8 @@
 .header {
   height: 100px;
   max-width: var(--max-width);
-  padding-left: 10px;
-  padding-right: 10px;
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -13,7 +13,7 @@
   /*background-blend-mode: overlay, color;*/
   /*background-size: cover;*/
   /*background-position: top;*/
-  z-index: 40;
+  z-index: 1000;
 }
 
 .header__home,
