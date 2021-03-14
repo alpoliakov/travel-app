@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
-import { Carousel } from '../../../components/Carousel';
+import Carousel from '../../../components/Carousel';
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import Loader from '../../../components/Loader';
@@ -85,6 +85,7 @@ export default function Country({ id }) {
               </p>
             </div>
           </div>
+          <Carousel id={id} />
           <div className="country__main">
             <div className="mb-5 ">
               <Places id={id} />
