@@ -2,7 +2,9 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import Player from 'react-player/youtube';
 
+import Carousel from '../../../components/Carousel';
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import Loader from '../../../components/Loader';
@@ -78,7 +80,7 @@ export default function Country({ id }) {
               {dataCountry[locale].capital}
             </h2>
             <div className="mb-5">
-              <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
+              <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />       
             </div>
             <p className="p-5 sm:text-sm lg:text-xl text-sm text-white bg-gray-900 bg-opacity-50 mx-5 text-justify text-light-shadow rounded-2xl mb-10">
               {dataCountry[locale].description}
