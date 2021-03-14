@@ -55,7 +55,7 @@ a {
 .countries {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 450px);
   column-gap: 20px;
   row-gap: 30px;
   margin: 0 auto;
@@ -91,19 +91,15 @@ a {
 
 /* Loader */
 
-
-
 @media (min-width: 1400px) {
   .countries {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 450px);
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .countries,
   .places {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-

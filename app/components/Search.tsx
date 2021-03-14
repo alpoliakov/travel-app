@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useIntl } from 'react-intl';
 
+import { useAppContext } from '../contexts/state';
+
 export default function Search() {
   const { formatMessage: f } = useIntl();
   const searcher = useRef(null);
 
   const [searchText, setSearchText] = useState('');
+  const { text, setText } = useAppContext();
 
   useEffect(() => {
     searcher.current.focus();
@@ -15,12 +18,20 @@ export default function Search() {
     setSearchText(e.target.value);
   };
 
+  useEffect(() => {
+    setText(searchText);
+    console.log(text);
+  }, [searchText]);
+
   return (
     <div className="flex items-center justify-center">
       <form>
         <div className="relative text-gray-600 focus-within:text-gray-400">
           <span className="absolute inset-y-0 left-0 flex items-center pl-2">
-            <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
+            <button
+              type="button"
+              aria-label="button"
+              className="p-1 focus:outline-none focus:shadow-outline">
               <svg
                 fill="none"
                 stroke="currentColor"
