@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useFullscreen } from 'react-use';
-import SwiperCore, { Controller, Navigation } from 'swiper';
+import SwiperCore, { A11y, Controller, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { usePlacesQuery } from '../lib/graphql/places.graphql';
 
-SwiperCore.use([Navigation, Controller]);
+SwiperCore.use([Navigation, Controller, A11y]);
 
 export default function Carousel({ id }) {
   const { locale } = useRouter();

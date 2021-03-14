@@ -1,13 +1,11 @@
 .widget-box {
   display: flex;
-  /*justify-content: flex-end;*/
   justify-content: center;
 }
 
 .widget-container {
-  /*width: 20%;*/
-  /*min-width: 250px;*/
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .weather-main {
@@ -17,9 +15,6 @@
 }
 
 @media (max-width: 600px) {
-  /*.widget-box {*/
-  /*  justify-content: center;*/
-  /*}*/
   .weather-informer {
     font-size: 1rem;
   }
