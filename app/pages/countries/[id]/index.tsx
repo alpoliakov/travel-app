@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import Player from 'react-player/youtube';
 
+import Carousel from '../../../components/Carousel';
 import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import Loader from '../../../components/Loader';
@@ -88,6 +89,7 @@ export default function Country({ id }) {
               </div>
             </div>
           </div>
+          <Carousel id={id} />
           <div className="country__main">
             <div className="mb-5 ">
               <Places id={id} />
