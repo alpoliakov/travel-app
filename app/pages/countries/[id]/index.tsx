@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import Player from 'react-player/youtube';
 
 import Carousel from '../../../components/Carousel';
 import Footer from '../../../components/Footer';
@@ -83,6 +84,9 @@ export default function Country({ id }) {
               <p className="mt-auto p-5 sm:text-2xl lg:text-3xl text-sm text-white bg-gray-900 bg-opacity-50 w-3/4 mx-auto text-justify text-light-shadow rounded-2xl">
                 {dataCountry[locale].description}
               </p>
+              <div className="w-full p-5 flex justify-center box-border">
+                <Player url={videoUrl} controls light />
+              </div>
             </div>
           </div>
           <Carousel id={id} />
