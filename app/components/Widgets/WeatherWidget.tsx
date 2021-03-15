@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
+import { convertFtoC } from 'utils/utils';
 
 const API_KEY = 'b96b3483c8a4a6510a423be0ef0914e7';
 
@@ -21,8 +22,6 @@ export const WeatherWidget = ({ countryCapital }) => {
       </div>
     );
   }
-
-  const convertFtoC = (temp) => Math.round(((temp - 32) * 5) / 9);
 
   const weather = weatherData.weather[0];
   const iconUrl = `http://openweathermap.org/img/w/${weather.icon}.png`;
