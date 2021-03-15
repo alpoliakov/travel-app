@@ -33,7 +33,7 @@ export const TimeWidget = ({ timeZone }) => {
 
   if (!todayTime) {
     return (
-      <div className="m-4 p-10 flex items-center justify-center bg-gray-900 rounded-xl bg-opacity-50 shadow-xl">
+      <div className="m-4 p-10 flex text-white items-center justify-center bg-gray-900 rounded-xl bg-opacity-50 shadow-xl">
         {f({ id: 'load' })}...
       </div>
     );

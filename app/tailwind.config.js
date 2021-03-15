@@ -8,6 +8,12 @@ module.exports = {
       fontFamily: {
         serif: ['Merriweather', ...defaultTheme.fontFamily.serif],
       },
+      spacing: {
+        '2/5': '40%',
+        '1/2': '50%',
+        '2/3': '66.666667%',
+        '3/4': '75%',
+      },
     },
   },
   variants: {

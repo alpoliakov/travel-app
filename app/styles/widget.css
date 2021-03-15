@@ -14,12 +14,8 @@
   align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .weather-informer {
-    font-size: 1rem;
-  }
-  .widget-container {
-    flex-direction: column;
-    width: 80%;
+    font-size: 1.5rem;
   }
 }
