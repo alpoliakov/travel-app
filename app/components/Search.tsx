@@ -20,7 +20,6 @@ export default function Search() {
 
   useEffect(() => {
     setText(searchText);
-    console.log(text);
   }, [searchText]);
 
   return (

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
@@ -11,6 +12,8 @@ export default function LoginForm() {
     email: '',
     password: '',
   });
+
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [errorPsw, setErrorPsw] = useState(false);
   const [validEmail, setValidEmail] = useState(false);
@@ -105,13 +108,12 @@ export default function LoginForm() {
               onClick={onFinish}>
               {f({ id: 'enter' })}
             </button>
-            <a
-              className="inline-block right-0 align-baseline font-bold text-sm text-500 text-white hover:text-blue-800"
-              role="button"
-              target="_blanck"
-              href="https://www.youtube.com/watch?v=a3edsIATN6A">
-              {f({ id: 'forgetPass' })}
-            </a>
+            <p
+              className="inline-block cursor-pointer right-0 align-baseline font-bold text-sm text-500 text-white hover:text-blue-800"
+              role="presentation"
+              onClick={() => router.back()}>
+              {f({ id: 'return' })}
+            </p>
           </div>
           <div className="text-center">
             <Link href="/auth/signup">

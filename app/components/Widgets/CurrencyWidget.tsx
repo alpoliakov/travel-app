@@ -36,7 +36,7 @@ export const CurrencyWidget = ({ currency }) => {
 
   if (!toUSD || !toEUR || !toRUB) {
     return (
-      <div className="m-4 p-10 flex items-center justify-center bg-gray-900 rounded-xl bg-opacity-50 shadow-xl">
+      <div className="m-4 p-10 text-white flex items-center justify-center bg-gray-900 rounded-xl bg-opacity-50 shadow-xl">
         {f({ id: 'load' })}...
       </div>
     );

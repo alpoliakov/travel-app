@@ -1,8 +1,6 @@
 .header {
   height: 100px;
   max-width: var(--max-width);
-  /*padding-left: 10px;*/
-  /*padding-right: 10px;*/
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -10,9 +8,9 @@
   top: 0;
   position: sticky;
   padding: 0 30px;
-  /*background-blend-mode: overlay, color;*/
-  /*background-size: cover;*/
-  /*background-position: top;*/
+  background-blend-mode: overlay, color;
+  background-size: cover;
+  background-position: top;
   z-index: 1000;
 }
 
@@ -29,7 +27,7 @@
 
 .header__menu {
   justify-self: end;
-  width: 300px;
+  width: 320px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,4 +35,21 @@
 
 .header__search {
   justify-self: center;
+}
+
+@media (max-width: 710px) {
+  .header {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+  }
+
+  .header__home {
+    justify-self: center;
+  }
+
+  .header__menu {
+    justify-self: center;
+  }
 }

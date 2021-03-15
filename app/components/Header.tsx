@@ -61,7 +61,7 @@ export default function Header() {
       <div className="header__home">
         <Link href="/">
           <a>
-            <Image src="/images/logo.png" width="150px" height="60px" />
+            <Image src="/images/logo.png" width="150px" height="80px" />
           </a>
         </Link>
       </div>
@@ -84,10 +84,14 @@ export default function Header() {
         {!user && (
           <>
             <Link href="/auth/login">
-              <a>{f({ id: 'btnLogin' })}</a>
+              <a className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-4xl sm:text-3xl md:text-2xl lg:text-xl p-2 bg-gray-900 rounded-xl bg-opacity-50">
+                {f({ id: 'btnLogin' })}
+              </a>
             </Link>
             <Link href="/auth/signup">
-              <a>{f({ id: 'btnSignUp' })}</a>
+              <a className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-4xl sm:text-3xl md:text-2xl lg:text-xl p-2 bg-gray-900 rounded-xl bg-opacity-50">
+                {f({ id: 'btnSignUp' })}
+              </a>
             </Link>
           </>
         )}

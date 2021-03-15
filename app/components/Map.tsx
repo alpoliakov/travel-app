@@ -5,7 +5,7 @@ import mapStyles from '../styles/map-styles';
 
 const containerStyle = {
   width: '100%',
-  height: '500px',
+  height: '550px',
 };
 
 const options = {
