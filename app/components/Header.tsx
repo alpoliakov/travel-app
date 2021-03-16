@@ -57,7 +57,7 @@ export default function Header() {
   }, [error]);
 
   return (
-    <div className="header">
+    <div className="header pb-5">
       <div className="header__home">
         <Link href="/">
           <a>
@@ -84,12 +84,12 @@ export default function Header() {
         {!user && (
           <>
             <Link href="/auth/login">
-              <a className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-4xl sm:text-3xl md:text-2xl lg:text-xl p-2 bg-gray-900 rounded-xl bg-opacity-50">
+              <a className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-base p-2 bg-gray-900 rounded-xl bg-opacity-50">
                 {f({ id: 'btnLogin' })}
               </a>
             </Link>
             <Link href="/auth/signup">
-              <a className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-4xl sm:text-3xl md:text-2xl lg:text-xl p-2 bg-gray-900 rounded-xl bg-opacity-50">
+              <a className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-base p-2 bg-gray-900 rounded-xl bg-opacity-50">
                 {f({ id: 'btnSignUp' })}
               </a>
             </Link>

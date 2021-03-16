@@ -1,24 +1,24 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react';
 import { useFullscreen } from 'react-use';
-import SwiperCore, { A11y, Controller, Navigation } from 'swiper';
+import SwiperCore, { A11y, Controller, EffectCube, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { usePlacesQuery } from '../lib/graphql/places.graphql';
 
-SwiperCore.use([Navigation, Controller, A11y]);
+SwiperCore.use([Navigation, Controller, A11y, EffectCube]);
 
-export default function Carousel({ id }) {
-  const { locale } = useRouter();
-
+export default function SwiperApp({ id }) {
   const { data, loading } = usePlacesQuery({ variables: { countryId: id } });
   const [places, setPlaces] = useState(null);
-  const [controlledSwiper, setControlledSwiper] = useState(null);
-  const [controlledThumbsSwiper, setControlledThumbsSwiper] = useState(null);
+  const { locale } = useRouter();
 
   const ref = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
   useFullscreen(ref, isFullscreen, { onClose: () => setIsFullscreen(false) });
+
+  const [firstSwiper, setFirstSwiper] = useState(null);
+  const [secondSwiper, setSecondSwiper] = useState(null);
 
   useEffect(() => {
     if (data) {
@@ -27,7 +27,7 @@ export default function Carousel({ id }) {
   }, [data, loading]);
 
   return (
-    <div ref={ref} className="w-full">
+    <main ref={ref} className="w-full">
       {places && (
         <>
           <Swiper
@@ -35,22 +35,23 @@ export default function Carousel({ id }) {
             loop
             lazy
             centeredSlides
-            spaceBetween={30}
+            effect="cube"
+            className="pt-3 pb-3"
             loopedSlides={6}
-            controller={{ control: controlledSwiper }}
-            onSwiper={setControlledThumbsSwiper}
-            className="gallery-top">
+            spaceBetween={30}
+            onSwiper={setFirstSwiper}
+            controller={{ control: secondSwiper }}>
             {places.map((place, index) => (
-              <SwiperSlide className="relative pb-1/2" virtualIndex={index} key={place._id}>
+              <SwiperSlide key={place._id} virtualIndex={index} className="relative w-full pb-1/2">
                 <img
                   src={place.imagesUrl[1]}
                   alt={place.data[locale].name}
                   className="absolute h-full rounded-xl w-full object-cover"
                 />
-                <h3 className="text-5xl sm:text-4xl md:text-3xl lg:text-2xl p-2 bg-gray-900 rounded-xl bg-opacity-50 absolute top-5 left-5 text-white">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl p-2 bg-gray-900 rounded-xl bg-opacity-50 absolute top-5 left-5 text-white">
                   {place.data[locale].name}
                 </h3>
-                <p className="place_description text-2xl sm:text-xl md:text-lg lg:text-sm p-5 bg-gray-900 rounded-xl bg-opacity-50 absolute bottom-5 left-5 right-5 text-white">
+                <p className="place_description text-sm p-5 bg-gray-900 rounded-xl bg-opacity-50 absolute bottom-5 left-5 right-5 text-white">
                   {place.data[locale].description}
                 </p>
                 <button
@@ -97,21 +98,21 @@ export default function Carousel({ id }) {
             centeredSlides
             slideToClickedSlide
             spaceBetween={10}
-            controller={{ control: controlledThumbsSwiper }}
-            onSwiper={setControlledSwiper}
             loopedSlides={6}
+            onSwiper={setSecondSwiper}
+            className="gallery-thumbs"
             breakpoints={{
               480: { slidesPerView: 2 },
               768: { slidesPerView: 3 },
               1200: { slidesPerView: 4 },
             }}
-            className="gallery-thumbs">
+            controller={{ control: firstSwiper }}>
             {places.map((place) => (
               <SwiperSlide key={place._id}>
                 <img
-                  src={place.imagesUrl[0]}
+                  src={place.imagesUrl[1]}
                   alt={place.data[locale].name}
-                  // className="rounded-xl w-full object-cover h-48 sm:h-44 md:h-40 lg:h-36"
+                  className="rounded-xl w-full object-cover h-32"
                 />
                 <p className="text-white text-center mt-3">Rating</p>
               </SwiperSlide>
@@ -119,6 +120,6 @@ export default function Carousel({ id }) {
           </Swiper>
         </>
       )}
-    </div>
+    </main>
   );
 }

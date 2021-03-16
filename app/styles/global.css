@@ -11,7 +11,7 @@
 @import 'widget.css';
 
 @tailwind base;
-/*@tailwind components;*/
+@tailwind components;
 @tailwind utilities;
 
 html,
@@ -31,15 +31,22 @@ a {
 
 .container {
   min-height: 100vh;
-  min-width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
   display: grid;
   row-gap: 50px;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 100px 1fr auto;
 }
 
 .container-country {
-  width: 100vw;
-  margin: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  background-size: cover;
+  background-blend-mode: overlay, color;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
 
 .default-page {
@@ -54,11 +61,12 @@ a {
 .box {
   display: flex;
   max-width: var(--max-width);
-  width: 100%;
+  width: 95vw;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
 }
 
 .countries {
@@ -68,6 +76,18 @@ a {
   column-gap: 20px;
   row-gap: 30px;
   margin: 0 auto;
+  padding: 40px 0;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*Shadow*/
@@ -98,8 +118,14 @@ a {
 }
 
 @media (max-width: 950px) {
-  .countries,
-  .places {
+  .countries {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .box {
+    max-width: 98vw;
+    width: 100%;
   }
 }
