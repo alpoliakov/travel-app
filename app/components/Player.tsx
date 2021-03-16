@@ -5,7 +5,7 @@ import { usePlacesQuery } from '../lib/graphql/places.graphql';
 import Loader from './Loader';
 import Modal from './Modal';
 
-export default function Places({ id }) {
+export default function Player({ id }) {
   const { data, loading } = usePlacesQuery({
     variables: { countryId: id },
   });
