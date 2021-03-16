@@ -7,16 +7,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "NODE_ENV=test jest",
+    "test:watch": "NODE_ENV=test jest --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.13.10",
-    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
-    "@babel/plugin-transform-react-jsx": "^7.12.17",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.13.0",
