@@ -88,9 +88,7 @@ export default function Header() {
         {!user && (
           <>
             <Link href="/auth/login">
-              <a
-                className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-base p-2 bg-gray-900 rounded-xl bg-opacity-50"
-                data-testid="login-btn">
+              <a className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-base p-2 bg-gray-900 rounded-xl bg-opacity-50">
                 {f({ id: 'btnLogin' })}
               </a>
             </Link>
