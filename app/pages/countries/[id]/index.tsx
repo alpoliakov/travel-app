@@ -72,7 +72,7 @@ export default function Country({ id }) {
                 {dataCountry[locale].capital}
               </h2>
             </div>
-            <Widgets dataCountry={dataCountry} currency={currency} timeZone={timeZone} />
+            <Widgets capital={dataCountry.en.capital} currency={currency} timeZone={timeZone} />
             <p className="p-5 w-full text-sm sm:text-base md:text-xl lg:text-2xl text-white bg-gray-900 bg-opacity-50 mx-5 text-justify text-light-shadow rounded-xl mb-10">
               {dataCountry[locale].description}
             </p>
