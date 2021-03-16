@@ -45,11 +45,11 @@ export const CurrencyWidget = ({ currency }) => {
   return (
     <div className="m-4 p-10 flex items-center justify-center bg-gray-900 rounded-xl bg-opacity-50 shadow-xl">
       <div className="text-white font-medium text-lg text-center font-bold uppercase">
-        USD: {toUSD}
+        {f({ id: 'usd' })}: {toUSD}
         <br />
-        EUR: {toEUR}
+        {f({ id: 'eur' })}: {toEUR}
         <br />
-        RUB: {toRUB}
+        {f({ id: 'rub' })}: {toRUB}
       </div>
     </div>
   );
