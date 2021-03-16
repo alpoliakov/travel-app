@@ -77,9 +77,9 @@ export default function Home() {
       <Head>
         <title>Countries</title>
       </Head>
-      <div className="container default-page">
-        <Header />
-        <div className="box">
+      <div className="default-page">
+        <div className="container">
+          <Header />
           <motion.div
             style={{ padding: '0 20px', margin: '0 auto' }}
             initial="initial"
@@ -101,8 +101,8 @@ export default function Home() {
               </div>
             )}
           </motion.div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </>
   );

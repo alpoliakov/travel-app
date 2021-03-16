@@ -1,12 +1,10 @@
 .header {
   height: 100px;
-  max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   top: 0;
-  position: sticky;
   padding: 0 30px;
   background-blend-mode: overlay, color;
   background-size: cover;
@@ -27,7 +25,7 @@
 
 .header__menu {
   justify-self: end;
-  width: 320px;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,12 +35,17 @@
   justify-self: center;
 }
 
-@media (max-width: 710px) {
+@media (max-width: 1024px) {
+  .header__menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
   .header {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 10px;
     margin-bottom: 80px;
-    margin-top: 20px;
   }
 
   .header__home {
@@ -50,6 +53,7 @@
   }
 
   .header__menu {
-    justify-self: center;
+    justify-content: center;
+    column-gap: 5px;
   }
 }

@@ -29,13 +29,13 @@ export default function Card({ item }) {
         backgroundImage: `url(${randomImgArr[0]}), linear-gradient(var(--color-grey-light) 1%, var(--color-grey-dark) 100%)`,
       }}>
       <h1
-        className="shadow__item gradient-text font-semibold"
+        className="shadow__item gradient-text text-2xl sm:text-3xl md:text-4xl font-semibold"
         data-id={_id}
-        style={{ fontSize: 42, zIndex: -1 }}>
+        style={{ zIndex: -1 }}>
         {data[locale].name}
       </h1>
       <h1
-        className="shadow__item lowercase gradient-text font-semibold text-2xl"
+        className="shadow__item lowercase gradient-text text-xl font-semibold md:text-2xl"
         data-id={_id}
         style={{ color: '#ffffff', zIndex: -1 }}>
         {data[locale].capital}

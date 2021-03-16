@@ -1,4 +1,4 @@
-@import 'swiper/swiper-bundle.css';
+@import 'swiper/swiper-bundle.min.css';
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -17,49 +17,42 @@
   position: relative;
 }
 
-.gallery {
-  position: relative;
-  width: calc(100% - 20px);
-  padding: 1rem;
-  height: fit-content;
-}
-
 .gallery-top .swiper-slide {
   overflow-y: auto;
 }
 
-.place_image {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  height: 550px;
-}
-
-.gallery-thumbs {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.swiper-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .gallery-thumbs .swiper-slide {
-  min-height: 10rem;
-  height: 100%;
-  opacity: 0.4;
-  cursor: pointer;
+  opacity: 0.5;
 }
 
 .gallery-thumbs .swiper-slide-active {
   opacity: 1;
+  cursor: pointer;
+}
+
+.gallery-thumbs .swiper-slide-active:hover {
+  transition: 0.3s;
+  z-index: 2000;
+  transform: scale(1.01);
+}
+
+.place_description {
+  max-height: 40%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 1200px) {
   .place_image {
     height: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .place_description {
+    -webkit-line-clamp: 1;
   }
 }
