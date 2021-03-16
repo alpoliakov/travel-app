@@ -30,6 +30,9 @@ export const messages = {
     hello: 'Hello!',
     modalText: 'To view, you need to log in or register!',
     close: 'Close',
+    usd: 'USD',
+    eur: 'EUR',
+    rub: 'RUB',
   },
   ru: {
     btnLogin: 'Войти',
@@ -62,6 +65,9 @@ export const messages = {
     hello: 'Приветствуем!',
     modalText: 'Для просмотра необходимо авторизоваться или зарегистрироваться!',
     close: 'Закрыть',
+    usd: 'Доллар',
+    eur: 'Евро',
+    rub: 'Рубль',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -94,5 +100,8 @@ export const messages = {
     hello: 'Вітаємо!',
     modalText: 'Для перегляду потрібно увійти або зареєструватися!',
     close: 'Закрити',
+    usd: 'Долар',
+    eur: 'Євро',
+    rub: 'Рубль',
   },
 };
