@@ -73,7 +73,11 @@ export default function Header() {
         )}
       </div>
       <div className="header__menu">
-        <select className="select-css" onChange={setLocal} defaultValue={locale}>
+        <select
+          className="select-css"
+          onChange={setLocal}
+          defaultValue={locale}
+          data-testid="select-locale">
           {locales.map((item) => (
             <option key={item} value={item}>
               {item}
@@ -84,7 +88,9 @@ export default function Header() {
         {!user && (
           <>
             <Link href="/auth/login">
-              <a className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-base p-2 bg-gray-900 rounded-xl bg-opacity-50">
+              <a
+                className="text-white p-1 hover:bg-opacity-100 hover:text-opacity-70 text-base p-2 bg-gray-900 rounded-xl bg-opacity-50"
+                data-testid="login-btn">
                 {f({ id: 'btnLogin' })}
               </a>
             </Link>
