@@ -41,7 +41,6 @@ export default function RatingForm({ setShowModal, placeId }) {
 
   const ratingChanged = (newRating) => {
     setDataRating({ ...dataRating, rate: newRating });
-    console.log(newRating);
   };
 
   const handleComment = (e) => {
