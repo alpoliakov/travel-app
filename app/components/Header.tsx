@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import setLanguage from 'next-translate/setLanguage';
 import React, { useEffect, useState } from 'react';
-import toast from 'react-hot-toast';
 import { useIntl } from 'react-intl';
 
 import { useAuth } from '../lib/useAuth';

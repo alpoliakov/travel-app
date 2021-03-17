@@ -45,6 +45,9 @@ export const messages = {
     changeEmail: 'Change e-mail',
     save: 'Save changes',
     emptySearch: 'Nothing found, change your search',
+    country: 'Country',
+    place: 'Place',
+    noReviews: 'There are no reviews yet.',
   },
   ru: {
     btnLogin: 'Войти',
@@ -92,6 +95,9 @@ export const messages = {
     changeEmail: 'Изменить e-mail',
     save: 'Сохранить',
     emptySearch: 'Ничего не найдено, измените поиск',
+    country: 'Страна',
+    place: 'Место',
+    noReviews: 'Пока нет отзывов',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -139,5 +145,8 @@ export const messages = {
     changeEmail: 'Змінити e-mail',
     save: 'Зберегти',
     emptySearch: 'Нічого не знайдено, змініть пошук',
+    country: 'Країна',
+    place: 'Місце',
+    noReviews: 'Єще немає відгуків.',
   },
 };
