@@ -49,9 +49,11 @@ export default function Dropdown() {
             </Link>
           </li>
           <li className="">
-            <a className="text-gray-800 hover:bg-gray-600 hover:text-white py-2 px-4 block whitespace-no-wrap">
-              Settings
-            </a>
+            <Link href={`/user/settings/${user._id}`}>
+              <a className="text-gray-800 hover:bg-gray-600 hover:text-white py-2 px-4 block whitespace-no-wrap">
+                {f({ id: 'settings' })}
+              </a>
+            </Link>
           </li>
           <li className="">
             <div
