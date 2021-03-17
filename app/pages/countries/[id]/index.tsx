@@ -13,7 +13,8 @@ import RatingForm from '../../../components/RatingForm';
 import SelectionModal from '../../../components/SelectionModal';
 import SwiperApp from '../../../components/Swiper';
 import { Widgets } from '../../../components/Widgets/Widgets';
-import { useCountryQuery } from '../../../lib/graphql/country.graphql';
+import { initializeApollo } from '../../../lib/apollo';
+import { CountryDocument, useCountryQuery } from '../../../lib/graphql/country.graphql';
 import { getRandomImg } from '../../../utils/utils';
 
 const postVariants = {
@@ -50,6 +51,15 @@ export default function Country({ id }) {
     refetch();
   }, []);
 
+  const fetchCountry = async () => {
+    const apollo = initializeApollo();
+    const { data } = await apollo.query({
+      query: CountryDocument,
+      variables: { countryId: id },
+    });
+    setCountryInfo(data);
+  };
+
   useEffect(() => {
     setCountryInfo(data);
   }, [data, loading]);
@@ -71,7 +81,14 @@ export default function Country({ id }) {
   return (
     <>
       <div className="container-country" style={heroStyle}>
-        {showModal && <RatingForm setShowModal={setShowModal} placeId={placeId} />}
+        {showModal && (
+          <RatingForm
+            setShowModal={setShowModal}
+            setCountryInfo={setCountryInfo}
+            fetchCountry={fetchCountry}
+            placeId={placeId}
+          />
+        )}
         {modal && <Modal setModal={setModal} propText={REMAINDER} />}
         {selectionModal && (
           <SelectionModal

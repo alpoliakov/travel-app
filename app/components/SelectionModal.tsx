@@ -36,7 +36,6 @@ export default function SelectionModal({ setSelectionModal, placeId, setShowModa
       variables: { id: placeId },
     });
 
-    console.log(data.place);
     setDataRating(data.place);
   };
 
