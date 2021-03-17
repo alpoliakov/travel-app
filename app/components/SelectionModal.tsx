@@ -36,7 +36,6 @@ export default function SelectionModal({ setSelectionModal, placeId, setShowModa
       variables: { id: placeId },
     });
 
-    console.log(data.place);
     setDataRating(data.place);
   };
 
@@ -103,10 +102,10 @@ export default function SelectionModal({ setSelectionModal, placeId, setShowModa
           <div className="leading-loose relative h-auto">
             <div className="m-2 relative flex items-start justify-center flex-col p-3 bg-gray-800 opacity-99 z-50 rounded shadow-xl">
               <span className="text-white text-xl font-bold">
-                Country: {dataRating.country.data[locale].name}
+                {f({ id: 'country' })}: {dataRating.country.data[locale].name}
               </span>
               <span className="text-white text-xl font-bold">
-                Place: {dataRating.data[locale].name}
+                {f({ id: 'place' })}: {dataRating.data[locale].name}
               </span>
             </div>
             <div className="m-2 relative flex items-start justify-center flex p-3 bg-gray-800 opacity-99 z-50 rounded shadow-xl">
@@ -122,11 +121,11 @@ export default function SelectionModal({ setSelectionModal, placeId, setShowModa
             {!dataRating.rating.length && (
               <div className="m-2 relative flex items-center justify-center flex-col p-3 bg-gray-800 opacity-99 z-50 rounded shadow-xl">
                 <div className="text-white text-base uppercase font-semibold block">
-                  There are no reviews.
+                  {f({ id: 'noReviews' })}
                 </div>
               </div>
             )}
-            {dataRating.rating.length &&
+            {!!dataRating.rating.length &&
               dataRating.rating.map((rate) => (
                 <div
                   key={rate.userId}
