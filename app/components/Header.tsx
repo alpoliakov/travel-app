@@ -61,7 +61,11 @@ export default function Header() {
         )}
       </div>
       <div className="header__menu">
-        <select className="select-css" onChange={setLocal} defaultValue={locale}>
+        <select
+          className="select-css"
+          onChange={setLocal}
+          defaultValue={locale}
+          data-testid="select-locale">
           {locales.map((item) => (
             <option key={item} value={item}>
               {item}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
-import { convertFtoC } from 'utils/utils';
+import { convertFtoC } from '../../utils/utils';
 
 const API_KEY = 'b96b3483c8a4a6510a423be0ef0914e7';
 

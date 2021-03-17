@@ -37,6 +37,10 @@ export const messages = {
     reminder: 'You need to login or register!',
     feedbackGive: 'give feedback',
     feedbackSee: 'see reviews',
+    usd: 'USD',
+    eur: 'EUR',
+    rub: 'RUB',
+
   },
   ru: {
     btnLogin: 'Войти',
@@ -76,6 +80,9 @@ export const messages = {
     reminder: 'Вам необходимо войти или зарегистрироваться!',
     feedbackGive: 'оставить отзыв',
     feedbackSee: 'посмотреть отзывы',
+    usd: 'Доллар',
+    eur: 'Евро',
+    rub: 'Рубль',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -115,5 +122,8 @@ export const messages = {
     reminder: 'Вам необхідно увійти або зареєструватися!',
     feedbackGive: 'залишити відгук',
     feedbackSee: 'подивитися відгуки',
+    usd: 'Долар',
+    eur: 'Євро',
+    rub: 'Рубль',
   },
 };
