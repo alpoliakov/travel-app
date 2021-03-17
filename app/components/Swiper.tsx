@@ -1,17 +1,20 @@
 import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react';
+import ReactStars from 'react-rating-stars-component';
 import { useFullscreen } from 'react-use';
 import SwiperCore, { A11y, Controller, EffectCube, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { usePlacesQuery } from '../lib/graphql/places.graphql';
+import { useAuth } from '../lib/useAuth';
 
 SwiperCore.use([Navigation, Controller, A11y, EffectCube]);
 
-export default function SwiperApp({ id }) {
+export default function SwiperApp({ id, setShowModal, setPlaceId, setModal }) {
   const { data, loading } = usePlacesQuery({ variables: { countryId: id } });
   const [places, setPlaces] = useState(null);
   const { locale } = useRouter();
+  const { user } = useAuth();
 
   const ref = useRef(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -25,6 +28,14 @@ export default function SwiperApp({ id }) {
       setPlaces([...data.places]);
     }
   }, [data, loading]);
+
+  const callingRatingForms = (id) => {
+    if (!user) {
+      return setModal(true);
+    }
+    setPlaceId(id);
+    setShowModal(true);
+  };
 
   return (
     <main ref={ref} className="w-full">
@@ -48,10 +59,10 @@ export default function SwiperApp({ id }) {
                   alt={place.data[locale].name}
                   className="absolute h-full rounded-xl w-full object-cover"
                 />
-                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl p-2 bg-gray-900 rounded-xl bg-opacity-50 absolute top-5 left-5 text-white">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl p-1 sm:p-2 bg-gray-900 rounded-xl bg-opacity-50 absolute top-5 left-5 text-white">
                   {place.data[locale].name}
                 </h3>
-                <p className="place_description text-sm p-5 bg-gray-900 rounded-xl bg-opacity-50 absolute bottom-5 left-5 right-5 text-white">
+                <p className="place_description text-sm p-1 sm:p-5 bg-gray-900 rounded-xl bg-opacity-50 absolute bottom-5 left-5 right-5 text-white">
                   {place.data[locale].description}
                 </p>
                 <button
@@ -113,8 +124,19 @@ export default function SwiperApp({ id }) {
                   src={place.imagesUrl[1]}
                   alt={place.data[locale].name}
                   className="rounded-xl w-full object-cover h-32"
+                  onClick={() => callingRatingForms(place._id)}
+                  role="presentation"
                 />
-                <p className="text-white text-center mt-3">Rating</p>
+                <div className="flex justify-center cursor-pointer">
+                  <ReactStars
+                    size={22}
+                    count={5}
+                    value={place.averageRating}
+                    edit={false}
+                    color="white"
+                    activeColor="yellow"
+                  />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

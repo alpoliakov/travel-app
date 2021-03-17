@@ -1,10 +1,21 @@
 import { ObjectId } from 'mongodb';
-import { Arg, FieldResolver, Query, Resolver, Root, UseMiddleware } from 'type-graphql';
+import {
+  Arg,
+  Ctx,
+  FieldResolver,
+  Mutation,
+  Query,
+  Resolver,
+  Root,
+  UseMiddleware,
+} from 'type-graphql';
 
 import { Country, CountryModel } from '../entity/Country';
 import { Place, PlaceModel } from '../entity/Place';
 import { isAuth } from '../middleware/isAuth';
 import { ObjectIdScalar } from '../schema/object-id.scalar';
+import { MyContext } from '../types/MyContext';
+import { RatingInput } from '../types/RatingInput';
 
 @Resolver(() => Place)
 export class PlaceResolver {
@@ -17,6 +28,31 @@ export class PlaceResolver {
   @Query(() => [Place])
   places(@Arg('countryId', () => ObjectIdScalar) countryId: ObjectId) {
     return PlaceModel.find({ country: countryId });
+  }
+
+  @Mutation(() => Place)
+  @UseMiddleware(isAuth)
+  async editPlace(@Arg('input') ratingInput: RatingInput, @Ctx() ctx: MyContext): Promise<Place> {
+    const { id, userName, rate, comment } = ratingInput;
+    const place = await PlaceModel.findOneAndUpdate(
+      { _id: id },
+      {
+        $push: {
+          rating: {
+            userId: ctx.res.locals.userId,
+            userName,
+            rate,
+            comment,
+          },
+        },
+      },
+      { runValidators: true, new: true },
+    );
+
+    if (!place) {
+      throw new Error('Stream not found');
+    }
+    return place;
   }
 
   @FieldResolver()
