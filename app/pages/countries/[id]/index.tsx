@@ -7,7 +7,10 @@ import Footer from '../../../components/Footer';
 import Header from '../../../components/Header';
 import Loader from '../../../components/Loader';
 import Map from '../../../components/Map';
+import Modal from '../../../components/Modal';
 import Player from '../../../components/Player';
+import RatingForm from '../../../components/RatingForm';
+import SelectionModal from '../../../components/SelectionModal';
 import SwiperApp from '../../../components/Swiper';
 import { Widgets } from '../../../components/Widgets/Widgets';
 import { useCountryQuery } from '../../../lib/graphql/country.graphql';
@@ -32,12 +35,22 @@ const postVariants = {
 export default function Country({ id }) {
   const { locale } = useRouter();
   const [countryInfo, setCountryInfo] = useState(null);
-  const { data, loading } = useCountryQuery({
+  const [showModal, setShowModal] = useState(false);
+  const [placeId, setPlaceId] = useState(null);
+  const [modal, setModal] = useState(false);
+  const [selectionModal, setSelectionModal] = useState(true);
+
+  const { data, loading, refetch } = useCountryQuery({
     variables: { countryId: id },
   });
 
+  const REMAINDER = 'reminder';
+
   useEffect(() => {
-    console.log(data);
+    refetch();
+  }, []);
+
+  useEffect(() => {
     setCountryInfo(data);
   }, [data, loading]);
 
@@ -58,6 +71,9 @@ export default function Country({ id }) {
   return (
     <>
       <div className="container-country" style={heroStyle}>
+        {showModal && <RatingForm setShowModal={setShowModal} placeId={placeId} />}
+        {modal && <Modal setModal={setModal} propText={REMAINDER} />}
+        {selectionModal && <SelectionModal setSelectionModal={setSelectionModal} />}
         <Head>
           <title>{dataCountry[locale].name}</title>
         </Head>
@@ -78,7 +94,12 @@ export default function Country({ id }) {
             </p>
             <Player videoUrl={videoUrl} />
             <div className="w-full bg-gray-900 rounded-xl bg-opacity-50 mx-5 p-5 mb-10 flex justify-center box-border">
-              <SwiperApp id={id} />
+              <SwiperApp
+                id={id}
+                setPlaceId={setPlaceId}
+                setShowModal={setShowModal}
+                setModal={setModal}
+              />
             </div>
             <div className="w-full min-w-0 bg-gray-900 rounded-xl bg-opacity-50 mx-5 p-5 mb-10 flex justify-center box-border">
               <Map ISOCode={ISOCode} locale={locale} coordinates={coordinates} />

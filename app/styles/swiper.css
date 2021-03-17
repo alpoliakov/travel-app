@@ -22,7 +22,7 @@
 }
 
 .gallery-thumbs .swiper-slide {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .gallery-thumbs .swiper-slide-active {
@@ -53,6 +53,6 @@
 
 @media (max-width: 420px) {
   .place_description {
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
   }
 }

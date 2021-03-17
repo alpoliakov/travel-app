@@ -27,22 +27,24 @@ export default function SignUp() {
   const { formatMessage: f } = useIntl();
 
   return (
-    <div className="container default-page">
-      <Header />
-      <div className="box">
-        <Head>
-          <title>Sign Up</title>
-        </Head>
-        <motion.div
-          className="flex justify-center w-full max-w-lg"
-          initial="initial"
-          animate="enter"
-          exit="exit"
-          variants={postVariants}>
-          <SignUpForm />
-        </motion.div>
+    <div className="default-page">
+      <Head>
+        <title>Sign Up</title>
+      </Head>
+      <div className="container">
+        <Header />
+        <div className="box">
+          <motion.div
+            className="flex justify-center w-full max-w-lg"
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={postVariants}>
+            <SignUpForm />
+          </motion.div>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

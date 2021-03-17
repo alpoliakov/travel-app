@@ -3,7 +3,7 @@
 @import 'footer.css';
 @import 'select.css';
 @import 'dropdown.css';
-@import 'carousel.css';
+@import 'swiper.css';
 /*@import 'country.css';*/
 
 @import 'loader.css';
@@ -35,6 +35,8 @@ a {
   margin: 0 auto;
   display: grid;
   row-gap: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
   grid-template-rows: 100px 1fr auto;
 }
 

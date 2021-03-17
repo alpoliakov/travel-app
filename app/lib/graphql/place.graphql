@@ -45,5 +45,12 @@ query Place($id: ObjectId!) {
         }
       }
     }
+    averageRating
+    rating {
+      userName
+      userId
+      rate
+      comment
+    }
   }
 }

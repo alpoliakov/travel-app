@@ -32,7 +32,7 @@ export default function Header() {
   const [currentLocal, setCurrentLocal] = useState(locale);
   const { formatMessage: f } = useIntl();
   const router = useRouter();
-  const { user, signOut, message, error } = useAuth();
+  const { user, message, error } = useAuth();
 
   const showSearch = router.pathname === '/';
 
@@ -43,18 +43,6 @@ export default function Header() {
   useEffect(() => {
     setLanguage(currentLocal);
   }, [currentLocal]);
-
-  useEffect(() => {
-    if (message) {
-      toast.success(message, { duration: 4000 });
-    }
-  }, [message]);
-
-  useEffect(() => {
-    if (error) {
-      toast.error(error, { duration: 4000 });
-    }
-  }, [error]);
 
   return (
     <div className="header pb-5">

@@ -7,6 +7,8 @@ export default function Search() {
   const { formatMessage: f } = useIntl();
   const searcher = useRef(null);
 
+  const KEY_ENTER = 'Enter';
+
   const [searchText, setSearchText] = useState('');
   const { text, setText } = useAppContext();
 
@@ -16,6 +18,16 @@ export default function Search() {
 
   const doSearch = (e) => {
     setSearchText(e.target.value);
+  };
+
+  const handleButtonSearch = () => {
+    setSearchText(searcher.current.value);
+  };
+
+  const handleKeySearch = (e) => {
+    if (e.key !== KEY_ENTER) return;
+    e.preventDefault();
+    setSearchText(searcher.current.value);
   };
 
   useEffect(() => {
@@ -30,6 +42,7 @@ export default function Search() {
             <button
               type="button"
               aria-label="button"
+              onClick={handleButtonSearch}
               className="p-1 focus:outline-none focus:shadow-outline">
               <svg
                 fill="none"
@@ -49,6 +62,7 @@ export default function Search() {
             name="q"
             value={searchText}
             onChange={doSearch}
+            onKeyDown={handleKeySearch}
             className="py-2 text-sm text-white bg-gray-800 rounded-md pl-10 pr-2 focus:outline-none focus:bg-white focus:text-gray-900"
             placeholder={`${f({ id: 'search' })}...`}
             autoComplete="off"
