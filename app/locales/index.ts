@@ -40,7 +40,6 @@ export const messages = {
     usd: 'USD',
     eur: 'EUR',
     rub: 'RUB',
-
   },
   ru: {
     btnLogin: 'Войти',

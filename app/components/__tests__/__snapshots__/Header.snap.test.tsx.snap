@@ -88,6 +88,7 @@ Array [
     >
       <select
         className="select-css"
+        data-testid="select-locale"
         defaultValue="en"
         onChange={[Function]}
       >

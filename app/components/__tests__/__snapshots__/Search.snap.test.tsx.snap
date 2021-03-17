@@ -14,6 +14,7 @@ exports[`Search render correctly 1`] = `
         <button
           aria-label="button"
           className="p-1 focus:outline-none focus:shadow-outline"
+          onClick={[Function]}
           type="button"
         >
           <svg
@@ -36,6 +37,7 @@ exports[`Search render correctly 1`] = `
         className="py-2 text-sm text-white bg-gray-800 rounded-md pl-10 pr-2 focus:outline-none focus:bg-white focus:text-gray-900"
         name="q"
         onChange={[Function]}
+        onKeyDown={[Function]}
         placeholder="Поиск..."
         type="search"
         value=""
