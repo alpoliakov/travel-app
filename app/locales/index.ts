@@ -19,7 +19,7 @@ export const messages = {
     avatar: 'Avatar:',
     register: 'Sign Up',
     signOut: 'Sign Out',
-    errorEmail: 'Invalid email field!',
+    errorEmail: 'Invalid e-mail field!',
     errorPass: 'Invalid password field!',
     errorName: 'Invalid username field!',
     profile: 'Profile',
@@ -40,6 +40,10 @@ export const messages = {
     usd: 'USD',
     eur: 'EUR',
     rub: 'RUB',
+    settings: 'Settings',
+    changeName: 'Change name (3 characters minimum)',
+    changeEmail: 'Change e-mail',
+    save: 'Save changes'
   },
   ru: {
     btnLogin: 'Войти',
@@ -82,6 +86,10 @@ export const messages = {
     usd: 'Доллар',
     eur: 'Евро',
     rub: 'Рубль',
+    settings: 'Настройки',
+    changeName: 'Изменить имя (3 символа минимум)',
+    changeEmail: 'Изменить e-mail',
+    save: 'Сохранить'
   },
   uk: {
     btnLogin: 'Увійти',
@@ -124,5 +132,9 @@ export const messages = {
     usd: 'Долар',
     eur: 'Євро',
     rub: 'Рубль',
+    settings: 'Налаштування',
+    changeName: 'Змінити ім`я (3 символа мінімум)',
+    changeEmail: 'Змінити e-mail',
+    save: 'Зберегти'
   },
 };
