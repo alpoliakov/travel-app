@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import { useIntl } from 'react-intl';
 
 import Card from '../components/Card';
 import Footer from '../components/Footer';
@@ -35,6 +36,7 @@ interface item {
 }
 
 export default function Home() {
+  const { formatMessage: f } = useIntl();
   const { locale } = useRouter();
   const { data, loading, refetch } = useCountriesQuery({ errorPolicy: 'ignore' });
   const { text } = useAppContext();
@@ -71,6 +73,10 @@ export default function Home() {
     setSearchText(text);
   }, [text]);
 
+  const emptySearchMessage = (
+    <span className="title text-white text-center text-4xl">{f({ id: 'emptySearch' })}</span>
+  );
+
   return (
     <>
       <Head>
@@ -86,13 +92,18 @@ export default function Home() {
             exit="exit"
             variants={postVariants}>
             {loading && <Loader show={loading} />}
-            {!loading && data && data.countries && (
-              <div className="countries">
-                {dataCountry.map((item) => (
-                  <Card key={item._id} item={item as Country} />
-                ))}
-              </div>
-            )}
+            {!loading &&
+              data &&
+              data.countries &&
+              (dataCountry.length > 0 ? (
+                <div className="countries">
+                  {dataCountry.map((item) => (
+                    <Card key={item._id} item={item as Country} />
+                  ))}
+                </div>
+              ) : (
+                emptySearchMessage
+              ))}
           </motion.div>
           <Footer />
         </div>
