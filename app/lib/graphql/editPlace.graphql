@@ -1,0 +1,11 @@
+mutation EditPlace($input: RatingInput!) {
+  editPlace(input: $input) {
+    rating
+    {
+      userName
+      userId
+      rate
+      comment
+    }
+  }
+}

@@ -60,11 +60,10 @@ export default function Home() {
 
     newData = data.countries.filter(
       ({ data }) =>
-        data[locale].name.toLowerCase().match(text) ||
-        data[locale].capital.toLowerCase().match(text),
+        data[locale].name.toLowerCase().match(text.toLowerCase()) ||
+        data[locale].capital.toLowerCase().match(text.toLowerCase()),
     );
     setDataCountry(newData);
-    console.log(newData);
   };
 
   useEffect(() => {

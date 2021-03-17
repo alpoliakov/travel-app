@@ -19,6 +19,13 @@ query Places($countryId: ObjectId!) {
         country
       }
     }
+    rating {
+      userName
+      userId
+      rate
+      comment
+    }
+    averageRating
     country {
       ISOCode
       currency

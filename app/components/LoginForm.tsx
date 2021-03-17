@@ -43,6 +43,7 @@ export default function LoginForm() {
   useEffect(() => {
     if (user) {
       setLoading(false);
+      router.back();
     }
 
     if (error) {

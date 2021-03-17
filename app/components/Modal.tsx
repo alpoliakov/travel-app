@@ -18,7 +18,7 @@ const postVariants = {
   },
 };
 
-export default function Modal({ setShowModal }) {
+export default function Modal({ setModal, propText }) {
   const { formatMessage: f } = useIntl();
 
   return (
@@ -32,10 +32,10 @@ export default function Modal({ setShowModal }) {
         <div className="leading-loose">
           <div className="m-4 relative p-10 bg-gray-800 opacity-99 z-50 rounded shadow-xl">
             <h1 className="text-white text-2xl font-bold">{f({ id: 'hello' })}</h1>
-            <span className="text-white text-xl font-semibold">{f({ id: 'modalText' })}</span>
+            <span className="text-white text-xl font-semibold">{f({ id: propText })}</span>
             <button
               className="text-white text-xl hover:text-yellow-500 focus:outline-none absolute bottom-3 right-10 block"
-              onClick={() => setShowModal(false)}>
+              onClick={() => setModal(false)}>
               {f({ id: 'close' })}
             </button>
           </div>

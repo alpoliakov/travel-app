@@ -47,6 +47,7 @@ type LocalePlace {
 
 type Mutation {
   deleteUser(userId: ObjectId!): Boolean!
+  editPlace(input: RatingInput!): Place!
   login(input: AuthInput!): UserResponse!
   register(input: AuthInput!): UserResponse!
 }
@@ -56,9 +57,11 @@ scalar ObjectId
 
 type Place {
   _id: ObjectId!
+  averageRating: Float
   country: Country!
   data: LocalePlace!
   imagesUrl: [String!]!
+  rating: [Rating!]!
 }
 
 type Query {
@@ -68,6 +71,20 @@ type Query {
   place(placeId: ObjectId!): Place
   places(countryId: ObjectId!): [Place!]!
   user(userId: ObjectId!): User
+}
+
+type Rating {
+  comment: String
+  rate: Float
+  userId: String
+  userName: String
+}
+
+input RatingInput {
+  comment: String
+  id: ObjectId
+  rate: Float!
+  userName: String
 }
 
 type User {
