@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { useIntl } from 'react-intl';
 import ReactStars from 'react-rating-stars-component';
 
+import { useCountryQuery } from '../lib/graphql/country.graphql';
 import { useEditPlaceMutation } from '../lib/graphql/editPlace.graphql';
 import { useAuth } from '../lib/useAuth';
 
@@ -27,6 +29,7 @@ export default function RatingForm({ setShowModal, placeId }) {
   const { formatMessage: f } = useIntl();
   const { user } = useAuth();
   const [editPlace] = useEditPlaceMutation();
+  const router = useRouter();
 
   const [dataRating, setDataRating] = useState({
     userName: '',

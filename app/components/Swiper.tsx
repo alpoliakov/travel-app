@@ -10,8 +10,8 @@ import { useAuth } from '../lib/useAuth';
 
 SwiperCore.use([Navigation, Controller, A11y, EffectCube]);
 
-export default function SwiperApp({ id, setShowModal, setPlaceId, setModal }) {
-  const { data, loading } = usePlacesQuery({ variables: { countryId: id } });
+export default function SwiperApp({ id, setSelectionModal, setPlaceId, setModal }) {
+  const { data, loading, refetch } = usePlacesQuery({ variables: { countryId: id } });
   const [places, setPlaces] = useState(null);
   const { locale } = useRouter();
   const { user } = useAuth();
@@ -24,6 +24,10 @@ export default function SwiperApp({ id, setShowModal, setPlaceId, setModal }) {
   const [secondSwiper, setSecondSwiper] = useState(null);
 
   useEffect(() => {
+    refetch();
+  }, []);
+
+  useEffect(() => {
     if (data) {
       setPlaces([...data.places]);
     }
@@ -34,7 +38,7 @@ export default function SwiperApp({ id, setShowModal, setPlaceId, setModal }) {
       return setModal(true);
     }
     setPlaceId(id);
-    setShowModal(true);
+    setSelectionModal(true);
   };
 
   return (

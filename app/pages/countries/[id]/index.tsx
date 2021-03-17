@@ -38,7 +38,7 @@ export default function Country({ id }) {
   const [showModal, setShowModal] = useState(false);
   const [placeId, setPlaceId] = useState(null);
   const [modal, setModal] = useState(false);
-  const [selectionModal, setSelectionModal] = useState(true);
+  const [selectionModal, setSelectionModal] = useState(false);
 
   const { data, loading, refetch } = useCountryQuery({
     variables: { countryId: id },
@@ -73,7 +73,13 @@ export default function Country({ id }) {
       <div className="container-country" style={heroStyle}>
         {showModal && <RatingForm setShowModal={setShowModal} placeId={placeId} />}
         {modal && <Modal setModal={setModal} propText={REMAINDER} />}
-        {selectionModal && <SelectionModal setSelectionModal={setSelectionModal} />}
+        {selectionModal && (
+          <SelectionModal
+            setShowModal={setShowModal}
+            placeId={placeId}
+            setSelectionModal={setSelectionModal}
+          />
+        )}
         <Head>
           <title>{dataCountry[locale].name}</title>
         </Head>
@@ -97,7 +103,7 @@ export default function Country({ id }) {
               <SwiperApp
                 id={id}
                 setPlaceId={setPlaceId}
-                setShowModal={setShowModal}
+                setSelectionModal={setSelectionModal}
                 setModal={setModal}
               />
             </div>
