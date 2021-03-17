@@ -28,7 +28,7 @@ Array [
           <span
             className="text-white text-xl font-semibold"
           >
-            Для просмотра необходимо авторизоваться или зарегистрироваться!
+            Вам необходимо войти или зарегистрироваться!
           </span>
           <button
             className="text-white text-xl hover:text-yellow-500 focus:outline-none absolute bottom-3 right-10 block"

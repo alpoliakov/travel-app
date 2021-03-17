@@ -7,11 +7,13 @@ import Modal from '../Modal';
 
 const mockFn = jest.fn();
 
+const REMAINDER = 'reminder';
+
 it('Modal renders correctly', () => {
   const tree = renderer
     .create(
       <IntlProvider locale="ru" messages={messages['ru']}>
-        <Modal setShowModal={mockFn} />)
+        <Modal setShowModal={mockFn} propText={REMAINDER} />)
       </IntlProvider>,
     )
     .toJSON();
