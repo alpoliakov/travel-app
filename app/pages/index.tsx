@@ -85,12 +85,6 @@ export default function Home() {
             animate="enter"
             exit="exit"
             variants={postVariants}>
-            <section>
-              <div style={{ color: '#ffffff' }}>
-                <span>Current locale: {locale}</span>
-                <span>Current text: {searchText}</span>
-              </div>
-            </section>
             {loading && <Loader show={loading} />}
             {!loading && data && data.countries && (
               <div className="countries">

@@ -25,7 +25,7 @@ const postVariants = {
   },
 };
 
-export default function RatingForm({ setShowModal, placeId }) {
+export default function RatingForm({ setShowModal, fetchCountry, setCountryInfo, placeId }) {
   const { formatMessage: f } = useIntl();
   const { user } = useAuth();
   const [editPlace] = useEditPlaceMutation();
@@ -56,8 +56,10 @@ export default function RatingForm({ setShowModal, placeId }) {
         variables: { input: { id: placeId, userName: user.name, rate, comment } },
       });
 
-      if (data.editPlace.rating) {
+      if (data.editPlace._id) {
         toast.success('Added rating!', { duration: 2000 });
+        await setCountryInfo(null);
+        await fetchCountry();
         setShowModal(false);
       }
     } catch (err) {
