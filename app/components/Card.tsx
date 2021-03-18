@@ -1,21 +1,16 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import { useAuth } from '../lib/useAuth';
 import { getRandomImg } from '../utils/utils';
 
 export default function Card({ item }) {
   const { _id, data, imagesUrl } = item;
-  const { user } = useAuth();
   const randomImgArr = getRandomImg(imagesUrl);
 
   const router = useRouter();
   const { locale } = useRouter();
 
-  const goToCountryPage = (e) => {
-    const currentId = e.target.dataset.id;
-    console.log(currentId);
-
+  const goToCountryPage = () => {
     router.push(`/countries/${_id}`);
   };
 

@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import React, { useEffect } from 'react';
-import { useIntl } from 'react-intl';
+import React from 'react';
 
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';

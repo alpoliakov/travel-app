@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import GoogleFonts from 'next-google-fonts';
 import React from 'react';
 
 class MyDocument extends Document {

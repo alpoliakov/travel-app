@@ -1,24 +1,35 @@
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { useIntl } from 'react-intl';
 
 import { REG_EMAIL } from '../constants';
+import { useEditUserMutation } from '../lib/graphql/editUser.graphql';
 import { useAuth } from '../lib/useAuth';
 import imageUpload from '../utils/imageUpload';
 import Loader from './Loader';
 
 export default function SettingsForm() {
-  const [userData, setUserData] = useState({
-    name: '',
-    email: '',
-    password: '',
-    avatar: '',
-  });
   const [loading, setLoading] = useState(false);
   const [errorName, setErrorName] = useState(false);
   const [validEmail, setValidEmail] = useState(false);
-  const { user, signUp, error } = useAuth();
+  const { user, error } = useAuth();
+
+  const [editUser] = useEditUserMutation();
+
+  const router = useRouter();
+
+  const [userData, setUserData] = useState({
+    name: '',
+    email: '',
+    avatar: '',
+  });
+
+  useEffect(() => {
+    setUserData(user);
+  }, [user]);
+
+  // console.log(userData);
 
   const { formatMessage: f } = useIntl();
 
@@ -40,7 +51,7 @@ export default function SettingsForm() {
     setUserData({ ...userData, avatar: file });
   };
 
-  const validation = async ({ name, email, password, avatar }) => {
+  const validation = async ({ name, email }) => {
     let result = false;
 
     if (!name || name.length < 3) {
@@ -66,7 +77,7 @@ export default function SettingsForm() {
 
     const valid = await validation(userData);
 
-    if (avatar !== '/images/hacker.png') {
+    if (typeof avatar !== 'string') {
       avatar = await imageUpload([avatar]);
     }
 
@@ -79,7 +90,19 @@ export default function SettingsForm() {
       return;
     }
 
-    await signUp(name, email, password, avatar);
+    try {
+      const { data } = await editUser({
+        variables: { input: { name, email, avatar } },
+      });
+
+      if (data.editUser._id) {
+        router.back();
+        toast.success('Profile changed successfully.');
+      }
+    } catch (err) {
+      console.log(err);
+      toast.error(err.message);
+    }
   };
 
   useEffect(() => {
@@ -92,10 +115,14 @@ export default function SettingsForm() {
     }
   }, [user, error]);
 
+  if (!userData) {
+    return <Loader show />;
+  }
+
   return (
     <div className="w-full max-w-lg">
+      {loading && <Loader show={loading} />}
       <div className="leading-loose">
-        <Loader show={loading} />
         <form className="m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
           <p className="text-white font-medium text-center text-lg font-bold uppercase">
             {f({ id: 'settings' })}
@@ -162,7 +189,11 @@ export default function SettingsForm() {
             <div className="mr-3">
               <img
                 className="h-20 w-20 rounded-full"
-                src={userData.avatar ? URL.createObjectURL(userData.avatar) : '/images/hacker.png'}
+                src={
+                  typeof userData.avatar === 'string'
+                    ? userData.avatar
+                    : URL.createObjectURL(userData.avatar)
+                }
                 alt="avatar"
               />
             </div>
@@ -175,13 +206,12 @@ export default function SettingsForm() {
               onClick={onFinish}>
               {f({ id: 'save' })}
             </button>
-            <Link href="/auth/login">
-              <a
-                className="inline-block right-0 align-baseline font-bold text-sm text-500 text-white hover:text-blue-800"
-                role="button">
-                {f({ id: 'or' })} {f({ id: 'return' })}
-              </a>
-            </Link>
+            <div
+              className="inline-block cursor-pointer right-0 align-baseline font-bold text-sm text-500 text-white hover:text-blue-800"
+              role="presentation"
+              onClick={() => router.back()}>
+              {f({ id: 'or' })} {f({ id: 'return' })}
+            </div>
           </div>
         </form>
       </div>

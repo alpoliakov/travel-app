@@ -29,7 +29,7 @@ export default function Settings() {
   return (
     <div className="default-page">
       <Head>
-        <title>Sign Up</title>
+        <title>Settings</title>
       </Head>
       <div className="container">
         <Header />

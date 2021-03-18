@@ -4,7 +4,6 @@ import { ApolloProvider } from '@apollo/client';
 import { AnimatePresence } from 'framer-motion';
 import { useApollo } from 'lib/apollo';
 import { useRouter } from 'next/router';
-import useTranslation from 'next-translate/useTranslation';
 import React, { useEffect } from 'react';
 import { IntlProvider } from 'react-intl';
 

@@ -5,6 +5,7 @@ import { User, UserModel } from '../entity/User';
 import { isAuth } from '../middleware/isAuth';
 import { ObjectIdScalar } from '../schema/object-id.scalar';
 import { MyContext } from '../types/MyContext';
+import { SettingsInput } from '../types/SettingsInput';
 
 @Resolver(() => User)
 export class UserResolver {
@@ -20,6 +21,33 @@ export class UserResolver {
     ctx: MyContext,
   ): Promise<User | null> {
     return await UserModel.findById(ctx.res.locals.userId);
+  }
+
+  @Mutation(() => User)
+  @UseMiddleware(isAuth)
+  async editUser(@Arg('input') settingsInput: SettingsInput, @Ctx() ctx: MyContext): Promise<User> {
+    const { name, email, avatar } = settingsInput;
+
+    const existingUser = await UserModel.findOne({ email });
+
+    if (existingUser && existingUser._id != ctx.res.locals.userId) {
+      throw new Error('Email already in use');
+    }
+
+    const user = await UserModel.findOneAndUpdate(
+      { _id: ctx.res.locals.userId },
+      {
+        name,
+        email,
+        avatar,
+      },
+      { runValidators: true, new: true },
+    );
+
+    if (!user) {
+      throw new Error('Stream not found');
+    }
+    return user;
   }
 
   @Mutation(() => Boolean)

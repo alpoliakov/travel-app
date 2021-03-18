@@ -5,7 +5,6 @@ import toast from 'react-hot-toast';
 import { useIntl } from 'react-intl';
 import ReactStars from 'react-rating-stars-component';
 
-import { useCountryQuery } from '../lib/graphql/country.graphql';
 import { useEditPlaceMutation } from '../lib/graphql/editPlace.graphql';
 import { useAuth } from '../lib/useAuth';
 
@@ -41,7 +40,6 @@ export default function RatingForm({ setShowModal, fetchCountry, setCountryInfo,
 
   const ratingChanged = (newRating) => {
     setDataRating({ ...dataRating, rate: newRating });
-    console.log(newRating);
   };
 
   const handleComment = (e) => {

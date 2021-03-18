@@ -43,7 +43,9 @@ export const messages = {
     settings: 'Settings',
     changeName: 'Change name (3 characters minimum)',
     changeEmail: 'Change e-mail',
-    save: 'Save changes'
+    save: 'Save changes',
+    country: 'Country',
+    place: 'Object',
   },
   ru: {
     btnLogin: 'Войти',
@@ -89,7 +91,9 @@ export const messages = {
     settings: 'Настройки',
     changeName: 'Изменить имя (3 символа минимум)',
     changeEmail: 'Изменить e-mail',
-    save: 'Сохранить'
+    save: 'Сохранить',
+    country: 'Страна',
+    place: 'Объект',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -135,6 +139,8 @@ export const messages = {
     settings: 'Налаштування',
     changeName: 'Змінити ім`я (3 символа мінімум)',
     changeEmail: 'Змінити e-mail',
-    save: 'Зберегти'
+    save: 'Зберегти',
+    country: 'Країна',
+    place: 'Oб`єкт',
   },
 };
