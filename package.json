@@ -7,10 +7,15 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "test": "lint-staged",
-    "lint": "eslint --fix .",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "build": "yarn workspace @travel-app/app run build",
+    "start": "yarn workspace @travel-app/api run start",
+    "dev": "yarn workspace @travel-app/api run dev",
+    "test": "lint-staged"
   },
+  "workspaces": [
+    "api",
+    "app"
+  ],
   "lint-staged": {
     "./**/*.{js,jsx,ts,tsx}": [
       "eslint --cache --fix"
@@ -31,5 +36,8 @@
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "npm": "^7.6.3"
   }
 }
