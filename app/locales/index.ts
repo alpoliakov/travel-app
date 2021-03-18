@@ -46,6 +46,8 @@ export const messages = {
     save: 'Save changes',
     country: 'Country',
     place: 'Object',
+    emptySearch: 'Nothing found, change your search',
+    noReviews: 'There are no reviews yet.',
   },
   ru: {
     btnLogin: 'Войти',
@@ -94,6 +96,8 @@ export const messages = {
     save: 'Сохранить',
     country: 'Страна',
     place: 'Объект',
+    emptySearch: 'Ничего не найдено, измените поиск',
+    noReviews: 'Пока нет отзывов',
   },
   uk: {
     btnLogin: 'Увійти',
@@ -142,5 +146,7 @@ export const messages = {
     save: 'Зберегти',
     country: 'Країна',
     place: 'Oб`єкт',
+    emptySearch: 'Нічого не знайдено, змініть пошук',
+    noReviews: 'Єще немає відгуків.',
   },
 };

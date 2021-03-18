@@ -127,13 +127,13 @@ export default function SelectionModal({ setSelectionModal, placeId, setShowModa
                 </div>
               </div>
             )}
-            {dataRating.rating.length &&
-              dataRating.rating.map((rate, index) => (
+            {!!dataRating.rating.length &&
+              dataRating.rating.map((rate) => (
                 <div
-                  key={index + rate.userId}
+                  key={rate.userId}
                   className="m-2 relative flex items-start justify-center flex-col p-3 bg-gray-800 opacity-99 z-50 rounded shadow-xl">
                   <div className="text-white text-base uppercase font-semibold block">
-                    <span className="text-yellow-300">{rate.userName}</span>
+                    {rate.userName}
                   </div>
                   <div className="text-white text-base uppercase font-semibold block">
                     <ReactStars

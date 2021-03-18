@@ -24,8 +24,6 @@ const postVariants = {
 };
 
 export default function Settings() {
-  const { formatMessage: f } = useIntl();
-
   return (
     <div className="default-page">
       <Head>
