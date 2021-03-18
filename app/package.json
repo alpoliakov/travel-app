@@ -2,7 +2,7 @@
   "name": "@travel-app/app",
   "version": "1.0.0",
   "description": "",
-  "main": "next.config.js",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "npx graphql-let && next build",
