@@ -5,7 +5,6 @@ import toast from 'react-hot-toast';
 import { useIntl } from 'react-intl';
 import ReactStars from 'react-rating-stars-component';
 
-import { useCountryQuery } from '../lib/graphql/country.graphql';
 import { useEditPlaceMutation } from '../lib/graphql/editPlace.graphql';
 import { useAuth } from '../lib/useAuth';
 

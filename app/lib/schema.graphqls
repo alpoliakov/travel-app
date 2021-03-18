@@ -48,6 +48,7 @@ type LocalePlace {
 type Mutation {
   deleteUser(userId: ObjectId!): Boolean!
   editPlace(input: RatingInput!): Place!
+  editUser(input: SettingsInput!): User!
   login(input: AuthInput!): UserResponse!
   register(input: AuthInput!): UserResponse!
 }
@@ -85,6 +86,12 @@ input RatingInput {
   id: ObjectId
   rate: Float!
   userName: String
+}
+
+input SettingsInput {
+  avatar: String
+  email: String!
+  name: String
 }
 
 type User {

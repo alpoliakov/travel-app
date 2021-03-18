@@ -102,10 +102,12 @@ export default function SelectionModal({ setSelectionModal, placeId, setShowModa
           <div className="leading-loose relative h-auto">
             <div className="m-2 relative flex items-start justify-center flex-col p-3 bg-gray-800 opacity-99 z-50 rounded shadow-xl">
               <span className="text-white text-xl font-bold">
-                {f({ id: 'country' })}: {dataRating.country.data[locale].name}
+                {f({ id: 'country' })}:{' '}
+                <span className="text-yellow-300">{dataRating.country.data[locale].name}</span>
               </span>
               <span className="text-white text-xl font-bold">
-                {f({ id: 'place' })}: {dataRating.data[locale].name}
+                {f({ id: 'place' })}:{' '}
+                <span className="text-yellow-300">{dataRating.data[locale].name}</span>
               </span>
             </div>
             <div className="m-2 relative flex items-start justify-center flex p-3 bg-gray-800 opacity-99 z-50 rounded shadow-xl">
@@ -121,7 +123,7 @@ export default function SelectionModal({ setSelectionModal, placeId, setShowModa
             {!dataRating.rating.length && (
               <div className="m-2 relative flex items-center justify-center flex-col p-3 bg-gray-800 opacity-99 z-50 rounded shadow-xl">
                 <div className="text-white text-base uppercase font-semibold block">
-                  {f({ id: 'noReviews' })}
+                  There are no reviews.
                 </div>
               </div>
             )}

@@ -8,7 +8,6 @@ import Card from '../components/Card';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Loader from '../components/Loader';
-import Modal from '../components/Modal';
 import { useAppContext } from '../contexts/state';
 import { Country, useCountriesQuery } from '../lib/graphql/countries.graphql';
 
