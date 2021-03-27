@@ -1,7 +1,7 @@
 1. Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/react/travel-app.md
 2. Screenshot:
    ![home.png](img/home.png)
-3. Deploy: https://rs.school/
+3. Deploy: https://alpoliakov-travel-app.herokuapp.com/
 4. Done 17.03.2021 / deadline 17.03.2021
 5. Score: 200 / 200
 
