@@ -60,7 +60,7 @@
     "react-rating-stars-component": "^2.2.0",
     "react-test-renderer": "^17.0.1",
     "react-use": "^17.2.1",
-    "swiper": "^6.5.0",
+    "swiper": "^6.5.1",
     "use-sound": "^2.0.1"
   },
   "jest": {
